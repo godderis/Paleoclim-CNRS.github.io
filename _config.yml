@@ -7,15 +7,15 @@
 
 remote_theme             : "mmistakes/minimal-mistakes@4.21.0"
 
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Cerege Climate Modelisation Group"
+title                    : "CEREGE Climate Modelisation Group"
 title_separator          : "-"
-subtitle                 : "A Jekyll theme"
-name                     : &name "Cerege Climate Group" # &name is a YAML anchor which can be *referenced later
-description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
+subtitle                 : "Paleoclimates"
+name                     : &name "CEREGE Climate Group" # &name is a YAML anchor which can be *referenced later
+description              : &description "Homepage for CEREGE climate modelisation group"
 url                      : https://CEREGE-CL.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "CEREGE-CL/CEREGE-CL.github.io"
@@ -113,13 +113,10 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mmistakes"
+      url: "https://twitter.com/cerege-climate"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mmistakes"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
+      url: "https://github.com/CEREGE-CL"
 
 
 # Reading Files
