@@ -34,4 +34,6 @@ feature_row:
     btn_label: "Learn more"     
 ---
 
+{% include vtkElevationReader.html %}
+
 {% include feature_row %}
