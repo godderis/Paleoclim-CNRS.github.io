@@ -34,6 +34,10 @@ feature_row:
     btn_label: "Learn more"     
 ---
 
-{% include vtkElevationReader.html %}
+<!-- {% include vtkElevationReader.html %} -->
+
+<div style="text-align: center;">
+<iframe src='https://kitware.github.io/paraview-glance/app/?name=202-t.glance&url=https://raw.githubusercontent.com/CEREGE-CL/CEREGE-CL.github.io/init-layout/assets/data/homepage.glance' style="width: 60%;height: 400px;margin-bottom: 2em;"></iframe>
+</div>
 
 {% include feature_row %}
