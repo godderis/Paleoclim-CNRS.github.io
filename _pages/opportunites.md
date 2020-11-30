@@ -20,7 +20,7 @@ excerpt: >
 
 {% for position in fellow %}
   <h3>
-    <a href="{{ project.url }}">
+    <a href="{{ position.url }}">
       {{ position.title }}
     </a>
   </h3>
@@ -32,7 +32,7 @@ excerpt: >
 
 {% for position in postdoc %}
   <h3>
-    <a href="{{ project.url }}">
+    <a href="{{ position.url }}">
       {{ position.title }}
     </a>
   </h3>
@@ -44,7 +44,7 @@ excerpt: >
 
 {% for position in phd %}
   <h3>
-    <a href="{{ project.url }}">
+    <a href="{{ position.url }}">
       {{ position.title }}
     </a>
   </h3>
@@ -56,7 +56,7 @@ excerpt: >
 
 {% for position in engineer %}
   <h3>
-    <a href="{{ project.url }}">
+    <a href="{{ position.url }}">
       {{ position.title }}
     </a>
   </h3>
