@@ -5,8 +5,9 @@ read_time: false
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mm-home-page-feature.jpg
+title: "Meet the Team"
 excerpt: >
-  Team   
+  Please feel free to checkout our team of motivated Research, Post Doc's, PhD Student's and Engineers
 ---
 <div itemscope itemtype="https://schema.org/Person">
 {% for member in site.team %}
