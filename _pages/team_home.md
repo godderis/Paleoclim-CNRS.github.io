@@ -7,7 +7,7 @@ header:
   overlay_image: /assets/images/mm-home-page-feature.jpg
 title: "Meet the Team"
 excerpt: >
-  Please feel free to checkout our team of motivated Research, Post Doc's, PhD Student's and Engineers
+  Please feel free to checkout our team of motivated Researchers, Post Doc's, PhD Student's and Engineers
 ---
 <div itemscope itemtype="https://schema.org/Person">
 {% for member in site.team %}

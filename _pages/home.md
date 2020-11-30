@@ -12,10 +12,10 @@ excerpt: >
   Home of the CEREGE paleoclimate modelling group<br />
 feature_row:
   - image_path: /assets/images/mm-customizable-feature.png
-    alt: "Ressources"
-    title: "Ressources"
+    alt: "Resources"
+    title: "Resources"
     excerpt: "Take a look at publications and presentations from the team as well as some documentation"
-    url: "/ressources"
+    url: "/resources"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/mm-responsive-feature.png

@@ -159,7 +159,7 @@ collections:
   projects:
     output: true
     permalink: /:collection/:path/
-  ressources:
+  resources:
     output: true
     permalink: /:collection/:path/
   team:
@@ -197,10 +197,10 @@ defaults:
       author_profile: true
       share: false
       comments: false
-  # _ressources
+  # _resources
   - scope:
       path: ""
-      type: ressources
+      type: resources
     values:
       layout: single
       read_time: true
