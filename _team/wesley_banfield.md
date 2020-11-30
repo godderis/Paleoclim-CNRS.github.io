@@ -1,5 +1,5 @@
 ---
-name: Wesley Banfield
+author: Wesley Banfield
 position: Research Engineer
 ---
 
