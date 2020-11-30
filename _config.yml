@@ -113,7 +113,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/cerege-climate"
+      url: "https://twitter.com/climate_cerege"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/CEREGE-CL"
@@ -176,16 +176,13 @@ kramdown:
 
 # Collections
 collections:
-  docs:
+  projects:
     output: true
     permalink: /:collection/:path/
-  recipes:
+  ressources:
     output: true
     permalink: /:collection/:path/
-  pets:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
+  team:
     output: true
     permalink: /:collection/:path/
 
@@ -210,44 +207,36 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _docs
+  # _projects
   - scope:
       path: ""
-      type: docs
+      type: projects
     values:
       layout: single
-      read_time: false
-      author_profile: false
-      share: false
+      read_time: true
+      author_profile: true
+      share: true
       comments: false
-      sidebar:
-        nav: "docs"
-  # _recipes
+  # _ressources
   - scope:
       path: ""
-      type: recipes
+      type: ressources
     values:
       layout: single
+      read_time: true
       author_profile: true
       share: true
-      comments: true
-  # _pets
+      comments: false
+  # _team
   - scope:
       path: ""
-      type: pets
+      type: team
     values:
       layout: single
+      read_time: true
       author_profile: true
       share: true
-      comment: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: false
-      share: true
+      comment: false
 
 
 # Sass/SCSS
