@@ -9,6 +9,7 @@ header:
   #   - label: "<i class='fas fa-download'></i> Install now"
   #     url: "/docs/quick-start-guide/"
 title: Resources
+excerpt: "This is where you are going to find all of our know-how"
 
 feature_rowl1:
   - image_path: /assets/images/mm-customizable-feature.png
@@ -32,7 +33,7 @@ feature_rowl2:
     title: "Tools"
     excerpt: >
       Want to know what tools we are currently using or have used in the past? Take a look at out tools sections
-    url: "/resources/presentations"
+    url: "/resources/tools"
     btn_label: "Read More"
     btn_class: "btn--primary"
 feature_rowr2:
@@ -42,7 +43,7 @@ feature_rowr2:
     excerpt: >
       Need to know how to get things up and running? Maybe we have already encountered the problem in this case head
       over to our documentation
-    url: "/resources/presentations"
+    url: "/resources/documentation"
     btn_label: "Read More"
     btn_class: "btn--primary"
 

@@ -9,6 +9,9 @@ title: "Meet the Team"
 excerpt: >
   Please feel free to checkout our team of motivated Researchers, Post Doc's, PhD Student's and Engineers
 ---
+
+<h2>Maybe add an about statement here like global goals and such???</h2>
+
 <div itemscope itemtype="https://schema.org/Person">
 {% for member in site.team %}
   {% assign author = site.data.authors[member.author] %}
