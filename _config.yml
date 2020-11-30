@@ -90,22 +90,19 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/michael-rose.jpg"
-  bio              : "Just another *boring*, *tattooed*, *time traveling*, *designer*."
-  location         : "Buffalo, NY"
+  avatar           : "/assets/images/logo.jpg"
+  bio              : "The Climate modelling group"
+  location         : "Aix-en-Provence, France"
   links:
-    - label: "Made Mistakes"
+    - label: "Homepage"
       icon: "fas fa-fw fa-link"
-      url: "https://mademistakes.com"
+      url: "https://cerege-cl.github.io/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mmistakes"
+      url: "https://twitter.com/climate_cerege"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mmistakes"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
+      url: "https://github.com/CEREGE-CL"
 
 
 # Site Footer
