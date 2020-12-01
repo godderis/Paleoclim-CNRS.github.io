@@ -1,0 +1,9 @@
+main:
+  - title: "Resources"
+    url: /resources
+  - title: "Team"
+    url: "/team"
+  - title: "Projects"
+    url: "/projects"
+  - title: "Vacancies"
+    url: "/opportunities"
