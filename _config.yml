@@ -159,13 +159,22 @@ collections:
   projects:
     output: true
     permalink: /:collection/:path/
-  resources:
-    output: true
-    permalink: /:collection/:path/
   team:
     output: true
     permalink: /:collection/:path/
   opportunities:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  presentations:
+    output: true
+    permalink: /:collection/:path/
+  tools:
+    output: true
+    permalink: /:collection/:path/
+  documentation:
     output: true
     permalink: /:collection/:path/
 
@@ -200,10 +209,40 @@ defaults:
       author_profile: true
       share: false
       comments: false
-  # _resources
+  # _publications
   - scope:
       path: ""
-      type: resources
+      type: publications
+    values:
+      layout: single
+      read_time: true
+      author_profile: true
+      share: false
+      comments: false
+  # _presentations
+  - scope:
+      path: ""
+      type: presentations
+    values:
+      layout: single
+      read_time: true
+      author_profile: true
+      share: false
+      comments: false
+  # _tools
+  - scope:
+      path: ""
+      type: tools
+    values:
+      layout: single
+      read_time: true
+      author_profile: true
+      share: false
+      comments: false
+  # _documentation
+  - scope:
+      path: ""
+      type: documentation
     values:
       layout: single
       read_time: true
