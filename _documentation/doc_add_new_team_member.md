@@ -1,7 +1,7 @@
 ---
 author: Wesley
 title: New Team Member
-description: How to add a new team member
+excerpt: How to add a new team member
 toc: true
 ---
 
