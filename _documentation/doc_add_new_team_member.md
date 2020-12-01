@@ -78,6 +78,8 @@ The first step is to create a new file `firstname_surname.md` in `_team` (exampl
 {: .notice--info}
 
 ## File contents
+
+### Front Matter
 [Front matter](https://jekyllrb.com/docs/front-matter/) is used to specify information about the file, this is not shown in the end file but used to create the website (links + magic). Front Matter is placed between `---` as in the example below.
 
 ``` yaml
@@ -103,3 +105,7 @@ excerpt: " " # This is to remove the content from the image
 * **title** if you want a title to appear on image, this will be a header
 * **excerpt** small writing that appears in header
 * **header** here you can set a link up to a background image in `assets/images` or choose a solid color.
+
+### Contents 
+
+Rights the contents of your file in Normal Markdown this is what is going to appear in the center of the page.
