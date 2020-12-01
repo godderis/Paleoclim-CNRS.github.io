@@ -1,6 +1,9 @@
 Wesley:
   name        : "Wesley Banfield"
-  bio         : "Research Engineer passionate about bringing cutting edge technology to geosciences"
+  bio         : >
+    Research Engineer passionate about
+    bringing cutting edge technology to 
+    geosciences
   avatar      : "/assets/images/wesley_banfield.png"
   location    : "Aix-en-Provence, France"
   links:

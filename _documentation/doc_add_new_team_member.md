@@ -1,5 +1,5 @@
 ---
-author: Wesley Banfield
+author: Wesley
 title: New Team Member
 description: How to add a new team member
 toc: true
@@ -19,7 +19,11 @@ You will find examples already in the file:
 ``` yaml
 Wesley:
   name        : "Wesley Banfield"
-  bio         : "Research Engineer passionate about bringing cutting edge technology to geosciences"
+  # This is how you do multilines
+  bio         : >
+    Research Engineer passionate 
+    about bringing cutting edge 
+    technology to geosciences
   avatar      : "/assets/images/wesley_banfield.png"
   location    : "Aix-en-Provence, France"
   links:
