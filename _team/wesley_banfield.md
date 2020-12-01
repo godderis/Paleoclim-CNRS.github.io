@@ -1,7 +1,7 @@
 ---
-author: Wesley Banfield
+author: Wesley
 position: Research Engineer
-title: Wesley Banfield
+title: " "
 header:
     overlay_image: "/assets/images/background_wesley_banfield.jpeg"
     # overlay_color: "#5e616c"

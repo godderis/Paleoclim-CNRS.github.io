@@ -25,7 +25,7 @@ excerpt: >
   {% endif %}
   <h2 style="float: left;">
     <a href="{{ member.url }}">
-      {{ member.author }} - {{ member.position }}
+      {{ author.name }} - {{ member.position }}
     </a>
   </h2>
   </div>
