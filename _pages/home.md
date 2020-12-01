@@ -35,9 +35,9 @@ feature_row:
 ---
 
 <!-- {% include vtkElevationReader.html %} -->
-
+https://github.com/CEREGE-CL/CEREGE-CL.github.io/blob/main/assets/data/homepage.glance
 <div style="text-align: center;">
-  <iframe src='https://kitware.github.io/paraview-glance/app/?name=202-t.glance&url=https://raw.githubusercontent.com/CEREGE-CL/CEREGE-CL.github.io/init-layout/assets/data/homepage.glance' style="width: 40%;height: 400px;margin-bottom: 2em;float: left;margin-left: 5%"></iframe>
+  <iframe src='https://kitware.github.io/paraview-glance/app/?name=202-t.glance&url=https://raw.githubusercontent.com/CEREGE-CL/CEREGE-CL.github.io/main/assets/data/homepage.glance' style="width: 40%;height: 400px;margin-bottom: 2em;float: left;margin-left: 5%"></iframe>
   <div style="position: relative; width: 40%; height:400px; float: left;margin-left: 7.5%">
     <iframe src='https://earth.nullschool.net/' style="width: 100%;height: 100%;position: relative;"> </iframe>
     <p style="position: absolute;bottom: -1em;right: 0.1em;background: gray;font-size: 10px;">
