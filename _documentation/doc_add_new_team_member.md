@@ -9,6 +9,9 @@ toc: true
 
 All the site authors are stores in `_data/authors.yml` this file holds all the information to create the author profiles in the side bar, as seen below. This only needs to be done once per person.
 
+If you already have a GitHub account (which you should) you can edit the file online [here](https://github.com/CEREGE-CL/CEREGE-CL.github.io/edit/main/_data/authors.yml). <br> <br>__Make sure to scroll down to the bottom and COMMIT YOUR CHANGES__
+{: .notice--info}
+
 <figure style="text-align: center;display: block;">
     <img src="/assets/images/side_bar_example.png" style="width: 40%">
 </figure>
@@ -74,6 +77,9 @@ Now that the author profile is setup we can start creating your webpage!
 ## Create file
 The first step is to create a new file `firstname_surname.md` in `_team` (example: `_team/wesley_banfield.md`)
 
+If you already have a GitHub account (which you should) you can create the file online [here](https://github.com/CEREGE-CL/CEREGE-CL.github.io/new/main/_team). <br> <br>__Make sure to scroll down to the bottom and COMMIT YOUR CHANGES__
+{: .notice--info}
+
 `.md` is a markdown file, a lightweight markup language with plain text formatting (it is used extensively thoughout the website) see [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for more information
 {: .notice--info}
 
@@ -108,4 +114,4 @@ excerpt: " " # This is to remove the content from the image
 
 ### Contents 
 
-Rights the contents of your file in Normal Markdown this is what is going to appear in the center of the page.
+Write the contents of your file in Normal Markdown this is what is going to appear in the center of the page.

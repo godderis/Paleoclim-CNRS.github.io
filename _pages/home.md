@@ -35,7 +35,6 @@ feature_row:
 ---
 
 <!-- {% include vtkElevationReader.html %} -->
-https://github.com/CEREGE-CL/CEREGE-CL.github.io/blob/main/assets/data/homepage.glance
 <div style="text-align: center;">
   <iframe src='https://kitware.github.io/paraview-glance/app/?name=202-t.glance&url=https://raw.githubusercontent.com/CEREGE-CL/CEREGE-CL.github.io/main/assets/data/homepage.glance' style="width: 40%;height: 400px;margin-bottom: 2em;float: left;margin-left: 5%"></iframe>
   <div style="position: relative; width: 40%; height:400px; float: left;margin-left: 7.5%">
