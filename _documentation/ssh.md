@@ -5,37 +5,6 @@ excerpt: Everything you need to know about getting up and running with ssh
 toc: true
 ---
 
-# TL;DR
-
-* Setup SSH keys using [GitHub Documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
-* Copy the ssh key to a server via 
-```
-ssh-copy-id username_on_server@servername
-```
-or
-```
-ssh-copy-id -o ProxyJump=username_on_gateway_server@gateway_server username_on_target_server@target_server
-```
-
-* create a `~/.ssh/config` similar to: 
-
-```
-Host *
-  AddKeysToAgent yes
-  IdentityFile ~/.ssh/id_ed25519
-
-Host GATEWAY_SERVER_SHORTNAME
-  Hostname GATEWAY_SERVER_ADDRESS
-  User GATEWAY_SERVER_USERNAME
-
-Host PRIVATE_SERVER_SHORTNAME
-  Hostname PRIVATE_SERVER_ADDRESS
-  User PRIVATE_SERVER_USERNAME
-  ProxyJump GATEWAY_SERVER_SHORTNAME
-  LocalForward LOCAL_PORT 127.0.0.1:REMOTE_PORT
-```
-
-`LocalForward` allows [port tunnelling](#tunnel-ports).
 
 # What is ssh
 
@@ -249,3 +218,36 @@ This connects the port `8111` on your localmachine to the port `8080` on the ser
 
 This is useful when a port on a server is not publically visible.
 {: .notice--info}
+
+
+# Conclusion
+
+* Setup SSH keys using [GitHub Documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+* Copy the ssh key to a server via 
+```
+ssh-copy-id username_on_server@servername
+```
+or
+```
+ssh-copy-id -o ProxyJump=username_on_gateway_server@gateway_server username_on_target_server@target_server
+```
+
+* create a `~/.ssh/config` similar to: 
+
+```
+Host *
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_ed25519
+
+Host GATEWAY_SERVER_SHORTNAME
+  Hostname GATEWAY_SERVER_ADDRESS
+  User GATEWAY_SERVER_USERNAME
+
+Host PRIVATE_SERVER_SHORTNAME
+  Hostname PRIVATE_SERVER_ADDRESS
+  User PRIVATE_SERVER_USERNAME
+  ProxyJump GATEWAY_SERVER_SHORTNAME
+  LocalForward LOCAL_PORT 127.0.0.1:REMOTE_PORT
+```
+
+`LocalForward` allows [port tunnelling](#tunnel-ports).
