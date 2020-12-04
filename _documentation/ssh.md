@@ -77,7 +77,7 @@ For extra security you can add a password to the private key file, this is for t
 
 If you already have an ssh key pair generated you can skip this step (`ls -al ~/.ssh` you are looking for a pair with a `.pub` file if you aren't sure just create a new one)
 
-I could rewrite all the steps but frankly there is no point in reinventing the wheel so check out this documentation ---> [GitHub Documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+I could rewrite all the steps but frankly there is no point in reinventing the wheel so check out this documentation, you need to do Generating a new ssh key AND Adding your ssh key to ssh-agent (but you do not need to the last step - Add the ssh key to your gihub account) ---> [GitHub Documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 ### Copy public key to server
 
