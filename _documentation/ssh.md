@@ -184,7 +184,6 @@ to access the server in a one liner. This sort of configuration can also be auto
 Host GATEWAY_SERVER_SHORT_NAME
   Hostname GATEWAY_SERVER_ADDRESS
   User GATEWAY_SERVER_USERNAME
-  ProxyJump rubicon
 
 Host TARGET_SERVER_SHORT_NAME
   Hostname TARGET_SERVER
