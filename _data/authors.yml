@@ -22,3 +22,23 @@ Wesley:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/wesleybanfield/"
+      
+      Yannick:
+  name        : "Yannick Donnadieu"
+  bio         : >
+    Head of the Deep Time modeling group at CEREGE;
+    enjoying the use of climate-carbon models to understand
+    processes at play during past environmental crisis
+  avatar      : "/assets/images/Yannick-Donnadieu-Picture.png"
+  location    : "Aix-en-Provence, France"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:donnadieu@cerege.fr"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-link"
+      url: "https://scholar.google.fr/citations?hl=fr&user=WTlPKX0AAAAJ"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tiphe-cerege"
+      
