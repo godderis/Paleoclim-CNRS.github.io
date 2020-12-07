@@ -1,5 +1,5 @@
 ---
-title: ANR project AMOR
+title: New project
 type: current
 description: "Data Model Reconstruction of the Cenozoic Climate"
 collaborators:
