@@ -4,9 +4,9 @@ year_start: 2017
 type: current
 description: "Data Model Reconstruction of the Cenozoic Climate (2017-2021)"
 collaborators:
-    - Emmanuelle Puceat, Emmanuelle Vennin (U. Burgundy - Biogéosciences)
+    - [Emmanuelle Puceat](http://emmanuelle.puceat.free.fr/index.html#contact), Emmanuelle Vennin (U. Burgundy - Biogéosciences)
     - Marc De Rafélis, Valérie Chavagnac, Guillaume Dera (U. Toulouse - GET)
-    - Mathieu Daeron, Christophe Dumas, Pierre Sepulchre (CEA - LSCE)
+    - [Mathieu Daeron](http://www.daeron.fr/about/), Christophe Dumas, Pierre Sepulchre (CEA - LSCE)
     - Didier Merle, Franck Lartaud (UPMC Sorbonne Universités, MNHN)
     - ajouter en "patron", date, publications, postdocs, PhDs, possibilité de faire des liens web sur le texte
 ---
