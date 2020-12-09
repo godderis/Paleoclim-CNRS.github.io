@@ -1,8 +1,9 @@
 ---
-title: ANR project AMOR
+acronyme: ANR project AMOR
 year_start: 2017
 type: current
-description: "Data Model Reconstruction of the Cenozoic Climate (2017-2021)"
+title: "Data Model Reconstruction of the Cenozoic Climate (2017-2021)"
+classes: wide
 collaborators:
     - <a href='http://emmanuelle.puceat.free.fr/index.html#contact'>Emmanuelle Puceat</a>, Emmanuelle Vennin (U. Burgundy - Biogéosciences)
     - Marc De Rafélis, Valérie Chavagnac, Guillaume Dera (U. Toulouse - GET)
@@ -10,6 +11,8 @@ collaborators:
     - Didier Merle, Franck Lartaud (UPMC Sorbonne Universités, MNHN)
     - ajouter en "patron", date, publications, postdocs, PhDs, possibilité de faire des liens web sur le texte
 ---
+<details>
+<summary>Abstract</summary>
 The aim of this proposal is to investigate the carbon-climate-ice sheet couplings through the study of
 major global transitions between icehouse and greenhouse states that Earth already experienced.
 Although atmospheric CO2 level is generally proposed as the main driver of these climatic changes,
@@ -41,6 +44,7 @@ is an invaluable source of information. Important advances to understand climate
 interactions have already been made on these periods. Conversely, the role of the interaction of the
 primary productivity with oceanographic-induced modifications in response to gateway changes but
 also to the ice sheet itself has been overlooked.
+
 Three tasks were identified: 1) a Δ47-Temperature calibration for living mollusks which should lead
 to a wider utilization of the mollusks fossils as one of the limit was due to the large salinity
 fluctuations occurring in coastal areas and impeding the use of δ180 measured on mollusks as a
@@ -51,3 +55,4 @@ EOT and MMCT to constrain potential feedbacks on CO2 levels related to the marin
 Climate simulations will also provide a physical framework to interpret geochemical data from task 2.
 Our integrated model and data approach should allow the complex web of interconnected processes
 associated with EOT and MMCT to be untangled.
+</details>

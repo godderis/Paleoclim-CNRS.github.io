@@ -18,17 +18,13 @@ excerpt: >
 {% for project in current_projects %}
   <h3>
     <a href="{{ project.url }}">
-      {{ project.title }}
+      {{ project.acronyme }}
     </a>
   </h3>
-  {{ project.description }}
+  <b>Start year: </b>{{ project.year_start }}
+
+  <b>Title: </b>{{ project.title }}
   
-  Collaborators:
-  <ul>
-  {% for collaborator in project.collaborators %}
-    <li>{{ collaborator }}</li>
-  {% endfor %}
-  </ul>
 {% endfor %}
 
 <h2>Archived Projects</h2>
