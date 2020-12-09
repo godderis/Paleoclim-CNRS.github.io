@@ -62,3 +62,6 @@ Anta:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/AntaCl"
+    - label: "Researchgate"
+      icon: "fab fa-researchgate"
+      url: "https://www.researchgate.net/profile/Anta_Clarisse_Sarr"
