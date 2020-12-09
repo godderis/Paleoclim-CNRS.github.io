@@ -1,5 +1,6 @@
 ---
 title: ANR project RISE
+year_start: 2020
 type: current
 description: "Tectonic Control on the last Greenhouse to Icehouse Transition: the Rise of Africa  (2020-2024)"
 collaborators:

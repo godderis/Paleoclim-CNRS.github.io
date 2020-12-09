@@ -10,7 +10,8 @@ excerpt: >
   This is where you can find all the cool stuff we are working on, have worked on and will hopefully be working on!   
 ---
 {% assign old_projects = site.projects | where: "type", "old" %}
-{% assign current_projects = site.projects | where_exp: "proj", "proj.type == 'current'" %}
+{% assign current_projects = site.projects | where_exp: "proj", "proj.type == 'current'" | sort: 'year_start' | reverse%}
+
 
 <h2>Current Projects</h2>
 
