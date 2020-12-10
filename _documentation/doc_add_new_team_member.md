@@ -9,7 +9,7 @@ toc: true
 
 All the site authors are stores in `_data/authors.yml` this file holds all the information to create the author profiles in the side bar, as seen below. This only needs to be done once per person.
 
-If you already have a GitHub account (which you should) you can edit the file online [here](https://github.com/CEREGE-CL/CEREGE-CL.github.io/edit/main/_data/authors.yml). <br> <br>__Make sure to scroll down to the bottom and COMMIT YOUR CHANGES__
+If you already have a GitHub account (which you should) you can edit the file online [here](https://github.com/CEREGE-CL/CEREGE-CL.github.io/edit/main/_data/authors.yml) when prompted for an avatar file, fill out the file name in advance then upload the file (with the correct filename) [here](https://github.com/CEREGE-CL/CEREGE-CL.github.io/upload/main/assets/images). <br> <br>__Make sure to scroll down to the bottom and COMMIT YOUR CHANGES__
 {: .notice--info}
 
 <figure style="text-align: center;display: block;">
