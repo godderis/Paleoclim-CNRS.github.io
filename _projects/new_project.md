@@ -1,5 +1,7 @@
 ---
 acronyme: Project Acro.
+funder: ANR
+lab: CEREGE
 title: New project
 type: current
 layout: project

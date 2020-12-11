@@ -1,0 +1,65 @@
+{% assign funder = site.data.funders[page.funder] | default: page.funder %}
+{% assign lab = site.data.labs[page.lab] | default: page.lab %}
+{% assign mainpi = page.mainpi |  default: page.collaborators[0].name | default: page.collaborators[0] %}
+
+<div class="sidebar sticky">
+
+    {% if funder %}
+    <div style="display: flex;align-items: center;">
+        {% if funder.avatar %}
+        <div class="author__avatar">
+            {% if funder.home %}
+            <a href="{{ funder.home | relative_url }}">
+                <img src="{{ funder.avatar | relative_url }}" alt="{{ funder.name }}" itemprop="image">
+            </a>
+            {% else %}
+            <img src="{{ funder.avatar | relative_url }}" alt="{{ funder.name }}" itemprop="image">
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <div class="author__content">
+            {% if funder.home %}
+            <a href="{{ funder.home | relative_url }}">
+                <h3 class="author__name" itemprop="name">{{ funder.name }}</h3>
+            </a>
+            {% else %}
+            <h3 class="author__name" itemprop="name">{{ funder.name }}</h3>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    {% if lab %}
+    {% if lab.avatar %}
+    <div class="author__avatar">
+        {% if lab.home %}
+        <a href="{{ lab.home | relative_url }}">
+            <img src="{{ lab.avatar | relative_url }}" alt="{{ lab.name }}" itemprop="image">
+        </a>
+        {% else %}
+        <img src="{{ lab.avatar | relative_url }}" alt="{{ lab.name }}" itemprop="image">
+        {% endif %}
+    </div>
+    {% endif %}
+
+    <div class="author__content">
+        {% if lab.home %}
+        <a href="{{ lab.home | relative_url }}">
+            <h3 class="author__name" itemprop="name">{{ lab.name }}</h3>
+        </a>
+        {% else %}
+        <h3 class="author__name" itemprop="name">{{ lab.name }}</h3>
+        {% endif %}
+        <ul class="author__urls social-icons">
+            {% if lab.location %}
+            <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+                <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span
+                    itemprop="name">{{ lab.location }}</span>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+    {% endif %}
+
+</div>
