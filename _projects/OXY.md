@@ -1,6 +1,8 @@
 ---
 acronyme: OXYMORE
 title: Oxygen Isotope ratios of Mesozoic Oceans Revisited 
+funder: ANR
+lab: LGLTPE
 year_start: 2018
 type: current
 layout: project
