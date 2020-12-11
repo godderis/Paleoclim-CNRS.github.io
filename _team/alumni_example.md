@@ -1,7 +1,7 @@
 ---
 author:
-    name: Old Person
-    avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMBOAjGvwjx4ESMg0k7m2VcWrKycQVlCdp-w&usqp=CAU"
-position: Fake position
+    name: Alexandre Pohl
+    avatar: "https://1.gravatar.com/avatar/4614585fcedc21202477e3e19407e63a?s=256&d=identicon&r=G"
+position: PostDoc 
 type: alumni
 ---
