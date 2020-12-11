@@ -3,3 +3,13 @@ CEREGE:
   location: Aix-en-Provence
   avatar: "https://www.cerege.fr/sites/default/files/accueil/logo_haut_0.jpg"
   home: "https://www.cerege.fr"
+Biogeosciences:
+  name: Biogeosciences
+  location: Dijon
+  avatar: "http://www.u-bourgogne.fr/images/stories/Images/logo_biogeosciences.png"
+  home: "https://biogeosciences.u-bourgogne.fr/"
+LGLTPE:
+  name: LGLTPE
+  location: Lyon
+  avatar: "http://lgltpe.ens-lyon.fr/logo.png"
+  home: "http://lgltpe.ens-lyon.fr/"
