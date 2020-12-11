@@ -73,7 +73,7 @@ atom_feed:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/logo.jpg"
+  avatar           : "/assets/images/logo.png"
   bio              : "The Climate modelling group"
   location         : "Aix-en-Provence, France"
   links:
@@ -204,7 +204,7 @@ defaults:
       path: ""
       type: projects
     values:
-      layout: single
+      layout: project
       read_time: true
       author_profile: true
       share: false
