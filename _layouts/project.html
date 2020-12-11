@@ -41,7 +41,8 @@ layout: default
           </aside>
         {% endif %}
 
-
+        <div style="display: flex;">
+          <div class="page__content">
         Collaborators:
         <ul>
         {% for collaborator in page.collaborators %}            
@@ -85,6 +86,8 @@ layout: default
 
         {% endfor %}
         </ul>
+      </div>
+      <div class="page__content">
         Fellows:
         <ul>
           {% for collaborator in page.fellows %}            
@@ -128,6 +131,8 @@ layout: default
   
           {% endfor %}
           </ul>
+        </div>
+        </div>
 
         <details>
             <summary>
