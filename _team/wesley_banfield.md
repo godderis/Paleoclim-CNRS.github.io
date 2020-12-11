@@ -1,6 +1,7 @@
 ---
 author: Wesley
 position: Research Engineer
+type: fellow
 title: " "
 header:
     overlay_image: "/assets/images/background_wesley_banfield.jpeg"

@@ -1,7 +1,7 @@
 ---
 author: Anta
 position: PostDoc
-type: postdoc
+type: fellow
 title: " "
 header:
     overlay_image: "/assets/images/background_anta_sarr.jpg"

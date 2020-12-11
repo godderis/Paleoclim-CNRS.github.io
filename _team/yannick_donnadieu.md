@@ -1,7 +1,7 @@
 ---
 author: Yannick
 position: Head of the group
-type: phd
+type: perm
 title: " "
 header:
     overlay_image: "/assets/images/IMG_2299.jpg"

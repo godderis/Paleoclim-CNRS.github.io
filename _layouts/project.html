@@ -93,14 +93,16 @@ layout: default
 
         <details>
             <summary>
-                Abstract
+              Abstract
             </summary>
         {{ content }}
         </details>
 
       {% if page.publications %}
       <details>
-        <summary>Publications</summary>
+        <summary>
+          Publications
+        </summary>
         <ul>
           {% for pub in page.publications %}
             {% assign name = pub.name | default: pub %}

@@ -11,9 +11,20 @@ excerpt:  "<div style='text-align: justify'> Interested in the Earth system evol
 ---
 
 {% assign fellow = site.opportunities | where: "type", "fellow" %}
-{% assign postdoc = site.opportunities | where: "type", "postdoc" %}
+{% assign perm = site.opportunities | where: "type", "perm" %}
 {% assign phd = site.opportunities | where: "type", "phd" %}
-{% assign engineer = site.opportunities | where: "type", "engineer" %}
+
+{% if perm != blank %}
+<h2>Permenant Positions</h2>
+
+{% for position in perm %}
+  <h3>
+    <a href="{{ position.url }}">
+      {{ position.title }}
+    </a>
+  </h3>
+{% endfor %}
+{% endif %}
 
 {% if fellow != blank %}
 <h2>Fellow Positions</h2>
@@ -27,34 +38,10 @@ excerpt:  "<div style='text-align: justify'> Interested in the Earth system evol
 {% endfor %}
 {% endif %}
 
-{% if postdoc != blank %}
-<h2>PostDoc Positions</h2>
-
-{% for position in postdoc %}
-  <h3>
-    <a href="{{ position.url }}">
-      {{ position.title }}
-    </a>
-  </h3>
-{% endfor %}
-{% endif %}
-
 {% if phd != blank %}
 <h2>PhD Positions</h2>
 
 {% for position in phd %}
-  <h3>
-    <a href="{{ position.url }}">
-      {{ position.title }}
-    </a>
-  </h3>
-{% endfor %}
-{% endif %}
-
-{% if engineer != blank %}
-<h2>Engineer Positions</h2>
-
-{% for position in engineer %}
   <h3>
     <a href="{{ position.url }}">
       {{ position.title }}

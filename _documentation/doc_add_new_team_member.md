@@ -105,9 +105,9 @@ excerpt: " " # This is to remove the content from the image
 * **position** is the current position held
 * **type** (used for layout in team homepage) one of:
     * fellow
-    * postdoc
+    * perm
     * phd
-    * engineer
+    * alumni
 * **title** if you want a title to appear on image, this will be a header
 * **excerpt** small writing that appears in header
 * **header** here you can set a link up to a background image in `assets/images` or choose a solid color.
