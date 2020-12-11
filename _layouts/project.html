@@ -41,6 +41,10 @@ layout: default
           </aside>
         {% endif %}
 
+        {% if page.description %}
+          {{ page.description | markdownify }}
+        {% endif %}
+
         Collaborators:
         <ul>
         {% for collaborator in page.collaborators %}            
