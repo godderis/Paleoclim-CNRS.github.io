@@ -5,5 +5,5 @@ main:
     url: "/team"
   - title: "Projects"
     url: "/projects"
-  - title: "Vacancies"
+  - title: "Opportunities"
     url: "/opportunities"
