@@ -1,6 +1,8 @@
 ---
 acronyme: MIOCARB
 title: "The Miocene–Pliocene transition: emergence of the modern carbon cycle"
+funder: ANR
+lab: CEREGE
 year_start: 2020
 type: current
 description: "To be done"
