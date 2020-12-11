@@ -19,8 +19,11 @@ publications:
   - name: This is a publication with a link
     url: "https://google.com"
     collaborators:
-      - Wesley
+      - name: Wesley
       - Yannick
+      - name: Person as Item
+        url: "https://www.google.com"
+      - Person standard
   - This is a normal publication
 ---
 
