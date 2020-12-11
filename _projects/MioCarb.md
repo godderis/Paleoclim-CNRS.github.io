@@ -1,6 +1,6 @@
 ---
 acronyme: MIOCARB
-title: The Miocene–Pliocene transition: emergence of the modern carbon cycle
+title: "The Miocene–Pliocene transition: emergence of the modern carbon cycle"
 year_start: 2020
 type: current
 description: "Our aim is to use the shallow marine record to caracterize coastal environmental changes occuring accross the two main climatic transition of the last 40 Myrs, 
