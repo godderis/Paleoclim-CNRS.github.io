@@ -11,7 +11,7 @@ collaborators:
     - François Guillocheau, Cécile Robin (U. Rennes - Géosciences)
     - Yves Goddéris (U. Toulouse - GET)
  fellows:
-    - Post-doc/ Engineer Opportunities to be announced soon (2021) at GET, Biogeosciences and Geosciences Rennes
+    - Post-doc, Engineer Opportunities to be announced soon (2021) in partners laboratories
 ---
 
 To be done
