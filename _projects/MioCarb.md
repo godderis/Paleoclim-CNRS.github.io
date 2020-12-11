@@ -1,9 +1,14 @@
 ---
-acronyme: ANR project MIOCARB
+acronyme: MIOCARB
+title: The Miocene–Pliocene transition: emergence of the modern carbon cycle
 year_start: 2020
 type: current
-title: "The Miocene–Pliocene transition: emergence of the modern carbon cycle (2020-2024)"
+layout: project
 collaborators:
     - Baptiste Suchéras (Main PI), Clara Bolton, Luc Beaufort, Yves Gally, Jean-Charles Mazur (CEREGE, AMU)
-    - Adriana Dutkiewicz (EarthByte - Sydney)
+    - <a href='https://www.earthbyte.org/tag/dr-adriana-dutkiewicz/'>Adriana Dutkiewicz</a> (EarthByte - Sydney)
+fellows: 
+    - Quentin
 ---
+
+Soon available
