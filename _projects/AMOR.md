@@ -1,6 +1,8 @@
 ---
 acronyme: AMOR
 title: Data Model Reconstruction of the Cenozoic Climate
+funder: ANR
+lab: CEREGE
 year_start: 2017
 type: current
 layout: project
