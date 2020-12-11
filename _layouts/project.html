@@ -44,51 +44,90 @@ layout: default
 
         Collaborators:
         <ul>
-        {% for collaborator in page.collaborators %}
-            <!-- Let's see if the name is in the authors file  -->
+        {% for collaborator in page.collaborators %}            
             {% assign name = collaborator.name | default: collaborator  %}
-            {% if site.data.authors[collaborator] %}
-              {% assign name = site.data.authors[collaborator].name %}
-            {% endif %}
             <!-- Let's see if the person has a team page. This returns an array -->
-            {% assign teamPage = site.team | where: 'author', collaborator %}
+            {% assign teamPage = site.team | where: 'author', name %}
             {% assign url = teamPage[0].url | default: collaborator.url %}
+            {% if site.data.authors[name] %}
+              {% assign name = site.data.authors[name].name %}
+            {% endif %}
             <li>
               {% if url %}
-                    <a href="{{ url }}">
-                        {{ name }}
-                    </a>
-              {% else %}
+                <a href="{{ url }}">
+              {% endif %}
                   {{ name }}
+              {% if url %}
+                </a>
+              {% endif %}
+
+              {% if collaborator.publications %}
+              <details>
+                <summary>Publications</summary>
+                <ul>
+                  {% for pub in collaborator.publications %}
+                    {% assign name = pub.name | default: pub %}
+                    {% assign url = pub.url %}
+                  <li>
+                    {% if url %}
+                      <a href="{{ url }}">
+                    {% endif %}
+                        {{ name }}
+                    {% if url %}
+                      </a>
+                    {% endif %}
+                  </li>
+                  {% endfor %}
+                </ul>
+              </details>
               {% endif %}
             </li>
 
         {% endfor %}
         </ul>
-
         Fellows:
         <ul>
-        {% for collaborator in page.fellows %}
-            <!-- Let's see if the name is in the authors file  -->
-            {% assign name = collaborator.name | default: collaborator  %}
-            {% if site.data.authors[collaborator] %}
-              {% assign name = site.data.authors[collaborator].name %}
-            {% endif %}
-            <!-- Let's see if the person has a team page. This returns an array -->
-            {% assign teamPage = site.team | where: 'author', collaborator %}
-            {% assign url = teamPage[0].url | default: collaborator.url %}
-            <li>
-              {% if url %}
-                    <a href="{{ url }}">
-                        {{ name }}
-                    </a>
-              {% else %}
-                  {{ name }}
+          {% for collaborator in page.fellows %}            
+              {% assign name = collaborator.name | default: collaborator  %}
+              <!-- Let's see if the person has a team page. This returns an array -->
+              {% assign teamPage = site.team | where: 'author', name %}
+              {% assign url = teamPage[0].url | default: collaborator.url %}
+              {% if site.data.authors[name] %}
+                {% assign name = site.data.authors[name].name %}
               {% endif %}
-            </li>
-
-        {% endfor %}
-        </ul>
+              <li>
+                {% if url %}
+                  <a href="{{ url }}">
+                {% endif %}
+                    {{ name }}
+                {% if url %}
+                  </a>
+                {% endif %}
+  
+                {% if collaborator.publications %}
+                <details>
+                  <summary>Publications</summary>
+                  <ul>
+                    {% for pub in collaborator.publications %}
+                      {% assign name = pub.name | default: pub %}
+                      {% assign url = pub.url %}
+                    <li>
+                      {% if url %}
+                        <a href="{{ url }}">
+                      {% endif %}
+                          {{ name }}
+                      {% if url %}
+                        </a>
+                      {% endif %}
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </details>
+                {% endif %}
+              </li>
+  
+          {% endfor %}
+          </ul>
 
         <details>
             <summary>

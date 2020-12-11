@@ -5,7 +5,11 @@ type: current
 layout: project
 description: "Quick project Description"
 collaborators:
-    - Wesley
+    - name: Wesley
+      publications:
+        - name: This is a publication with a link
+          url: "https://google.com"
+        - This is a normal publication
     - Yannick
     - name: Person as Item
       url: "https://www.google.com"
