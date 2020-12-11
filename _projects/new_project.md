@@ -6,10 +6,6 @@ layout: project
 description: "Quick project Description"
 collaborators:
     - name: Wesley
-      publications:
-        - name: This is a publication with a link
-          url: "https://google.com"
-        - This is a normal publication
     - Yannick
     - name: Person as Item
       url: "https://www.google.com"
@@ -19,6 +15,13 @@ fellows:
     - name: Person as Item
       url: "https://www.google.com"
     - Person standard
+publications:
+  - name: This is a publication with a link
+    url: "https://google.com"
+    collaborators:
+      - Wesley
+      - Yannick
+  - This is a normal publication
 ---
 
 Lets test

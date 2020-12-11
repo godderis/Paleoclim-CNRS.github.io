@@ -41,8 +41,6 @@ layout: default
           </aside>
         {% endif %}
 
-        <div style="display: flex;">
-          <div class="page__content">
         Collaborators:
         <ul>
         {% for collaborator in page.collaborators %}            
@@ -61,33 +59,11 @@ layout: default
               {% if url %}
                 </a>
               {% endif %}
-
-              {% if collaborator.publications %}
-              <details>
-                <summary>Publications</summary>
-                <ul>
-                  {% for pub in collaborator.publications %}
-                    {% assign name = pub.name | default: pub %}
-                    {% assign url = pub.url %}
-                  <li>
-                    {% if url %}
-                      <a href="{{ url }}">
-                    {% endif %}
-                        {{ name }}
-                    {% if url %}
-                      </a>
-                    {% endif %}
-                  </li>
-                  {% endfor %}
-                </ul>
-              </details>
-              {% endif %}
             </li>
 
         {% endfor %}
         </ul>
-      </div>
-      <div class="page__content">
+
         Fellows:
         <ul>
           {% for collaborator in page.fellows %}            
@@ -106,14 +82,40 @@ layout: default
                 {% if url %}
                   </a>
                 {% endif %}
+              </li>
   
-                {% if collaborator.publications %}
-                <details>
-                  <summary>Publications</summary>
-                  <ul>
-                    {% for pub in collaborator.publications %}
-                      {% assign name = pub.name | default: pub %}
-                      {% assign url = pub.url %}
+          {% endfor %}
+          </ul>
+
+        <details>
+            <summary>
+                Abstract
+            </summary>
+        {{ content }}
+        </details>
+
+      {% if page.publications %}
+      <details>
+        <summary>Publications</summary>
+        <ul>
+          {% for pub in page.publications %}
+            {% assign name = pub.name | default: pub %}
+            {% assign url = pub.url %}
+          <li>
+            {% if url %}
+              <a href="{{ url }}">
+            {% endif %}
+                {{ name }}
+                {% if pub.collaborators %}
+                <ul>
+                  {% for collab in pub.collaborators %}
+                    {% assign name = collab.name | default: collab  %}
+                    <!-- Let's see if the person has a team page. This returns an array -->
+                    {% assign teamPage = site.team | where: 'author', name %}
+                    {% assign url = teamPage[0].url | default: collab.url %}
+                    {% if site.data.authors[name] %}
+                      {% assign name = site.data.authors[name].name %}
+                    {% endif %}
                     <li>
                       {% if url %}
                         <a href="{{ url }}">
@@ -123,24 +125,19 @@ layout: default
                         </a>
                       {% endif %}
                     </li>
-                    {% endfor %}
-                  </ul>
-                </details>
+                  {% endfor %}
+                </ul>
                 {% endif %}
-              </li>
-  
+            {% if url %}
+              </a>
+            {% endif %}
+          </li>
           {% endfor %}
-          </ul>
-        </div>
-        </div>
-
-        <details>
-            <summary>
-                Abstract
-            </summary>
-        {{ content }}
-        </details>
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        </ul>
+      </details>
+      {% endif %}
+      
+      {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
       <footer class="page__meta">
