@@ -1,18 +1,22 @@
 ---
-acronyme: ANR project AMOR
+acronyme: AMOR
+title: Data Model Reconstruction of the Cenozoic Climate
 year_start: 2017
 type: current
-title: "Data Model Reconstruction of the Cenozoic Climate (2017-2021)"
-classes: wide
+layout: project
+description: "Our aim is to use the shallow marine record to caracterize coastal environmental changes occuring accross the two main climatic transition of the last 40 Myrs, 
+the Eocene-Oligocene and the Middle Miocene, and to anchor these results to global signal using the Earth System model IPSL-CM5A2"
 collaborators:
     - <a href='http://emmanuelle.puceat.free.fr/index.html#contact'>Emmanuelle Puceat</a>, Emmanuelle Vennin (U. Burgundy - Biogéosciences)
     - Marc De Rafélis, Valérie Chavagnac, Guillaume Dera (U. Toulouse - GET)
     - <a href='http://www.daeron.fr/about/'>Mathieu Daeron</a>, Christophe Dumas, Pierre Sepulchre (CEA - LSCE)
     - Didier Merle, Franck Lartaud (UPMC Sorbonne Universités, MNHN)
-    - ajouter en "patron", date, publications, postdocs, PhDs, possibilité de faire des liens web sur le texte
+fellows: 
+    - Anta
+    - Justine Briard, PhD, October2017-October2020 (U. Toulouse - GET)
+    - Damien Huygues, Postdoc, May2017-May2018 (Sorbonne Universités, LECOB)
 ---
-<details>
-<summary>Abstract</summary>
+
 The aim of this proposal is to investigate the carbon-climate-ice sheet couplings through the study of
 major global transitions between icehouse and greenhouse states that Earth already experienced.
 Although atmospheric CO2 level is generally proposed as the main driver of these climatic changes,
@@ -55,4 +59,4 @@ EOT and MMCT to constrain potential feedbacks on CO2 levels related to the marin
 Climate simulations will also provide a physical framework to interpret geochemical data from task 2.
 Our integrated model and data approach should allow the complex web of interconnected processes
 associated with EOT and MMCT to be untangled.
-</details>
+
