@@ -1,5 +1,7 @@
 ---
 acronyme: ANR project RISE
+funder: ANR
+lab: Biogeosciences
 year_start: 2020
 type: current
 title: "Tectonic Control on the last Greenhouse to Icehouse Transition: the Rise of Africa  (2020-2024)"
