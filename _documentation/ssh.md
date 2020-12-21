@@ -218,6 +218,21 @@ This connects the port `8111` on your localmachine to the port `8080` on the ser
 This is useful when a port on a server is not publically visible.
 {: .notice--info}
 
+## Opening Remote Windows
+
+To open remote windows the `ForwardX11` (-X) or `ForwardX11Trusted` keywords should be used. If the target server is behind a jump server only use this keyword on the target server. Options are `yes` or `no` (default)
+
+For Mac users ensure [XQuartz](https://www.xquartz.org/) is installed else X11 windows can not be passed through. 
+<br/><br/>
+```brew install --cask xquartz```
+{: .notice--info}
+
+```
+Host SERVER
+  Hostname SERVER_ADDRESS
+  User SERVER_USERNAME
+  ForwardX11 yes
+```
 
 # Conclusion
 
@@ -245,8 +260,10 @@ Host GATEWAY_SERVER_SHORTNAME
 Host PRIVATE_SERVER_SHORTNAME
   Hostname PRIVATE_SERVER_ADDRESS
   User PRIVATE_SERVER_USERNAME
+  ForwardX11 yes
   ProxyJump GATEWAY_SERVER_SHORTNAME
   LocalForward LOCAL_PORT 127.0.0.1:REMOTE_PORT
 ```
 
 `LocalForward` allows [port tunnelling](#tunnel-ports).
+`ForwardX11` or `ForwardX11Trusted` allows passing windows through the connection
