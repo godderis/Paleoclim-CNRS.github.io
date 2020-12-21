@@ -53,7 +53,7 @@ Anta:
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:sarr@cerege.fr"
     - label: "Google Scholar"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=QGE3B5IAAAAJ&hl=fr"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
