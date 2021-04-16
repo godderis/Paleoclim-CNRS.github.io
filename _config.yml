@@ -11,11 +11,11 @@ minimal_mistakes_skin    : "dark" #"default" # "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "CEREGE Climate Modelisation Group"
+title                    : "CEREGE Deep Time Climate Modeling Group"
 title_separator          : "-"
 subtitle                 : "Paleoclimates"
 name                     : &name "CEREGE Climate Group" # &name is a YAML anchor which can be *referenced later
-description              : &description "Homepage for CEREGE climate modelisation group"
+description              : &description "Homepage for Yannick Donnadieu's Earth System modeling group"
 url                      : https://CEREGE-CL.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "CEREGE-CL/CEREGE-CL.github.io"
