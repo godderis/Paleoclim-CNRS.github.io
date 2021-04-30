@@ -180,6 +180,7 @@ __The following example is to run a coupled simulation from scratch__
  ```
  
 Then you will have to modify the following variables in the boundary condition file COMP/lmdz.card
-    - LMDZ_Physics=AP <div style="color: #870f04"> (l.8) </div>
+
+- LMDZ_Physics=AP (l.8)
 
 
