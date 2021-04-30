@@ -26,26 +26,20 @@ _In case you want to run simulations with de present-day land sea mask_
 -	Login & password are required in order to install ORCHIDEE =>login : sechiba, password : ipsl2000
 -	In order to install LMDz : tape return so it ask for a login => login : lmdz-users, passwd : lmdz2020
 
-__Code__
 ```bash
-## Load the model
+# Load the model
 
-cd $CCCWORKDIR
-mkdir IPSLCM5A2
-cd IPSLCM5A
-svn co http://forge.ipsl.jussieu.fr/igcmg/svn/modipsl/trunk modipsl
-cd modipsl/util
-./model IPSLCM5A2.1
+ cd $CCCWORKDIR
 
-cd ../config/IPSLCM5A2/
-vi Makefile
+ mkdir IPSLCM5A2
 
-# Uncomment line 100
+ cd IPSLCM5A
 
-# Compiling
+ svn co http://forge.ipsl.jussieu.fr/igcmg/svn/modipsl/trunk modipsl
 
-gmake
+ cd modipsl/util
 
+ ./model IPSLCM5A2.1
 
 ```
 
@@ -54,5 +48,16 @@ __In case you want to remove ice in Antarctica, additional modification should b
 -	In modipsl/config/IPSLCM5A2 directory, uncomment line 100 from the Makefile
 -	Compile with gmake
 
- 
+ ```bash
+  cd ../config/IPSLCM5A2/
+
+  vi Makefile
+
+# Uncomment line 100
+
+# Compile
+
+ gmake
+
+ ```
 
