@@ -43,7 +43,7 @@ _In case you want to run simulations with a present-day land sea mask_
 
 ```
 
-__In case you want to remove ice in Antarctica, additional modification should be done before compiling the code. They are listed in the grey square in the following [page](#Without)__
+__In case you want to remove ice in Antarctica, additional modification should be done before compiling the code. They are listed in the grey square in the following [page](#Without-Antarctic-ice-sheet)__
 
 -	In modipsl/config/IPSLCM5A2 directory, uncomment line 100 from the Makefile
 -	Compile with gmake
@@ -90,7 +90,7 @@ Additional modification have to be done to switch the code to paleo-version :
 -	In /modipsl/modeles/NEMOGCM/NEMO/OPA_SRC, modify the files in TRA, LDF et  DIA directory (copy files from PATH/MODIFICATION-CODE)
 -	In /modipsl/modeles/NEMOGCM/NEMO/TOP_SRC/PISCES, modify the files in P4Z (copy files from PATH/MODIFICATION-CODE/P4Z/)
 
-### Without
+### Without Antarctic ice-sheet
 
 __In case you want to remove ice in Antarctica, additional modification should be done before compiling the code :__ 
 
