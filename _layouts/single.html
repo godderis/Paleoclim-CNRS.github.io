@@ -16,7 +16,7 @@ classes: wide
 {% endif %}
 
 <div id="main" role="main">
-  {% include project_sidebar.html %}
+  {% include sidebar.html %}
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
@@ -41,110 +41,8 @@ classes: wide
             </nav>
           </aside>
         {% endif %}
-
-        {% if page.description %}
-          {{ page.description | markdownify }}
-        {% endif %}
-
-        Collaborators:
-        <ul>
-        {% for collaborator in page.collaborators %}            
-            {% assign name = collaborator.name | default: collaborator  %}
-            <!-- Let's see if the person has a team page. This returns an array -->
-            {% assign teamPage = site.team | where: 'author', name %}
-            {% assign url = teamPage[0].url | default: collaborator.url %}
-            {% if site.data.authors[name] %}
-              {% assign name = site.data.authors[name].name %}
-            {% endif %}
-            <li>
-              {% if url %}
-                <a href="{{ url }}">
-              {% endif %}
-                  {{ name }}
-              {% if url %}
-                </a>
-              {% endif %}
-            </li>
-
-        {% endfor %}
-        </ul>
-
-        Fellows:
-        <ul>
-          {% for collaborator in page.fellows %}            
-              {% assign name = collaborator.name | default: collaborator  %}
-              <!-- Let's see if the person has a team page. This returns an array -->
-              {% assign teamPage = site.team | where: 'author', name %}
-              {% assign url = teamPage[0].url | default: collaborator.url %}
-              {% if site.data.authors[name] %}
-                {% assign name = site.data.authors[name].name %}
-              {% endif %}
-              <li>
-                {% if url %}
-                  <a href="{{ url }}">
-                {% endif %}
-                    {{ name }}
-                {% if url %}
-                  </a>
-                {% endif %}
-              </li>
-  
-          {% endfor %}
-          </ul>
-
-        <details>
-            <summary>
-              Abstract
-            </summary>
         {{ content }}
-        </details>
-
-      {% if page.publications %}
-      <details>
-        <summary>
-          Publications
-        </summary>
-        <ul>
-          {% for pub in page.publications %}
-            {% assign name = pub.name | default: pub %}
-            {% assign url = pub.url %}
-          <li>
-            {% if url %}
-              <a href="{{ url }}">
-            {% endif %}
-                {{ name }}
-                {% if pub.collaborators %}
-                <ul>
-                  {% for collab in pub.collaborators %}
-                    {% assign name = collab.name | default: collab  %}
-                    <!-- Let's see if the person has a team page. This returns an array -->
-                    {% assign teamPage = site.team | where: 'author', name %}
-                    {% assign url = teamPage[0].url | default: collab.url %}
-                    {% if site.data.authors[name] %}
-                      {% assign name = site.data.authors[name].name %}
-                    {% endif %}
-                    <li>
-                      {% if url %}
-                        <a href="{{ url }}">
-                      {% endif %}
-                          {{ name }}
-                      {% if url %}
-                        </a>
-                      {% endif %}
-                    </li>
-                  {% endfor %}
-                </ul>
-                {% endif %}
-            {% if url %}
-              </a>
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
-      </details>
-      {% endif %}
-      
-      {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
       <footer class="page__meta">
