@@ -157,11 +157,13 @@ Different model elements and output from simulation can be found in $CCCWORKDIR,
 ## Run a simulation
 _Here you will find general indications on which file you have to modify to setup a new simulation_
 
-First you need to create a new directory for you simulation. For that you need to choose which model you want to use (Coupled, Atmosphere-Land surface) and to obtain a config.card file, that you can find in the MODELE/modipsl/config/IPSLCM5A2/EXPERIMENT directory. 
+First you need to create a new directory for you simulation. For that you need to choose which model you want to use (Coupled, Atmosphere-Land surface) and to obtain a config.card file, that you can find in the MODELE/modipsl/config/IPSLCM5A2/EXPERIMENT directory.
 
-<div style="color: #870f04">
+
+<div style="color: #8738b5">
  All the boundary conditions files you will need can be generated with the NetCDF_file_editor.
 </div>
+
 
 __The following example is to run a coupled simulation from scratch__
 
@@ -324,6 +326,32 @@ R_incl = 24.5
 
 #### 3. Launch the simulation
 
+
+```bash
+
+ccc_msub Job_SimulationName 
+
+```
+
+### Coupled Model
+
+Once you have the 1 year-length LMDZOR simulation you can know run a coupled simulation. But before being able to launch it you will need to create restart for the OASIS coupler. 
+
+#### Create file for OASIS
+
+
+#### 1. Generation of simulation directory
+
+#### 3. Launch the simulation
+
+You need to change the number of year that will be done during one run (that can last up to 24h). In the Job_SimulationName file, change the period number (l.76). Usually we setup it to 60 or 70 years.
+
+```
+#D- Number of execution in one job
+PeriodNb=60
+```
+
+Then you can finally launch your simulation
 
 ```bash
 
