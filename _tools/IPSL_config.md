@@ -17,7 +17,7 @@ _First you have to choose the version of the model you want to install :_
 _Both can be run without ice, which requires additional changes in the code before compilation_
 
 ## Standard version
-_In case you want to run simulations with de present-day land sea mask_
+_In case you want to run simulations with a present-day land sea mask_
 
 -	In the  $CCCWORKDIR directory, create a new IPSLCM5A2 directory
 -	In IPSLCM5A2 directory, do a svn to load the required files from the server
@@ -60,4 +60,32 @@ __In case you want to remove ice in Antarctica, additional modification should b
  gmake
 
  ```
+## Paleo version
+_In case you want to run simulations with a paleo land sea mask_
 
+In $CCCWORKDIR create new directory that will contain the model (e.g. PALEO-IPSL)
+
+-	In PALEO-IPSLCM5A2 directory, do a svn to load the required files from the server
+-	In  modipsl/util directory do ./model IPSLCM5A2.1 to load the code
+
+```bash
+# Load the model
+
+ cd $CCCWORKDIR
+
+ mkdir IPSLCM5A2
+
+ cd IPSLCM5A
+
+ svn co http://forge.ipsl.jussieu.fr/igcmg/svn/modipsl/trunk modipsl
+
+ cd modipsl/util
+
+ ./model IPSLCM5A2.1
+
+```
+
+Additional modification have to be done to switch the code to paleo-version :
+
+-	In /modipsl/modeles/NEMOGCM/NEMO/OPA_SRC, modify the files in TRA, LDF et  DIA directory (copy files from /ccc/work/cont003/gen2212/p519don/MODIFICATION-CODE)
+-	In /modipsl/modeles/NEMOGCM/NEMO/TOP_SRC/PISCES, modify the files in P4Z (copy files from /ccc/work/cont003/gen2212/p519don/MODIFICATION-CODE/P4Z/)
