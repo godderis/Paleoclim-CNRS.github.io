@@ -169,7 +169,7 @@ __The following example is to run a coupled simulation from scratch__
     -	JobName= Name_Experiment _(example : ELC-piControl)_
     -	DateBegin=1848-01-01
     -	DateEnd=1848-12-30
-- Create the diretory [../../libIGCM/ins_job]
+- Create the directory [../../libIGCM/ins_job]
 
  ``` bash
  
@@ -182,5 +182,15 @@ __The following example is to run a coupled simulation from scratch__
 Then you will have to modify the following variables in the boundary condition file COMP/lmdz.card
 
 - LMDZ_Physics=AP (l.8)
+- 
+In the case of paleo simulation you migh need to modify the following lines as well :
 
+- Modify the Relief.nc file, with a high resolution topography file (with masked bathymetry) (l.27)
+- Modify the landiceref.nc file, with the land-ice extension file (l.29)
+- Modify the amipbc_sst_1x1.nc with a SST file suitable for paleo (it can be one from previous coupled simulation or just take the generic 4X or 2X file depending on the pCO2 you will use) (l.31)
+- Modify the amipbc_sic_1x1.nc with a SST file suitable for paleo (it can be one from previous coupled simulation or just take the generic 4X or 2X file depending on the pCO2 you will use) (l.32)
+- Uncomment the line relative to o2a.nc file (l.39) and modify it, with the o2a file you generated from the paleogeography
 
+_Generic SST and SIC files can be found here:_
+- PATH/BC_CM5A2/LMDZ/40Ma_ICE/sst_bc_clim_2X.nc
+- PATH/BC_CM5A2/LMDZ/40Ma/no_sic_bc_clim.nc
