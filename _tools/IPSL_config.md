@@ -339,6 +339,45 @@ Once you have the 1 year-length LMDZOR simulation you can know run a coupled sim
 
 #### Create file for OASIS
 
+- If it does not exist create a directory on your $CCCWORKDIR where you will generates the files ($CCCWORKDIR/BC_IPSLCM5A2) then download the CPLRESTART routines using a svn
+
+The CPLRESTART directory should contains 5 files :
+    - README.txt
+    -	FillOceRestart.py is used to add missing variables in the OASIS restarts  
+    - Nemo.py is used with FillOceRestart.py
+    -	CreateRestartOce4Oasis.bash is used to create atmosphee restart for OASIS
+    -	CreateRestartAtm4Oasis.bash is used to create ocean restart for OASIS
+
+In most of the case you will only need to create restart for the atmosphere : 
+ - Copy the histmth.nc file from the corresponding LMDZOR simulation
+ - Extract the last month with nco
+ - Run the CreateRestartOce4Oasis.bash script
+ - Move the files you generated in a directory spectific to you simulation
+
+```bash
+#Download the useful scripts
+
+  mkdir $CCCWORKDIR/BC_IPSLCM5A2
+  svn co http://forge.ipsl.jussieu.fr/igcmg/svn/TOOLS/CPLRESTART CPLRESTART
+
+#Create atmospheric restart for OASIS
+
+  cd CPLRESTART
+  cp $STOREDIR/IGCM_OUT/LMDZOR/PROD/clim/SimulationName/ATM/Output/MO/SimulationName_xxxx_xxxx_histmth.nc .
+
+  ncks -d time_counter,-1,-1 Nom_fichier_histmth.nc Nom_fichier_histmth_last_month.nc
+  
+# You need to modify the netcdf-hdf5 package otherwise it will not work
+
+  bash ./CreateRestartAtm4Oasis.bash Nom_fichier_histmth_last_month.nc
+  
+  mkdir SimulationName
+
+  mv add_dim.nco create_flxat.nco flxat_LMD9695_maskFrom_ORCA2.3.nc icbrg_LMD9695_maskFrom_ORCA2.3.nc icshf_LMD9695_maskFrom_ORCA2.3.nc lonlat2xyz.nco      
+ SimulationName_xxxx_xxxx_histmth.nc lonlat2xyz.nco SimulationName
+```
+
+You will use the flxat_LMD9695_maskFrom_Unknown.nc file late to setup the coupled simulation
 
 #### 1. Generation of simulation directory
 
