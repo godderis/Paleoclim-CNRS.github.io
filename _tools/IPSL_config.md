@@ -109,6 +109,20 @@ Once all the modification have been done for the version of the model you need :
 -	In modipsl/config/IPSLCM5A2 uncomment line 100 of Makefile
 -	Compile the code  (gmake).
 
-<div style="color: #fcba03">
-    Test
-</div>
+```bash
+# Load the model
+
+ cd $CCCWORKDIR
+
+ mkdir PALEO-IPSL
+
+ cd PALEO-IPSL
+
+ svn co http://forge.ipsl.jussieu.fr/igcmg/svn/modipsl/trunk modipsl
+
+ cd modipsl/util
+
+ ./model IPSLCM5A2.1
+
+```
+
