@@ -95,14 +95,13 @@ __In case you want to remove ice in Antarctica, additional modification should b
 Before compiling the code, you will have to modify the model component to remove ice:
 -	In modipsl/modeles, create a new directory PALEO_LMDZ that contain two sub-directory PALEO_SRC and ORIGINAL_SRC
 -	In ORIGINAL_SRC copy the 3 original files :
-
-  -	Modeles/LMDZ/libf/phylmd/hydrol.F90
-  -	Modeles/LMDZ/libf/phylmd/surf_landice_mod.F90
-  -	Modeles/LMDZ/libf/phylmd/fonte_neige_mod.F90
+ - Modeles/LMDZ/libf/phylmd/hydrol.F90
+ - Modeles/LMDZ/libf/phylmd/surf_landice_mod.F90
+ - Modeles/LMDZ/libf/phylmd/fonte_neige_mod.F90
 -	In PALEO_SRC, copy updated (from /ccc/work/cont003/gen2212/p519don/MODIFICATION-CODE/phylmd/) 
-  -	Paleorca_hydrol.F90_paleorca
-  -	Paleorca _surf_landice_mod.F90_paleorca
-  -	Paleorca_ fonte_neige_mod.F90_paleorca
+ - Paleorca_hydrol.F90_paleorca
+ - Paleorca _surf_landice_mod.F90_paleorca
+ - Paleorca_ fonte_neige_mod.F90_paleorca
 -	In /modipsl/modeles/LMDZ/libf/phylmd, copy the 3 files you just added in PALEO_SRC instead of existing hydrol.F90 etc… files (be careful to keep original filel name).
 
 Once all the modification have been done for the version of the model you need :
