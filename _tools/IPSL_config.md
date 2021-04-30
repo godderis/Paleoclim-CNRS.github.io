@@ -154,10 +154,11 @@ Different model elements and output from simulation can be found in $CCCWORKDIR,
     -	LMDZOR : Atmosphere + land surface model
     -	IPSLCM : Coupled model (piControl=preindustrial ou pdControl=present-day)
 
-## Simulation setup
+## Run a simulation
 _Here you will find general indications on which file you have to modify to setup a new simulation_
 
 1. Generation of simulation directory
+
 First you need to create a new directory for you simulation. For that you need to choose which model you want to use (Coupled, Atmosphere-Land surface) and to obtain a config.card file, that you can find in the MODELE/modipsl/config/IPSLCM5A2/EXPERIMENT directory. 
 
 __The following example is to run a coupled simulation from scratch__
@@ -179,17 +180,28 @@ __The following example is to run a coupled simulation from scratch__
  
  ```
  
+2. Simulation setup
+ 
 Then you will have to modify the following variables in the boundary condition file COMP/lmdz.card
 
 - LMDZ_Physics=AP (l.8)
-- 
+- Modify the config.def_actuel by config.def_preind (l.46) 
+-
 In the case of paleo simulation you migh need to modify the following lines as well :
 
-- Modify the Relief.nc file, with a high resolution topography file (with masked bathymetry) (l.27)
-- Modify the landiceref.nc file, with the land-ice extension file (l.29)
-- Modify the amipbc_sst_1x1.nc with a SST file suitable for paleo (it can be one from previous coupled simulation or just take the generic 4X or 2X file depending on the pCO2 you will use) (l.31)
-- Modify the amipbc_sic_1x1.nc with a SST file suitable for paleo (it can be one from previous coupled simulation or just take the generic 4X or 2X file depending on the pCO2 you will use) (l.32)
+_(be sure you only change the 1st part of each line and keep the name of the 2nd file in the line as it is in the original lmdz.card )_
+
+__Example:__ (__PATH/mynew_TopoHR.nc__, Relief.nc), \
+
+
+
+- Modify the relief file (Relief.nc), with a high resolution topography file (with masked bathymetry) (l.27)
+- Modify the land-ice file (landiceref.nc), with the land-ice extension file (l.29)
+- Modify the SST file (amipbc_sst_1x1.nc) with a SST file suitable for paleo (it can be one from previous coupled simulation or just take the generic 4X or 2X file depending on the pCO2 you will use) (l.31)
+- Modify the sea-ice file (amipbc_sic_1x1.nc) with a SIC file suitable for paleo (it can be one from previous coupled simulation or just take the generic 4X or 2X file depending on the pCO2 you will use) (l.32)
 - Uncomment the line relative to o2a.nc file (l.39) and modify it, with the o2a file you generated from the paleogeography
+
+
 
 _Generic SST and SIC files can be found here:_
 - PATH/BC_CM5A2/LMDZ/40Ma_ICE/sst_bc_clim_2X.nc
