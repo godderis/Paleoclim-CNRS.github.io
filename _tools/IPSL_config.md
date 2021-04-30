@@ -17,16 +17,36 @@ _Both can be run without ice, which requires additional changes in the code befo
 ## Standard version
 _In case you want to run simulations with de present-day land sea mask_
 
--	In the  $CCCWORKDIR directory , create a new IPSLCM5A2 directory
--	In  IPSLCM5A2 directory, do a svn to load the required files from the server
+-	In the  $CCCWORKDIR directory, create a new IPSLCM5A2 directory
+-	In IPSLCM5A2 directory, do a svn to load the required files from the server
 -	Move to modipsl/util directory
 -	Load the model files  [ ./model IPSLCM5A2.1 ]
--	Login & password are required in order to install ORCHIDEE. Login :sechiba, passwd: ipsl2000
--	In order to install LMDz : tape return so it ask for a login => login/passwd
-lmdz-users/lmdz2020
+-	Login & password are required in order to install ORCHIDEE =>login : sechiba, password : ipsl2000
+-	In order to install LMDz : tape return so it ask for a login => login : lmdz-users, passwd : lmdz2020
 
+__Code__
 ``` 
-cd 
+## Load the model
+
+cd $CCCWORKDIR
+mkdir IPSLCM5A2
+cd IPSLCM5A
+svn co http://forge.ipsl.jussieu.fr/igcmg/svn/modipsl/trunk modipsl
+
+
+
+cd modipsl/util
+./model IPSLCM5A2.1
+
+cd ../config/IPSLCM5A2/
+vi Makefile
+
+# Uncomment line 100
+
+# Compiling
+
+gmake
+
 
 ```
 
