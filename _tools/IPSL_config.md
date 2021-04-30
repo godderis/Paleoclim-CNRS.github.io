@@ -186,7 +186,7 @@ Then you will have to modify the following variables in the boundary condition f
 
 - LMDZ_Physics=AP (l.8)
 - Modify the config.def_actuel by config.def_preind (l.46) 
--
+
 In the case of paleo simulation you migh need to modify the following lines as well :
 
 _(be sure you only change the 1st part of each line and keep the name of the 2nd file in the line as it is in the original lmdz.card )_
@@ -206,3 +206,41 @@ __Example:__ (__PATH/mynew_TopoHR.nc__, Relief.nc), \
 _Generic SST and SIC files can be found here:_
 - PATH/BC_CM5A2/LMDZ/40Ma_ICE/sst_bc_clim_2X.nc
 - PATH/BC_CM5A2/LMDZ/40Ma/no_sic_bc_clim.nc
+
+You can also change some parameters in the PARAM/config.def_preind file:
+
+__CO2 :__  
+
+- co2_ppm = _AUTO_: DEFAULT = 0.280E+03 (l.32)
+
+__Solar constant :__ 
+
+- solaire = _AUTO_: DEFAULT = 1361.20 (l.27)
+
+__Orbital configuration :__
+
+- R_ecc = 0.06 (l.20)
+- R_peri = 90 (l.22)
+- R_incl = 24.5 (.24)
+
+
+3. Launch the simulation
+
+First you will need to reduce the time-wall (which is a 24h automaticaaly), because this type of simulation will run quickly:
+
+ - In the Job_SimulationName file replace 84600 by 1800 (l.10 : #MSUB -T 86400  # Wall clock limit (seconds))
+
+Then submit the job 
+
+```bash
+
+ccc_msub Job_SimulationName 
+
+```
+
+### LMDZOR
+
+Once you have created the initial conditions with the ELC step you have to run an Atmosphere-Land Surface simulation
+
+
+ 
