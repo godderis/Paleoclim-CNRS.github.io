@@ -32,9 +32,6 @@ cd $CCCWORKDIR
 mkdir IPSLCM5A2
 cd IPSLCM5A
 svn co http://forge.ipsl.jussieu.fr/igcmg/svn/modipsl/trunk modipsl
-
-
-
 cd modipsl/util
 ./model IPSLCM5A2.1
 
