@@ -125,4 +125,61 @@ Once all the modification have been done for the version of the model you need :
   gmake
 
 ```
+# Launch a new simulation
+## Model architecture 
+_Here are (very!) useful things to know on how the model is organized on the supercomputer_
+
+1. Workspaces
+
+Different model elements and output from simulation can be found in $CCCWORKDIR, $CCCSTOREDIR, $CCSSCRATCHDIR:
+-	On $CCCWORKDIR you find the directory where you install & compile the model (contains code, boundary condition & parameterization files, executables) 
+-	$CCCSCRATCHDIR is for temporary storage (it can be erased from time to time). Model output are stored there before being transferred to Storedir by post-processing 
+-	$CCCSTOREDIR is the working space where model outputs are permanently stored 
+
+2. Model architecture
+
+ “MODELE/modipsl “ directory (exemple : IPSL-CM5A2/modipsl ou PALEOIPSL/modipsl) is subdivided in 4 directory :
+-	« Config » contains parameterization files, experiments directory …  
+-	« Modeles » contains code for each different model components 
+-	« bin » contains executables. If compilation has been successfull, it should contains 4 individual files 
+-	« libIGCM » contains model environment  (processor-related stuffs, error outputs etc...)
+
+« MODELE/modipsl/config/IPSLCM5A2 »  directory contains several experiments directories :
+- «  GENERAL » 
+    -	POST : Post-processing files (Temporal evolution … 
+    - PARAM : Initial parameters & part of boundary conditions (CO2, model timesteps, Orbital parameters etc…)
+    -	DRIVER : Drivers for different model component. Deal with the year per year incrementation for example. 
+-	« EXPERIMENTS «  : Classic setup for different types of simulations
+    -	LMDZ : Atmosphere-only model
+    -	LMDZOR : Atmosphere + land surface model
+    -	IPSLCM : Coupled model (piControl=preindustrial ou pdControl=present-day)
+
+## Simulation setup
+_Here you will find general indications on which file you have to modify to setup a new simulation_
+
+1. Generation of simulation directory
+First you need to create a new directory for you simulation. For that you need to choose which model you want to use (Coupled, Atmosphere-Land surface) and to obtain a config.card file, that you can find in the MODELE/modipsl/config/IPSLCM5A2/EXPERIMENT directory. 
+
+__The following example is to run a coupled simulation from scratch__
+
+### ELC
+
+- Copy the LMDZ config.card in the $CCCWORKDIR/MODELE/modipsl/config/IPSLCM5A2 directory
+- Modify the config.card :
+    -	JobName= Name_Experiment _(example : ELC-piControl)_
+    -	DateBegin=1848-01-01
+    -	DateEnd=1848-12-30
+- Create the diretory [../../libIGCM/ins_job]
+
+ ``` bash
+ 
+ cp EXPERIMENTS/LMDZ/CREATE_clim/config.card .
+ 
+ ../../libIGCM/ins_job
+ 
+ ```
+ 
+Then you will have to modify the following variables in the boundary condition file COMP/lmdz.card
+    - LMDZ_Physics=AP <div style="color: #870f04"> (l.8) </div>
+
 
