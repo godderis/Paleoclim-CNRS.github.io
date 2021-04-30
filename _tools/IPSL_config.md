@@ -240,7 +240,7 @@ R_incl = 24.5
 
 #### 3. Launch the simulation
 
-First you will need to reduce the time-wall (which is a 24h automaticaaly), because this type of simulation will run quickly:
+First you will need to reduce the time-wall (which is a 24h automatically), because this type of simulation will run quickly:
 
  - In the Job_SimulationName file replace 84600 by 1800 (l.10 : #MSUB -T 86400  # Wall clock limit (seconds))
 
@@ -254,7 +254,7 @@ ccc_msub Job_SimulationName
 
 ### LMDZOR
 
-Once you have created the initial conditions with the ELC step you have to run an Atmosphere-Land Surface simulation
+Once you have created the initial conditions with the [ELC](#elc) step you have to run an Atmosphere-Land Surface simulation
 
 #### 1. Generation of simulation directory
 
@@ -335,7 +335,7 @@ ccc_msub Job_SimulationName
 
 ### Coupled Model
 
-Once you have the 1 year-length LMDZOR simulation you can know run a coupled simulation. But before being able to launch it you will need to create restart for the OASIS coupler. 
+Once you have the 1 year-length [LMDZOR](#lmdzor) simulation you can know run a coupled simulation. But before being able to launch it you will need to create restart for the OASIS coupler. 
 
 #### Create file for OASIS
 
@@ -444,7 +444,7 @@ Modify the boundary conditions files for the Ocean in COMP/opa.card
 - bathy_meter.nc, ahmcoef.nc, subbasins.nc, geothermal_heating.nc are files you need to generates from paleogeography you use.
 - 
 
-You also need to modify the COMP/oasis.card with the file you created from the corresponding LMDZOR simulation
+You also need to modify the COMP/oasis.card with the file you created from the corresponding LMDZOR simulation. [If it does not remind you something, you may be have missed this step [here](#create-file-for-oasis)]
  - Specify the flatx and sstoc files. The sstoc file should correspond to the SST file you used in the previous ELC step. You can also create it using specific script in case you want to restart the ocean from an existing simulation. 
 
 _Generic SST files can be found here:_
