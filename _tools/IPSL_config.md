@@ -174,8 +174,8 @@ __The following example is to run a coupled simulation from scratch__
 - Copy the LMDZ config.card in the $CCCWORKDIR/MODELE/modipsl/config/IPSLCM5A2 directory
 - Modify the config.card :
     -	JobName= Name_Experiment [example : ELC-SimulationNAme)]
-    -	DateBegin=1848-01-01
-    -	DateEnd=1848-12-30
+    -	DateBegin=1854-01-01
+    -	DateEnd=1854-12-30
 - Create the directory [../../libIGCM/ins_job]
 
  ``` bash
@@ -259,11 +259,11 @@ Once you have created the initial conditions with the ELC step you have to run a
 #### 1. Generation of simulation directory
 
 
-- Copy the LMDZOR config.card in the $CCCWORKDIR/MODELE/modipsl/config/IPSLCM5A2 directory
+- Copy the LMDZOR config.card in the $CCCWORKDIR/MODELE/modipsl/config/IPSLCM5A2 directory (you can also copy it from a previous simulation)
 - Modify the config.card :
     -	JobName= Name_Experiment [example : LMDZOR-SimulationNAme)]
-    -	DateBegin=1848-01-01
-    -	DateEnd=1848-12-30
+    -	DateBegin=1854-01-01
+    -	DateEnd=1854-12-30
 - Create the directory [../../libIGCM/ins_job]
 
  ``` bash
@@ -341,6 +341,128 @@ Once you have the 1 year-length LMDZOR simulation you can know run a coupled sim
 
 
 #### 1. Generation of simulation directory
+
+- Copy the LMDZOR config.card in the $CCCWORKDIR/MODELE/modipsl/config/IPSLCM5A2 directory (you can also copy it from previous simulation)
+- Modify the config.card :
+    -	JobName= Name_Experiment [example : CPL-SimulationNAme)]
+    -	CalendarType=360d [Choose leap years (leap) or no leap years (noleap) or 360 days-long years (360d = the one we usually use for paleo simulations)]
+    -	DateBegin=1855-01-01
+    -	DateEnd=4855-12-30 [This will fix the length of the simulation, we usually run coupled simulatios for at least 3,000 years]
+- Create the directory [../../libIGCM/ins_job]
+
+ ``` bash
+ 
+cp EXPERIMENTS/IPSLCM/piControl/config.card .
+ 
+ ../../libIGCM/ins_job
+ 
+ ```
+
+#### 2. Simulation setup
+
+You can still modify the config.card :
+ -	PeriodLength = 1Y
+ - Restart : In case of standard coupled simulation you will only restart the components related to LMDZOR (LMDZ, SRF, MBG) so set the _Restart =_ field to 'y' and then specify the path of the related simulation as in the following example. For all the other component let the _Restart =_ field to 'n'.
+
+__Example:__
+```
+#D-- ATM -
+[ATM]
+WriteFrequency="1M"
+# If config_Restarts_OverRule == 'n' next 4 params are read
+Restart= y
+# Last day of the experience used as restart for this component if Restart=y
+RestartDate=1854-12-30
+#D- Define restart simulation name for all components
+RestartJobName=LMDZOR_SimulationName
+#D- Path Server Group Login
+RestartPath=$STOREDIR/IGCM_OUT/LMDZOR/PROD/clim
+
+```
+
+ - PackFrequency=10Y (l.184)
+ - TimeSeriesFrequency=NONE (l.187)
+ -	SeasonalFrequency=100Y [Gives you the number of years that will be average in the SE outputs, usually we set up this field to 100Y] (l.190)
+
+
+_If you do not run the code on Irene but on Jean-Zay or other super-computer you may need to modyfile the number of processor in the _Executable_ part (be careful in case you do that you will need to modify the jpni, jpnj and jpnij PARAM/namelist_ORCA2_cfg accordingly)_
+
+Modify the boundary conditions files for the atmosphere in COMP/lmdz.card
+ - LMDZ_Physics=AP (l.9)
+ - ConfType=preind (l.14)
+
+Then you will have to modify the following variables in the boundary condition file COMP/orchidee.card
+
+- Modify the soil file (soils_param.nc), with a soil parameter file that has the correct geography  (l.14)
+- Modify the routing file (routing.nc), with the new routing file (l.15)
+- Modify the Plant Functional Type file (PFTmap.nc) with the PTF file that has the correct geography (l.16)
+
+
+Modify the boundary conditions files for the Ocean in COMP/opa.card
+
+- K1rowdrg.nc, M2rowdrg.nc, chlorophyll_surface_40Ma.nc, runoffs_ORCA2_depths.nc, sali_ref_clim_monthly.nc, coordinates.nc and mask_itf.nc are usually standard files you use in all the simulation (for Cenozoic simulation at least (?), except if you generate new tides files for example) and can be found in PATH/BC_CM5A2/NEMO/40Ma/filename.nc
+- sss_data.nc, sst_data.nc, data_1m_potential_temperature_nomask.nc and data_1m_salinity_nomask.nc are also standardized files (?)
+- bathy_meter.nc, ahmcoef.nc, subbasins.nc, geothermal_heating.nc are files you need to generates from paleogeography you use.
+- 
+
+You also need to modify the COMP/oasis.card with the file you created from the corresponding LMDZOR simulation
+ - Specify the flatx and sstoc files. The sstoc file should correspond to the SST file you used in the previous ELC step. You can also create it using specific script in case you want to restart the ocean from an existing simulation. 
+
+_Generic SST files can be found here:_
+- PATH/BC_PALEOIPSL/COUPLER/40Ma-ICE-SL/sstoc_2X.nc
+
+```
+[InitialStateFiles]
+List=   ($WORKDIR/CPLRESTART/SimulationName/flxat_LMD9695_maskFrom_Unknown.nc, flxat.nc), \
+        (PATH/sstoc_2X.nc, sstoc.nc)
+```
+
+ - Specify the grids,masks,areas and MOZAIC-related files (l.15-21)
+
+__Example:__
+```
+[BoundaryFiles]
+List=   ()
+ListNonDel= ($WORKDIR/IGCM/CPL/IPSLCM5A2/PALEORCA2.SimulationNamexLMD9695/grids.nc, grids.nc),\
+
+```
+
+Then in PARAM/field_def_nemo-opa.xml:
+
+Then in PARAM/namelist_ORCA2_cfg. cp_cfg is the grid you use (orca2 or paleorca), rn_rdt is the timestep of the ocean, and jpni, jpnj and jpnij are the distribution of processor (have to correspond with the number of processors you setup in the config.card)
+
+```
+   cp_cfg      =  "paleorca"               !  name of the configuration
+   
+   rn_rdt      = 4800     !  time step for the dynamics (and tracer if nn_acc=0)
+   
+   jpni        =   4       !  jpni   number of processors following i (set automatically if < 1)
+   jpnj        =  15       !  jpnj   number of processors following j (set automatically if < 1)
+   jpnij       =  60       !  jpnij  number of local domains (set automatically if < 1)
+```
+
+
+You can also change some parameters in the PARAM/config.def_preind file :
+
+- CO2 (l.32):
+
+```
+co2_ppm = _AUTO_: DEFAULT = 0.280E+03 
+```
+
+- Solar constant (l.27) :
+
+```
+solaire = _AUTO_: DEFAULT = 1361.20 
+```
+
+- Orbital configuration (l. 20-24):
+
+```
+R_ecc = 0.06 
+R_peri = 90 
+R_incl = 24.5 
+```
 
 #### 3. Launch the simulation
 
