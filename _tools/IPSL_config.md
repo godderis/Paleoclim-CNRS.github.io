@@ -43,7 +43,7 @@ _In case you want to run simulations with a present-day land sea mask_
 
 ```
 
-__In case you want to remove ice in Antarctica, additional modification should be done before compiling the code. They are listed in the grey square in the following [page](#Without-Antarctic-ice-sheet)__
+__In case you want to remove ice in Antarctica, additional modification should be done before compiling the code. They are listed paleo section [here](#without-Antarctic-ice-sheet).__
 
 -	In modipsl/config/IPSLCM5A2 directory, uncomment line 100 from the Makefile
 -	Compile with gmake
@@ -93,6 +93,7 @@ Additional modification have to be done to switch the code to paleo-version :
 ### Without Antarctic ice-sheet
 
 __In case you want to remove ice in Antarctica, additional modification should be done before compiling the code :__ 
+_(If you want to run simulation with an ice-sheet on Antarctica, just skip this part and directly compile the code)_
 
 Before compiling the code, you will have to modify the model component to remove ice:
 -	In modipsl/modeles, create a new directory PALEO_LMDZ that contain two sub-directory PALEO_SRC and ORIGINAL_SRC
@@ -105,6 +106,7 @@ Before compiling the code, you will have to modify the model component to remove
     - Paleorca _surf_landice_mod.F90_paleorca
     - Paleorca_ fonte_neige_mod.F90_paleorca
 -	In /modipsl/modeles/LMDZ/libf/phylmd, copy the 3 files you just added in PALEO_SRC instead of existing hydrol.F90 etc… files (be careful to keep original filel name).
+
 
 Once all the modification have been done for the version of the model you need :
 
