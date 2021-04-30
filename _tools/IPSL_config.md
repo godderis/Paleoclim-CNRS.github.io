@@ -157,17 +157,21 @@ Different model elements and output from simulation can be found in $CCCWORKDIR,
 ## Run a simulation
 _Here you will find general indications on which file you have to modify to setup a new simulation_
 
-1. Generation of simulation directory
-
 First you need to create a new directory for you simulation. For that you need to choose which model you want to use (Coupled, Atmosphere-Land surface) and to obtain a config.card file, that you can find in the MODELE/modipsl/config/IPSLCM5A2/EXPERIMENT directory. 
+
+<div style="color: #870f04">
+ All the boundary conditions files you will need can be generated with the NetCDF_file_editor.
+</div>
 
 __The following example is to run a coupled simulation from scratch__
 
 ### ELC
 
+#### 1. Generation of simulation directory
+
 - Copy the LMDZ config.card in the $CCCWORKDIR/MODELE/modipsl/config/IPSLCM5A2 directory
 - Modify the config.card :
-    -	JobName= Name_Experiment _(example : ELC-piControl)_
+    -	JobName= Name_Experiment [example : ELC-SimulationNAme)]
     -	DateBegin=1848-01-01
     -	DateEnd=1848-12-30
 - Create the directory [../../libIGCM/ins_job]
@@ -180,7 +184,7 @@ __The following example is to run a coupled simulation from scratch__
  
  ```
  
-2. Simulation setup
+#### 2. Simulation setup
  
 Then you will have to modify the following variables in the boundary condition file COMP/lmdz.card
 
@@ -191,8 +195,11 @@ In the case of paleo simulation you migh need to modify the following lines as w
 
 _(be sure you only change the 1st part of each line and keep the name of the 2nd file in the line as it is in the original lmdz.card )_
 
-__Example:__ (__PATH/mynew_TopoHR.nc__, Relief.nc), \
+```
+# Example:
 
+ (PATH/mynew_TopoHR.nc,   Relief.nc),\
+```
 
 
 - Modify the relief file (Relief.nc), with a high resolution topography file (with masked bathymetry) (l.27)
@@ -209,22 +216,27 @@ _Generic SST and SIC files can be found here:_
 
 You can also change some parameters in the PARAM/config.def_preind file:
 
-__CO2 :__  
+- CO2 (l.32):
 
-- co2_ppm = _AUTO_: DEFAULT = 0.280E+03 (l.32)
+```
+co2_ppm = _AUTO_: DEFAULT = 0.280E+03 
+```
 
-__Solar constant :__ 
+- Solar constant (l.27) :
 
-- solaire = _AUTO_: DEFAULT = 1361.20 (l.27)
+```
+solaire = _AUTO_: DEFAULT = 1361.20 
+```
 
-__Orbital configuration :__
+- Orbital configuration (l. 20-24):
 
-- R_ecc = 0.06 (l.20)
-- R_peri = 90 (l.22)
-- R_incl = 24.5 (.24)
+```
+R_ecc = 0.06 
+R_peri = 90 
+R_incl = 24.5 
+```
 
-
-3. Launch the simulation
+#### 3. Launch the simulation
 
 First you will need to reduce the time-wall (which is a 24h automaticaaly), because this type of simulation will run quickly:
 
@@ -242,5 +254,79 @@ ccc_msub Job_SimulationName
 
 Once you have created the initial conditions with the ELC step you have to run an Atmosphere-Land Surface simulation
 
+#### 1. Generation of simulation directory
 
+
+- Copy the LMDZOR config.card in the $CCCWORKDIR/MODELE/modipsl/config/IPSLCM5A2 directory
+- Modify the config.card :
+    -	JobName= Name_Experiment [example : LMDZOR-SimulationNAme)]
+    -	DateBegin=1848-01-01
+    -	DateEnd=1848-12-30
+- Create the directory [../../libIGCM/ins_job]
+
+ ``` bash
  
+ cp EXPERIMENTS/LMDZOR/clim_pdControl/config.card .
+ 
+ ../../libIGCM/ins_job
+ 
+ ```
+ 
+#### 2. Simulation setup
+ 
+Then you will have to modify the following variables in the boundary condition file COMP/lmdz.card
+
+- LMDZ_Physics=AP (l.9)
+- ConfType=preind (l.17)
+
+Then you need to specified boundary conditions files from the corresponding ELC simulation (l.53-54) :
+
+- either specify CREATE=ELC-SimulationName (l.12) (Put the name of the ELC simulation you have done juste before) and be sure that the l.53-58 uses the CREATE variable to define the path. Or simply give the complete path to the start, starphy and limit files as below
+
+```
+[InitialStateFiles]
+List=   ($STOREDIR/IGCM_OUT/LMDZ/ELC-SimulationName/ATM/Output/Restart/ELC-SimulationName_clim_start.nc,    start.nc),\
+        ($STOREDIR/IGCM_OUT/LMDZ/ELC-SimulationName/ATM/Output/Restart/ELC-ELC-SimulationName_clim_startphy.nc, startphy.nc)
+        
+[BoundaryFiles]
+List=()
+ListNonDel= ($STOREDIR/IGCM_OUT/LMDZ/ELC-SimulationName/ATM/Output/Boundary/ELC-SimulationName_clim_limit.nc, limit.nc),\
+```
+
+Then you will have to modify the following variables in the boundary condition file COMP/orchidee.card
+
+- Modify the soil file (soils_param.nc), with a soil parameter file that has the correct geography  (l.14)
+- Modify the routing file (routing.nc), with the new routing file (l.15)
+- Modify the Plant Functional Type file (PFTmap.nc) with the PTF file that has the correct geography (l.16)
+
+
+You can also change some parameters in the PARAM/config.def_preind file :
+
+- CO2 (l.32):
+
+```
+co2_ppm = _AUTO_: DEFAULT = 0.280E+03 
+```
+
+- Solar constant (l.27) :
+
+```
+solaire = _AUTO_: DEFAULT = 1361.20 
+```
+
+- Orbital configuration (l. 20-24):
+
+```
+R_ecc = 0.06 
+R_peri = 90 
+R_incl = 24.5 
+```
+
+#### 3. Launch the simulation
+
+
+```bash
+
+ccc_msub Job_SimulationName 
+
+```
