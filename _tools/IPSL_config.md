@@ -87,8 +87,8 @@ In $CCCWORKDIR create new directory that will contain the model (e.g. PALEO-IPSL
 
 Additional modification have to be done to switch the code to paleo-version :
 
--	In /modipsl/modeles/NEMOGCM/NEMO/OPA_SRC, modify the files in TRA, LDF et  DIA directory (copy files from /ccc/work/cont003/gen2212/p519don/MODIFICATION-CODE)
--	In /modipsl/modeles/NEMOGCM/NEMO/TOP_SRC/PISCES, modify the files in P4Z (copy files from /ccc/work/cont003/gen2212/p519don/MODIFICATION-CODE/P4Z/)
+-	In /modipsl/modeles/NEMOGCM/NEMO/OPA_SRC, modify the files in TRA, LDF et  DIA directory (copy files from PATH/MODIFICATION-CODE)
+-	In /modipsl/modeles/NEMOGCM/NEMO/TOP_SRC/PISCES, modify the files in P4Z (copy files from PATH/MODIFICATION-CODE/P4Z/)
 
 __In case you want to remove ice in Antarctica, additional modification should be done before compiling the code :__ 
 
@@ -98,7 +98,7 @@ Before compiling the code, you will have to modify the model component to remove
     - Modeles/LMDZ/libf/phylmd/hydrol.F90
     - Modeles/LMDZ/libf/phylmd/surf_landice_mod.F90
     - Modeles/LMDZ/libf/phylmd/fonte_neige_mod.F90
--	In PALEO_SRC, copy updated (from /ccc/work/cont003/gen2212/p519don/MODIFICATION-CODE/phylmd/) 
+-	In PALEO_SRC, copy updated (from PATH/MODIFICATION-CODE/phylmd/) 
     - Paleorca_hydrol.F90_paleorca
     - Paleorca _surf_landice_mod.F90_paleorca
     - Paleorca_ fonte_neige_mod.F90_paleorca
