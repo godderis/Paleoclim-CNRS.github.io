@@ -114,19 +114,15 @@ Once all the modification have been done for the version of the model you need :
 -	Compile the code  (gmake).
 
 ```bash
-# Load the model
+  cd ../config/IPSLCM5A2/
 
- cd $CCCWORKDIR
+  vi Makefile
 
- mkdir PALEO-IPSL
+# Uncomment line 100
 
- cd PALEO-IPSL
+# Compile
 
- svn co http://forge.ipsl.jussieu.fr/igcmg/svn/modipsl/trunk modipsl
-
- cd modipsl/util
-
- ./model IPSLCM5A2.1
+  gmake
 
 ```
 
