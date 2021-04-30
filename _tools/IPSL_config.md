@@ -521,7 +521,10 @@ ccc_msub Job_SimulationName
 
 ```
 
-# RESTART
+# Restarting from an existing simulation
+
+## Normal restart
+
 ## Update bathymetry and restart
 In some case you may want to do small bathymetry modification but you do not want to restart your simulation from scratch (because it will take to long). In this case you can (sometimes ?) re-generate salinity and temperature field from an existing simulation with similare paleogeography and use them as boundary conditions for the new simulation.
  
