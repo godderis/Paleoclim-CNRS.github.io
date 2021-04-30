@@ -2,6 +2,8 @@
 title: IPSL Config
 author: Anta
 toc: true
+toc_sticky: true
+
 ---
 
 # Download & Compile the code 
