@@ -1,5 +1,5 @@
 ---
-title: IPSL Config
+title: IPSL-CM5A2 Model
 author: Anta
 toc: true
 toc_sticky: true
@@ -93,7 +93,7 @@ Additional modification have to be done to switch the code to paleo-version :
 ### Without Antarctic ice-sheet
 
 __In case you want to remove ice in Antarctica, additional modification should be done before compiling the code :__ 
-_(If you want to run simulation with an ice-sheet on Antarctica, just skip this part and directly compile the code)_
+_(If you want to run simulation WITH an ice-sheet on Antarctica, just skip this part and directly compile the code)_
 
 Before compiling the code, you will have to modify the model component to remove ice:
 -	In modipsl/modeles, create a new directory PALEO_LMDZ that contain two sub-directory PALEO_SRC and ORIGINAL_SRC
@@ -520,3 +520,15 @@ Then you can finally launch your simulation
 ccc_msub Job_SimulationName 
 
 ```
+
+# Useful tips
+
+__1.  Where to find/store boundary conditions__
+
+- Most of the time boundary conditions from a simulation can be find in user workdir withtin the BC_IPSLCM5A2 or BC_PALEOIPSL directory, classified by model component and by simulation (or at list it should !!). 
+
+__2. (Normal) crash when you launch your 1st simulation ever__
+
+- Check in the Job_SimulationName you did not make any mistake in the path of boundary conditions (in this case the error message is usually : 'xxx.nc does not exist')
+- Useful bash command if grep -ir error . It can help you track 'error' or 'E R R O R' or other key_word that may help you (maybe to find the bug
+
