@@ -25,7 +25,7 @@ _In case you want to run simulations with de present-day land sea mask_
 -	In order to install LMDz : tape return so it ask for a login => login : lmdz-users, passwd : lmdz2020
 
 __Code__
-``` 
+```bash
 ## Load the model
 
 cd $CCCWORKDIR
