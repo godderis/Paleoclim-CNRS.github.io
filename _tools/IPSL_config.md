@@ -6,7 +6,7 @@ toc: true
 
 # Download & Compile the code 
 
-[Instructions](https://forge.ipsl.jussieu.fr/igcmg_doc/wiki/DocHconfigAipslcm5a2)
+Additional documentation can be found [here](https://forge.ipsl.jussieu.fr/igcmg_doc/wiki/DocHconfigAipslcm5a2)
 
 First you have to choose the version of the model you want to install : 
 - Standard version  (ORCA grid - e.g. Modern simulations)
