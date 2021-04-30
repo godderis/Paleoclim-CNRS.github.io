@@ -335,18 +335,19 @@ ccc_msub Job_SimulationName
 
 ### Coupled Model
 
-Once you have the 1 year-length [LMDZOR](#lmdzor) simulation you can know run a coupled simulation. But before being able to launch it you will need to create restart for the OASIS coupler. 
+Once you have the 1 year-length [LMDZOR](#lmdzor) simulation you can know run a coupled simulation. But before being able to launch it you will need to create restart files for the OASIS coupler. 
 
 #### Create file for OASIS
 
-- If it does not exist create a directory on your $CCCWORKDIR where you will generates the files ($CCCWORKDIR/BC_IPSLCM5A2) then download the CPLRESTART routines using a svn
+- If it does not exist create a directory on your $CCCWORKDIR where you will generates the files ($CCCWORKDIR/BC_IPSLCM5A2) then download the CPLRESTART routines using a svn.
 
 The CPLRESTART directory should contains 5 files :
-    - README.txt
-    -	FillOceRestart.py is used to add missing variables in the OASIS restarts  
-    - Nemo.py is used with FillOceRestart.py
-    -	CreateRestartOce4Oasis.bash is used to create atmosphee restart for OASIS
-    -	CreateRestartAtm4Oasis.bash is used to create ocean restart for OASIS
+
+   - README.txt
+   -	FillOceRestart.py is used to add missing variables in the OASIS restarts 
+   - Nemo.py is used with FillOceRestart.py
+   -	CreateRestartOce4Oasis.bash is used to create atmosphee restart for OASIS
+   -	CreateRestartAtm4Oasis.bash is used to create ocean restart for OASIS
 
 In most of the case you will only need to create restart for the atmosphere : 
  - Copy the histmth.nc file from the corresponding LMDZOR simulation
@@ -377,7 +378,7 @@ In most of the case you will only need to create restart for the atmosphere :
  SimulationName_xxxx_xxxx_histmth.nc lonlat2xyz.nco SimulationName
 ```
 
-You will use the flxat_LMD9695_maskFrom_Unknown.nc file late to setup the coupled simulation
+You will use the flxat_LMD9695_maskFrom_Unknown.nc file late to setup the coupled simulation.
 
 #### 1. Generation of simulation directory
 
