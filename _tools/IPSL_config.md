@@ -43,7 +43,7 @@ _In case you want to run simulations with a present-day land sea mask_
 
 ```
 
-__In case you want to remove ice in Antarctica, additional modification should be done before compiling the code. They are listed paleo section [here](#without-Antarctic-ice-sheet).__
+__In case you want to remove ice in Antarctica, additional modification should be done before compiling the code. They are listed paleo section [here](#without-antarctic-ice-sheet).__
 
 -	In modipsl/config/IPSLCM5A2 directory, uncomment line 100 from the Makefile
 -	Compile with gmake
