@@ -335,7 +335,7 @@ ccc_msub Job_SimulationName
 
 ### Coupled Model
 
-Once you have the 1 year-length [LMDZOR](#lmdzor) simulation you can know run a coupled simulation. But before being able to launch it you will need to create restart files for the OASIS coupler. 
+Once you have the 1 year-length [LMDZOR](#lmdzor) simulation you can now run a coupled simulation. But before being able to launch it you will need to create restart files for the OASIS coupler. 
 
 #### Create file for OASIS
 
@@ -520,6 +520,27 @@ Then you can finally launch your simulation
 ccc_msub Job_SimulationName 
 
 ```
+
+# RESTART
+## Update bathymetry and restart
+In some case you may want to do small bathymetry modification but you do not want to restart your simulation from scratch (because it will take to long). In this case you can (sometimes ?) re-generate salinity and temperature field from an existing simulation with similare paleogeography and use them as boundary conditions for the new simulation.
+ 
+ - Modify the bathymetry locally using your favorite tool. Be sure you keep the variable names and dimension as in the initial file.
+ - Extract salinity (so) and temperature (tethao) variables from the gridT.nc output of the simulation you want to restart from 
+
+```bash
+ncks -v so SimulationName_gridT.nc SimulationName_gridT_so.nc 
+ncks -v thetao SimulationName_gridT.nc SimulationName_gridT_thetao.nc 
+```
+
+ - Regenerate the temperature and salinity fields using Create_thetao.f90, Create_so.f90 and Create_thetao_so.ksh scripts. Before running them you need to read the comments insides and modify the files path inside.
+- Use the newly-created files in the PARAM/opa.card 
+
+
+Then you need to regenerate restart files for OASIS (both atmosphere and ocean) and use them in the PARAM/oasis.card
+
+In most of the case you can restart the LMDZOR-related components (LMDZ, SRF, SBG) in the config.card and specify the path from the coupled simulation you restart from.
+
 
 # Useful tips
 
