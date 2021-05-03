@@ -31,7 +31,8 @@ _more complete documentation_ [here](https://linux.die.net/man/1/ncks)
 ncks -x -v variable1,variable2 infile.nc outfile.nc
 ```
 
-- __Concatenate files__
+- __Average files__
+
 (useful in case you have output files averaged over 10Y and you want a 100Y average instead)
 
 _more complete documentation_ [here](https://linux.die.net/man/1/ncea)
