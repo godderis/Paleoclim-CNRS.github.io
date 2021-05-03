@@ -9,7 +9,9 @@ Reference paper for the IPSL-CM5A2 model is [Sepulchre et al. 2020](https://gmd.
 
 # Download & Compile the code 
 
-_Additional documentation can be found [here](https://forge.ipsl.jussieu.fr/igcmg_doc/wiki/DocHconfigAipslcm5a2)_
+_Additional documentation on how to download and compile the code can be found [here](https://forge.ipsl.jussieu.fr/igcmg_doc/wiki/DocHconfigAipslcm5a2)_.
+
+_Information provided in the following text is well suited for running simulations on IRENE supercomputer (TGCC). Adaptation might be required to run the code on Jean Zay supercomputer (IDRIS)._
 
 
 _First you have to choose the version of the model you want to install :_
