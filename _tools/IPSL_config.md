@@ -5,10 +5,12 @@ toc: true
 toc_sticky: true
 
 ---
+Reference paper for the IPSL-CM5A2 model is [Sepulchre et al. 2020](https://gmd.copernicus.org/articles/13/3011/2020/gmd-13-3011-2020.html). You will find additional information about each component of the model and appropiate references within this paper as well. 
 
 # Download & Compile the code 
 
 _Additional documentation can be found [here](https://forge.ipsl.jussieu.fr/igcmg_doc/wiki/DocHconfigAipslcm5a2)_
+
 
 _First you have to choose the version of the model you want to install :_
 - _Standard version  (ORCA grid - e.g. Modern simulations)_
