@@ -23,8 +23,7 @@ _In case you want to run simulations with a present-day land sea mask_
 -	In IPSLCM5A2 directory, do a svn to load the required files from the server
 -	Move to modipsl/util directory
 -	Load the model files  [ ./model IPSLCM5A2.1 ]
--	Login & password are required in order to install ORCHIDEE =>login : sechiba, password : ipsl2000
--	In order to install LMDz : tape return so it ask for a login => login : lmdz-users, passwd : lmdz2020
+-	Login & password are required in order to install ORCHIDEE & LMdz => They are available upon request to ... 
 
 ```bash
 # Load the model
