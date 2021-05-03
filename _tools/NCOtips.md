@@ -1,4 +1,3 @@
-
 ---
 title: NCO tips
 author: Anta
