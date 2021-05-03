@@ -38,4 +38,4 @@ _more complete documentation_ [here](https://linux.die.net/man/1/ncea)
 
 ```
 ncea File1.nc File2.nc Filex.nc Output.nc
-
+```
