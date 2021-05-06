@@ -84,3 +84,6 @@ Delphine:
     - label: "Researchgate"
       icon: "fab fa-researchgate"
       url: "https://www.researchgate.net/profile/Delphine-Tardif"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/dtardif-becquet/"
