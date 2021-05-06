@@ -12,7 +12,7 @@ Wesley:
       url: "mailto:banfield@cerege.fr"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://wesleythegeolien.github.io/random_raves/"
+      url: "https://wesleythegeolien.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/wesleythegeolien"
