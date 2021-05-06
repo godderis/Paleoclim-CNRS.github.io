@@ -64,3 +64,23 @@ Anta:
     - label: "Researchgate"
       icon: "fab fa-researchgate"
       url: "https://www.researchgate.net/profile/Anta_Clarisse_Sarr"
+
+Delphine:
+  name        : "Delphine Tardif"
+  bio         : >
+    PostDoc interested in geodynamics & paleoclimate interactions. Climate Modeling. Cenozoic.
+  avatar      : "/assets/images/Delphine-Tardif-Image.png"
+  location    : "Aix-en-Provence, France"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:tardif@cerege.fr"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.fr/citations?user=musScH4AAAAJ&hl=fr"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/DelphineTardif"
+    - label: "Researchgate"
+      icon: "fab fa-researchgate"
+      url: "https://www.researchgate.net/profile/Delphine-Tardif"
