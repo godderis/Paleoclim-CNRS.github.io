@@ -433,6 +433,14 @@ _If you do not run the code on Irene but on Jean-Zay or other super-computer you
 Modify the boundary conditions files for the atmosphere in COMP/lmdz.card
  - LMDZ_Physics=AP (l.9)
  - ConfType=preind (l.14)
+ - LMDZ_NMC_monthly=n (l.44)
+ - Replace Post_1M_histmthNMC and Post_1M_paramLMDZ_phy by NONE (l.100-101)
+
+```
+(histmthNMC.nc,    ${R_OUT_ATM_O_M}/${PREFIX}_1M_histmthNMC.nc,    NONE),    \
+(paramLMDZ_phy.nc, ${R_OUT_ATM_O_M}/${PREFIX}_1M_paramLMDZ_phy.nc, NONE), \
+
+```
 
 Then you will have to modify the following variables in the boundary condition file COMP/orchidee.card
 
@@ -446,7 +454,15 @@ Modify the boundary conditions files for the Ocean in COMP/opa.card
 - K1rowdrg.nc, M2rowdrg.nc, chlorophyll_surface_40Ma.nc, runoffs_ORCA2_depths.nc, sali_ref_clim_monthly.nc, coordinates.nc and mask_itf.nc are usually standard files you use in all the simulation (for Cenozoic simulation at least (?), except if you generate new tides files for example) and can be found in PATH/BC_CM5A2/NEMO/40Ma/filename.nc
 - sss_data.nc, sst_data.nc, data_1m_potential_temperature_nomask.nc and data_1m_salinity_nomask.nc are also standardized files (?)
 - bathy_meter.nc, ahmcoef.nc, subbasins.nc, geothermal_heating.nc are files you need to generates from paleogeography you use.
-- 
+
+- Modify l. 61 - 62 to put NONE in place of Post_1D files
+
+```
+# For example 
+
+(${config_UserChoices_JobName}_1d_grid_T.nc, ${R_OUT_OCE_O_D}/${PREFIX}_1D_grid_T.nc     , NONE),\
+```
+
 
 You also need to modify the COMP/oasis.card with the file you created from the corresponding LMDZOR simulation. [If it does not remind you something, you may be have missed this step [here](#create-file-for-oasis)]
  - Specify the flatx and sstoc files. The sstoc file should correspond to the SST file you used in the previous ELC step. You can also create it using specific script in case you want to restart the ocean from an existing simulation. 
