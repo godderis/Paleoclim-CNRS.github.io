@@ -455,7 +455,7 @@ Modify the boundary conditions files for the Ocean in COMP/opa.card
 - sss_data.nc, sst_data.nc, data_1m_potential_temperature_nomask.nc and data_1m_salinity_nomask.nc are also standardized files (?)
 - bathy_meter.nc, ahmcoef.nc, subbasins.nc, geothermal_heating.nc are files you need to generates from paleogeography you use.
 
-- Modify l. 61 - 62 to put NONE in place of Post_1D files
+- Replace Post_1D files by NONE (l. 61-62)
 
 ```
 # For example 
@@ -463,6 +463,21 @@ Modify the boundary conditions files for the Ocean in COMP/opa.card
 (${config_UserChoices_JobName}_1d_grid_T.nc, ${R_OUT_OCE_O_D}/${PREFIX}_1D_grid_T.nc     , NONE),\
 ```
 
+In the COMP/pisces.card
+ - Replace Post_1D_bioscalar by NONE (l.52)
+
+```
+(${config_UserChoices_JobName}_1d_bioscalar.nc     , ${R_OUT_MBG_O_M}/${PREFIX}_1D_bioscalar.nc , NONE)
+```
+
+In stomate.card
+ - Replace Post_1M_stomate_history.nc and Post_1M_stomate_ipcc_history by NONE (l.28)
+
+```
+[OutputFiles]
+List=   (stomate_history.nc,      ${R_OUT_SBG_O_M}/${PREFIX}_1M_stomate_history.nc,      NONE),    \
+        (stomate_ipcc_history.nc, ${R_OUT_SBG_O_M}/${PREFIX}_1M_stomate_ipcc_history.nc, NONE)
+```
 
 You also need to modify the COMP/oasis.card with the file you created from the corresponding LMDZOR simulation. [If it does not remind you something, you may be have missed this step [here](#create-file-for-oasis)]
  - Specify the flatx and sstoc files. The sstoc file should correspond to the SST file you used in the previous ELC step. You can also create it using specific script in case you want to restart the ocean from an existing simulation. 
