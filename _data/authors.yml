@@ -92,7 +92,7 @@ Quentin:
   name        : "Quentin Pillot"
   bio         : >
     Phd student in paleoclimate modeling, focused on the Miocene epoch.  
-  avatar      : ""
+  avatar      : "/assets/images/photo_quentin_pillot.jpg"
   location    : "Aix-en-Provence, France"
   links:
     - label: "Email"
