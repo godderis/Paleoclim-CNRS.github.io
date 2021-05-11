@@ -87,3 +87,23 @@ Delphine:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/dtardif-becquet/"
+
+Quentin:
+  name        : "Quentin Pillot"
+  bio         : >
+    Phd student in paleoclimate modeling, focused on the Miocene epoch.  
+  avatar      : ""
+  location    : "Aix-en-Provence, France"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:pillot@cerege.fr"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/QuentinPillot21"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/QuentinPILLOT1"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/quentin-pillot-10477012b/"
