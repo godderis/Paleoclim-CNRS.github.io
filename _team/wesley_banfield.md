@@ -32,4 +32,4 @@ Wesley has also given various presentations:
 
 - Previous Roles:
     - How certain are you of your services, understanding and visualising geological model uncertainty [YouTube](https://www.youtube.com/watch?v=jt26J5ljlA0&t)
-    - Prototyping for Geologists, Trasnform 2020 [YouTube](https://www.youtube.com/watch?v=rUbvueIF5f8&t=4141s)
+    - Prototyping for Geologists, Transform 2020 [YouTube](https://www.youtube.com/watch?v=rUbvueIF5f8&t=4141s)
