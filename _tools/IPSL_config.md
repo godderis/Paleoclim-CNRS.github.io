@@ -284,7 +284,41 @@ Then you will have to modify the following variables in the boundary condition f
 - LMDZ_Physics=AP (l.9)
 - ConfType=preind (l.17)
 
-Then you need to specified boundary conditions files from the corresponding ELC simulation (l.53-54) :
+### Without Antarctic ice-sheet
+
+__In case you want to remove ice in Antarctica (and have compiled the code to do so), additional modification should be done for running the LMDZOR simulation :__ 
+_(If you want to run simulation WITH an ice-sheet on Antarctica, just skip this part and see below)_
+
+- In your WORKDIR (ideally you would have already created a directory where you store all you boundary conditions - $WORKDIR/YOUR_BC_DIRECTORY - ...), create a MOD-ETAT0-LMDZ/SimulationName directory
+- Copy the following files into it :
+    -	/ccc/store/cont003/gen2212/UserName/IGCM_OUT/LMDZ/SimulationName/ATM/Output/Boundary/ELC-SimulationName_clim_limit.nc
+    -	/ccc/store/cont003/gen2212/UserName/IGCM_OUT/LMDZ/SimulationName/ATM/Output/Restart/ELC-SimulationName_clim_start.nc
+    - /ccc/store/cont003/gen2212/UserName/IGCM_OUT/LMDZ/SimulationName/ATM/Output/Restart/ELC-SimulationName_clim_startphy.nc
+    
+- You then have to modify those files to add some ice on the south pole grid point (this is mandatory for the ORCHIDEE model to run) : 
+
+``` bash
+
+Ncap2 -s «FLIC(9025)=1.» -s «FTER(9025)=0.» ELC-SimulationName_clim_startphy.nc ELC-SimulationName_clim_startphy_corr.nc
+Ncap2 -s «FLIC(:,9025)=1.» -s «FTER(:,9025)=0.» ELC-SimulationName_clim_limit.nc ELC-SimulationName_clim_limit_corr.nc
+
+```
+
+Then you need to specified boundary conditions files from the corresponding ELC simulation (l.53-54) and specifity the path for corresponding ELC start file as well as for the newely created startphy and limit files as below 
+
+```
+[InitialStateFiles]
+List=   ($STOREDIR/IGCM_OUT/LMDZ/ELC-SimulationName/ATM/Output/Restart/ELC-SimulationName_clim_start.nc,    start.nc),\
+        ($WORKDIR/YOUR_BC_DIRECTORY/MOD-ETAT0-LMDZ/SimulationName/ELC-SimulationName_clim_startphy_corr.nc, startphy.nc)
+        
+[BoundaryFiles]
+List=()
+ListNonDel= ($WORKDIR/YOUR_BC_DIRECTORY/MOD-ETAT0-LMDZ/SimulationName/ELC-SimulationName_clim_limit_corr.nc, limit.nc),\
+```
+
+
+### With a Antarctic Ice-sheet 
+You need to specified boundary conditions files from the corresponding ELC simulation (l.53-54) :
 
 - either specify CREATE=ELC-SimulationName (l.12) (Put the name of the ELC simulation you have done juste before) and be sure that the l.53-58 uses the CREATE variable to define the path. Or simply give the complete path to the start, starphy and limit files as below
 
@@ -298,6 +332,7 @@ List=()
 ListNonDel= ($STOREDIR/IGCM_OUT/LMDZ/ELC-SimulationName/ATM/Output/Boundary/ELC-SimulationName_clim_limit.nc, limit.nc),\
 ```
 
+### For all types of simulation
 Then you will have to modify the following variables in the boundary condition file COMP/orchidee.card
 
 - Modify the soil file (soils_param.nc), with a soil parameter file that has the correct geography  (l.14)
