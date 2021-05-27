@@ -38,6 +38,12 @@ In file PARAM/file_def_nemo-opa.xml :
  <field field_ref="wocetr_eff"   name="wocetr_eff"  /> (l.265)
  
 ```
+## Compute scaling factor from runoff
+
+To do so you need the grid_T.nc file from the coupled simulation and the script runoffs.jnl to obtain annually cumulated runoff.
+To get the scaling factor, you have to divide this value by value from a modern simulation (2352948)
+
+
 
 ## Generate initial state for MBG/ component
 
