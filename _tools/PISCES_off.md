@@ -42,3 +42,11 @@ In file PARAM/file_def_nemo-opa.xml :
 ## Generate initial state for MBG/ component
 
 - To generate initial state for the ocean-biogeochmistry use the script ScaleNutrient.ksh 
+
+__Total nutrient input similar to present-day__
+
+In this case you just need to extract value from the ptrc.nc file and to scale the O2 variable to have the right unit.
+
+__Nutrient input adapted to climate__
+
+In this case you have, in addition, to be sure that each file has been scaled by the factor you calculated from the runoff of the coupled simulation. 
