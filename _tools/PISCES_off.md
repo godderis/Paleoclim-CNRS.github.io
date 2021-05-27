@@ -67,10 +67,11 @@ __Nutrient input adapted to climate__
 At the end, the total supply should roughly correspond to the one from the control simulation (ORCA2_OFF_PISCES/PROD/ORCA2clim/PISC-Control-RunOff/DEBUG/MBG_PISC-Control-RunOff_05000101_05001231_ocean.output)
 
 ```
-N Supply :
-Si Supply :
-P Supply :
-Alk Supply : 
+N Supply : 36.096027 TgN/yr
+Si Supply : 154.645665 TgSi/yr
+P Supply : 2.572411 TgP/yr
+Alk Supply : 35.141530 Teq/yr
+DIC Supply : 586.800500 TgC/yr
 ```
 
 So it is better to run the simulation for one year only and to adjust concentration if it does not fit. 
