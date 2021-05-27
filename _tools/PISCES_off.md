@@ -56,3 +56,23 @@ In this case you just need to extract value from the ptrc.nc file and to scale t
 __Nutrient input adapted to climate__
 
 In this case you have, in addition, to be sure that each file has been scaled by the factor you calculated from the runoff of the coupled simulation. 
+
+## Define value of nutrient concentration
+
+__Total nutrient input similar to present-day__
+
+__Nutrient input adapted to climate__
+
+
+At the end, the total supply should roughly correspond to the one from the control simulation (ORCA2_OFF_PISCES/PROD/ORCA2clim/PISC-Control-RunOff/DEBUG/MBG_PISC-Control-RunOff_05000101_05001231_ocean.output)
+
+```
+N Supply :
+Si Supply :
+P Supply :
+Alk Supply : 
+```
+
+So it is better to run the simulation for one year only and to adjust concentration if it does not fit. 
+DIC Supply :
+
