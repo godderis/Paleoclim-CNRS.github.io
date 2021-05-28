@@ -43,6 +43,12 @@ In file PARAM/file_def_nemo-opa.xml :
 To do so you need the grid_T.nc file from the coupled simulation and the script runoffs.jnl to obtain annually cumulated runoff.
 To get the scaling factor, you have to divide this value by value from a modern simulation (2352948)
 
+__Total nutrient input similar to present-day__
+
+This scaling factor in use to calculate initial concentration of dissolved elements in the river 
+
+__Total nutrient input similar to present-day__
+This scaling factor is used to modifiy initial state for the MBG/ component as explained below
 
 
 ## Generate initial state for MBG/ component
