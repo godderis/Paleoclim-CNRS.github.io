@@ -60,7 +60,18 @@ This scaling factor in use to calculate initial concentration of dissolved eleme
 ```
 
 __Total nutrient input similar to present-day__
-This scaling factor is used to modifiy initial state for the MBG/ component as explained below
+
+This scaling factor is used to scale damping value (l.81-84)
+
+```bash
+  alkmean = 2426.    ! Mean alkalinity concentration
+  po4mean = 2.165    ! Mean phosphate concentration
+  no3mean = 30.90    ! Mean nitrate concentration
+  silmean = 91.51    ! Mean silicate concentration
+```
+
+
+as well as to modifiy initial state for the MBG/ component as explained below
 
 
 ## Generate initial state for MBG/ component
