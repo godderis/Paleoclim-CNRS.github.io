@@ -45,7 +45,19 @@ To get the scaling factor, you have to divide this value by value from a modern 
 
 __Total nutrient input similar to present-day__
 
-This scaling factor in use to calculate initial concentration of dissolved elements in the river 
+This scaling factor in use to calculate initial concentration of dissolved elements in the river. To do so you have to modify file PARAM/NAMELIST/namelist_pisces_cfg (l.70-76)
+
+```bash
+
+<    dicconc = xxxe-6    ! dissolved inorganic carbon concentration in rivers (in Mmol/m3)
+<    docconc = xxxe-6   ! dissolved organic carbon concentration in rivers (in Mmol/m3)
+<    dinconc = xxxe-8   ! dissolved inorganic nitrogen concentration in rivers (in Mmol/m3)
+<    donconc = xxxe-8    ! dissolved organic nitrogen concentration in rivers (in Mmol/m3)
+<    dipconc = xxxe-9    ! dissolved inorganic phosphorus concentration in rivers (in Mmol/m3)
+<    dopconc = xxxe-9   ! dissolved organic phosphorus concentration in rivers (in Mmol/m3)
+<    dsiconc = xxxe-6  ! dissolved silicate concentration in rivers (in Mmol/m3)
+
+```
 
 __Total nutrient input similar to present-day__
 This scaling factor is used to modifiy initial state for the MBG/ component as explained below
