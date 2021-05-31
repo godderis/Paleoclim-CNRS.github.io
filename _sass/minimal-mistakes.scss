@@ -39,7 +39,11 @@
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
 
-/* Add bootstrap */
+
+/* Custom */
+@import "custom";
+
+// Add bootstrap
 @import "variables";
 @import "bootstrap";
 @import "bootswatch";
