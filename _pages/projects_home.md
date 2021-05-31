@@ -14,25 +14,35 @@ excerpt: >
 
 
 <h2>Current Projects</h2>
-
+<div class='card-list'>
 {% for project in current_projects %}
-  <h3>
-    <a href="{{ project.url }}">
-      {{ project.acronyme }}
-    </a>
-  </h3>
-  <b>Start year: </b>{{ project.year_start }}
-
-  <b>Title: </b>{{ project.title }}
+<div class='card'>
+  <div class='card-header'>
+      <a href="{{ project.url }}">
+        {{ project.acronyme }}
+      </a>
+    </div>
+    <div class='card-body'>
+    <p>
+      <b>Start year: </b>{{ project.year_start }}
+    </p>
+    <p>
+      <b>Title: </b>{{ project.title }}
+    </p>
+    </div>
+  </div>
   
 {% endfor %}
+</div>
 
 <h2>Archived Projects</h2>
-
+<div class='card-list'>
 {% for project in old_projects %}
-  <h3>
-    <a href="{{ project.url }}">
-      {{ project.title }}
-    </a>
-  </h3>
+  <div class='card'>
+    <div class='card-header'>
+      <a href="{{ project.url }}">
+        {{ project.title }}
+      </a>
+    </div>
+  </div>
 {% endfor %}

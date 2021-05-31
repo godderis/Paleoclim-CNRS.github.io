@@ -16,36 +16,39 @@ excerpt:  "<div style='text-align: justify'> Interested in the Earth system evol
 
 {% if perm != blank %}
 <h2>Permenant Positions</h2>
-
-{% for position in perm %}
-  <h3>
-    <a href="{{ position.url }}">
-      {{ position.title }}
-    </a>
-  </h3>
-{% endfor %}
+<div class='card-list'>
+  {% for position in perm %}
+    <div class='card card-header'>
+      <a href="{{ position.url }}">
+        {{ position.title }}
+      </a>
+    </div>
+  {% endfor %}
+</div>
 {% endif %}
 
 {% if fellow != blank %}
 <h2>Fellow Positions</h2>
-
-{% for position in fellow %}
-  <h3>
-    <a href="{{ position.url }}">
-      {{ position.title }}
-    </a>
-  </h3>
-{% endfor %}
+<div class='card-list'>
+  {% for position in fellow %}
+    <div class='card card-header'>
+      <a href="{{ position.url }}">
+        {{ position.title }}
+      </a>
+    </div>
+  {% endfor %}
+</div>
 {% endif %}
 
 {% if phd != blank %}
 <h2>PhD Positions</h2>
-
-{% for position in phd %}
-  <h3>
-    <a href="{{ position.url }}">
-      {{ position.title }}
-    </a>
-  </h3>
-{% endfor %}
+<div class='card-list'>
+  {% for position in phd %}
+    <div class='card card-header'>
+      <a href="{{ position.url }}">
+        {{ position.title }}
+      </a>
+    </div>
+  {% endfor %}
+</div>
 {% endif %}
