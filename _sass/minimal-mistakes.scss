@@ -40,4 +40,6 @@
 @import "minimal-mistakes/print";
 
 /* Add bootstrap */
+@import "variables";
 @import "bootstrap";
+@import "bootswatch";
