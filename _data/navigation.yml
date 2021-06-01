@@ -16,8 +16,6 @@ main:
     url: "/documentation"
     dropdown:
       - title: "Website Toolkit"
-        url: "/"
-      - title: "Server Config"
-        url: "/"
-      - title: "Simulation"
-        url: "/"
+        url: "/documentation/website-toolkit"
+      - title: "Tools"
+        url: "/documentation/tools"
