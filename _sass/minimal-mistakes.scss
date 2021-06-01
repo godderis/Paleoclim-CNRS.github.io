@@ -44,6 +44,8 @@
 @import "custom";
 
 // Add bootstrap
-@import "variables";
+// Bootswatch = theme
+// Need to import variables then bootstrap then theme
+@import "bootstrap/bootswatch/variables";
 @import "bootstrap";
-@import "bootswatch";
+@import "bootstrap/bootswatch/bootswatch";
