@@ -1,9 +1,23 @@
 main:
-  - title: "Resources"
+  - title: "Online Resources"
     url: /resources
+    dropdown:
+      - title: "Publications"
+        url: "/resources/publications"
+      - title: "Presentations"
+        url: "/resources/presentations"
   - title: "Team"
     url: "/team"
   - title: "Projects"
     url: "/projects"
   - title: "Opportunities"
     url: "/opportunities"
+  - title: "Documentation"
+    url: "/documentation"
+    dropdown:
+      - title: "Website Toolkit"
+        url: "/"
+      - title: "Server Config"
+        url: "/"
+      - title: "Simulation"
+        url: "/"
