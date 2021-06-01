@@ -7,6 +7,12 @@ toc_sticky: true
 ---
 Reference paper for the PISCES model is [Aumont et al. 2015](https://gmd.copernicus.org/articles/13/3011/2020/gmd-13-3011-2020.html). You will find additional information about parameterization and appropiate references within this paper as well.
 
+# Download & Compile the code
+
+- In the $CCCWORKDIR directory, create a new PALEO-PISCES directory
+- In PALEO-PISCES directory, do a svn to load the required files from the server
+
+# Launch a new simulation
 
 ## Get the boundary conditions files from the coupled simulation
 
