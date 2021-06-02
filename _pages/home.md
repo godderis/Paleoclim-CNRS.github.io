@@ -31,8 +31,68 @@ feature_row:
     excerpt: "Check out the projects we are working on and the ones in the pipeline"
     url: "/projects"
     btn_class: "btn--primary"
-    btn_label: "Learn more"     
+    btn_label: "Learn more" 
 ---
+
+{% assign news_items = site.news %}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin: 1em">
+  <ol class="carousel-indicators">
+    {% for entry in news_items %}
+      {% if forloop.index0 == 0%}
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    {% else %}
+    <li data-target="#carouselExampleIndicators" data-slide-to="{{forloop.index0}}"></li>
+    {% endif %}
+    {% endfor %}
+  </ol>
+  <div class="carousel-inner">
+  {% for entry in news_items %}
+    {% if forloop.index0 == 0%}
+    <div class="carousel-item active">
+    {% else %}
+    <div class="carousel-item">
+    {% endif %}
+    {% if entry.img == blank %}
+      <img class="d-block w-100" src="https://placeimg.com/1080/500/nature">
+    {% else %}
+      <img class="d-block w-100" src="{{entry.img}}" style="height:500px;width:1080px;object-fit:cover">
+    {% endif %}
+      <div class="carousel-caption d-none d-md-block" style="top:20px">
+      <div class="card" style='color:black; opacity:0.7'>
+      <div class='card-header'>
+        <div>{{ entry.title }}</div>
+      </div>
+        <div class='card-body'>
+        {{ entry.content }}
+        </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
 <!-- {% include vtkElevationReader.html %} -->
 <div style="text-align: center;display: flex;flex-wrap: wrap;justify-content: space-evenly;margin-bottom: 2em;">

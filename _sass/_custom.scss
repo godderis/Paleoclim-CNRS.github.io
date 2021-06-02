@@ -1,11 +1,17 @@
 @import "bootstrap/bootswatch/variables";
 @import "bootstrap/variables";
 
+// override externally loaded stylesheet (bootstrap)
+.layout--splash {
+  background-color: $background-color;
+  color: $text-color;
+}
+
 .card-list .card:not(:first-child) {
   margin-top: 1em;
 }
 
-.dropdown {
+.dropdown-custom {
   position: relative;
   display: inline-block;
 }
@@ -17,7 +23,7 @@
   padding: 0;
 }
 
-.dropdown-menu {
+.dropdown-menu-custom {
   border-radius: $border-radius;
   position: absolute;
   z-index: 1000;
@@ -38,14 +44,15 @@
   }
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown-custom:hover .dropdown-menu-custom {
     display: block;
 }
 
-.dropdown-item {
+.dropdown-item-custom {
     margin: 0rem !important;
     display: block;
     width: 100%; // For `<button>`s
+    text-decoration: none;
     padding: $dropdown-item-padding-y $dropdown-item-padding-x;
     clear: both;
     color: $dropdown-link-color;
@@ -58,6 +65,6 @@
     &:focus {
       color: $dropdown-link-hover-color;
       background-color: $dropdown-link-hover-bg;
-      // text-decoration: if($link-hover-decoration == underline, none, null);
+      text-decoration: none;
     }
 }
