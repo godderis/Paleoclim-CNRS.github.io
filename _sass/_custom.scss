@@ -5,6 +5,16 @@
 .layout--splash {
   background-color: $background-color;
   color: $text-color;
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.page__hero--overlay .wrapper{
+  background-color: rgba(0,0,0,0.5);
+  border-radius: $border-radius;
+  padding: 1em;
 }
 
 .card-list .card:not(:first-child) {
