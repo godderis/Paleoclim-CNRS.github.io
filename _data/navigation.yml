@@ -15,7 +15,9 @@ main:
   - title: "Documentation"
     url: "/documentation"
     dropdown:
+      - title: "Model Toolkit"
+        url: "/documentation/model-toolkit"
+      - title: "Processing Toolkit"
+        url: "/documentation/processing-toolkit"
       - title: "Website Toolkit"
         url: "/documentation/website-toolkit"
-      - title: "Tools"
-        url: "/documentation/tools"

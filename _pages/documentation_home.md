@@ -11,28 +11,38 @@ header:
 title: Documentation
 excerpt: "This is where you are going to find all of our know-how"
 
-feature_rowl2:
+feature_rowl1:
   - image_path: /assets/images/mm-responsive-feature.png
-    alt: "Tools"
-    title: "Tools"
+    alt: "Model Toolkit"
+    title: "Model Toolkit"
     excerpt: >
-      Want to know what tools we are currently using or have used in the past? Take a look at out tools sections
-    url: "/documentation/tools"
+      (almost) all you need to know to run simulations with IPSL-CM5A2, LMDz, PISCES and ORCHIDEE models, especially for paleo-conditions and boundary conditions design
+    url: "/documentation/model-toolkit"
     btn_label: "Read More"
     btn_class: "btn--primary"
-feature_rowr2:
+
+feature_rowr1:
+  - image_path: /assets/images/mm-responsive-feature.png
+    alt: "Processing Toolkit"
+    title: "Processing Toolkit"
+    excerpt: >
+      Some useful tips to setup your models and transform your netcdf outputs, visualize, display and share your results
+    url: "/documentation/processing-toolkit"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+
+feature_rowl2:
   - image_path: /assets/images/mm-responsive-feature.png
     alt: "Website Toolkit"
     title: "Website Toolkit"
     excerpt: >
-      Need to know how to get things up and running? Maybe we have already encountered the problem in this case head
-      over to our documentation
+      How to manage your website profile and add posts
     url: "/documentation/website-toolkit"
     btn_label: "Read More"
     btn_class: "btn--primary"
 
 ---
 
+{% include feature_row id="feature_rowl1" type="left" %}
+{% include feature_row id="feature_rowr1" type="right" %}
 {% include feature_row id="feature_rowl2" type="left" %}
-
-{% include feature_row id="feature_rowr2" type="right" %}

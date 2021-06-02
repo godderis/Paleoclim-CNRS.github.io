@@ -174,7 +174,13 @@ collections:
   tools:
     output: true
     permalink: /:collection/:path/
-  documentation:
+  documentation-model:
+    output: true
+    permalink: /:collection/:path/
+  documentation-processing:
+    output: true
+    permalink: /:collection/:path/
+  documentation-website:
     output: true
     permalink: /:collection/:path/
 
@@ -229,20 +235,30 @@ defaults:
       author_profile: true
       share: false
       comments: false
-  # _tools
+  # _documentation-model
   - scope:
       path: ""
-      type: tools
+      type: documentation-model
     values:
       layout: single
       read_time: true
       author_profile: true
       share: false
       comments: false
-  # _documentation
+  # _documentation-processing
   - scope:
       path: ""
-      type: documentation
+      type: documentation-processing
+    values:
+      layout: single
+      read_time: true
+      author_profile: true
+      share: false
+      comments: false
+  # _documentation-website
+  - scope:
+      path: ""
+      type: documentation-website
     values:
       layout: single
       read_time: true
