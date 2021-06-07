@@ -53,7 +53,7 @@ feature_row:
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
 
 <div class="d-flex flex-row justify-content-around flex-wrap" style="margin: 1em;">
-  <div class='p-2 flex-grow-1 col-8'>
+  <div class='p-2 flex-grow-1 flex-shrink-1 col-md-8 col-sm-12'>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         {% for entry in news_items %}
@@ -76,7 +76,7 @@ feature_row:
         {% else %}
           <img class="d-block w-100 news-background" src="{{entry.img}}">
         {% endif %}
-          <div class="carousel-caption d-none d-md-block" style="top:20px">
+          <div class="carousel-caption d-md-block" style="top:20px">
           {% if entry.link != blank %}
           <a href="{{ entry.link | relative_url }}">
           {% endif %}
@@ -84,8 +84,10 @@ feature_row:
               <div class='card-header'>
                 <div>{{ entry.title }}</div>
               </div>
-                <div class='card-body'>
-                  {{ entry.content }}
+                <div class="card-block p-1">
+                  <div class='card-text'>
+                    {{ entry.content }}
+                  </div>
                 </div>
               </div>
               {% if entry.link != blank %}
@@ -105,7 +107,7 @@ feature_row:
       </a>
     </div>
   </div>
-  <div class='p-2 flex-grow-1 col-4'>
+  <div class='p-2 flex-grow-1 flex-shrink-1 col-md-4 col-sm-12'>
     <div class='news-aside'>
       <h5>News</h5>
       <ul>
