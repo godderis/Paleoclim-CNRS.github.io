@@ -80,12 +80,27 @@
 }
 
 .news-aside {
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   padding: 1em;
   background-color: $white;
   color: black;
   border-radius: $border-radius;
-  height: 100%;;
+  height: 400px;
+
+  & .news-content {
+    
+    /**Major Properties**/
+    overflow:hidden;
+    line-height: 1rem;
+    max-height: 3rem;
+    -webkit-box-orient: vertical;
+    display: inline-block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+  }
 }
 
 .news-background {

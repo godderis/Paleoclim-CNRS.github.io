@@ -113,7 +113,13 @@ feature_row:
       <ul>
       {% for entry in news_items %}
       <li>
-        <a href="{{ entry.link | relative_url}}">{{entry.title}}</a>
+          {{entry.title}}
+          <small class="news-content">{{entry.content}}</small>
+          {% if entry.link != blank %}
+            <a href="{{entry.link | relative_url}}" class='btn btn-outline-info btn-sm'>
+            Read more
+            </a>
+          {% endif %}
       </li>
       {% endfor %}
     </ul>
