@@ -34,7 +34,7 @@ feature_row:
     btn_label: "Learn more" 
 ---
 
-{% assign news_items = site.news %}
+{% assign news_items = site.news | sort: "date" | reverse %}
 
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
@@ -119,7 +119,7 @@ feature_row:
           <div class="d-flex flex-row justify-content-between align-items-baseline">
             {{entry.title}}
             <small class="news-date">
-              {{ entry.last_modified_at | date: "%-d %B %Y" }}
+              {{ entry.date | date: "%-d %B %Y" }}
             </small>
           </div>
           <small class="news-content">{{entry.content}}</small>
