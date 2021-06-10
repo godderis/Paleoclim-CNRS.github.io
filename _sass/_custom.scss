@@ -11,14 +11,44 @@
   }
 }
 
-.page__hero--overlay .wrapper > *:not(:empty){
-  background-color: rgba(0,0,0,0.5);
+.page__hero--overlay .wrapper > *:not(:empty) {
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: $border-radius;
   padding: 1em;
 }
 
-.card-list .card:not(:first-child) {
-  margin-top: 1em;
+.card-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0 -5px;
+  justify-content: center;
+
+  & .card {
+    flex: 1 1 33%;
+    margin: 0 5px;
+    max-width: min(400px, 30%);
+  }
+
+  & .card:not(:first-child) {
+    // margin-top: 1em;
+  }
+}
+
+.team-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(110px + 9rem);
+  justify-content: space-between;
+
+  & h2 {
+    text-align: center;
+  }
+
+  & .author__avatar img{
+    max-height: 110px;
+    margin-top: 1em;
+  }
 }
 
 .dropdown-custom {
@@ -26,7 +56,7 @@
   display: inline-block;
 }
 
-.dropdown-masthead a{
+.dropdown-masthead a {
   font-size: 1rem;
   font-weight: normal;
   margin: 0;
@@ -55,28 +85,28 @@
 }
 
 .dropdown-custom:hover .dropdown-menu-custom {
-    display: block;
+  display: block;
 }
 
 .dropdown-item-custom {
-    margin: 0rem !important;
-    display: block;
-    width: 100%; // For `<button>`s
-    text-decoration: none;
-    padding: $dropdown-item-padding-y $dropdown-item-padding-x;
-    clear: both;
-    color: $dropdown-link-color;
-    text-align: inherit; // For `<button>`s
-    white-space: nowrap; // prevent links from randomly breaking onto new lines
-    background-color: transparent; // For `<button>`s
-    border: 0; // For `<button>`s
+  margin: 0rem !important;
+  display: block;
+  width: 100%; // For `<button>`s
+  text-decoration: none;
+  padding: $dropdown-item-padding-y $dropdown-item-padding-x;
+  clear: both;
+  color: $dropdown-link-color;
+  text-align: inherit; // For `<button>`s
+  white-space: nowrap; // prevent links from randomly breaking onto new lines
+  background-color: transparent; // For `<button>`s
+  border: 0; // For `<button>`s
 
-    &:hover,
-    &:focus {
-      color: $dropdown-link-hover-color;
-      background-color: $dropdown-link-hover-bg;
-      text-decoration: none;
-    }
+  &:hover,
+  &:focus {
+    color: $dropdown-link-hover-color;
+    background-color: $dropdown-link-hover-bg;
+    text-decoration: none;
+  }
 }
 
 .news-aside {
@@ -89,9 +119,8 @@
   height: 400px;
 
   & .news-content {
-    
     /**Major Properties**/
-    overflow:hidden;
+    overflow: hidden;
     line-height: 1rem;
     max-height: 3rem;
     -webkit-box-orient: vertical;
@@ -102,7 +131,7 @@
     -webkit-line-clamp: 3;
     font-size: $font-size-sm;
     margin-top: 0.25rem;
-    color: $secondary
+    color: $secondary;
   }
 
   & .btn {
@@ -128,15 +157,15 @@
 
   & li {
     padding-bottom: 0.5rem;
-    border-bottom:1px solid $secondary;
+    border-bottom: 1px solid $secondary;
   }
   & li:last-child {
     padding-bottom: 0;
-    border-bottom:none;
+    border-bottom: none;
   }
 }
 
 .news-background {
   height: 400px;
-  object-fit:cover;
+  object-fit: cover;
 }
