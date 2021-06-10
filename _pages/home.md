@@ -113,10 +113,10 @@ feature_row:
   <div class='p-2 flex-grow-1 flex-shrink-1 col-md-4 col-sm-12'>
     <div class='news-aside'>
       <h5>News</h5>
-      <ul>
+      <ul class="news-list">
       {% for entry in news_items %}
       <li>
-          <div class="d-flex flex-row justify-content-between align-items-baseline">
+          <div class="d-flex flex-row justify-content-between align-items-baseline news-title">
             {{entry.title}}
             <small class="news-date">
               {{ entry.date | date: "%-d %B %Y" }}

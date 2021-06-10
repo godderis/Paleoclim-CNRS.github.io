@@ -102,6 +102,7 @@
     -webkit-line-clamp: 3;
     font-size: $font-size-sm;
     margin-top: 0.25rem;
+    color: $secondary
   }
 
   & .btn {
@@ -114,6 +115,24 @@
     display: block;
     text-align: end;
     color: $secondary;
+  }
+
+  & .news-title {
+    color: $primary;
+  }
+}
+
+.news-list {
+  list-style-type: none;
+  padding: 0em;
+
+  & li {
+    padding-bottom: 0.5rem;
+    border-bottom:1px solid $secondary;
+  }
+  & li:last-child {
+    padding-bottom: 0;
+    border-bottom:none;
   }
 }
 
