@@ -20,13 +20,15 @@
 .card-list {
   display: flex;
   flex-direction: row;
-  margin: 0 -5px;
+  flex-wrap: wrap;
+  margin: -5px -5px;
   justify-content: center;
 
   & .card {
     flex: 1 1 33%;
-    margin: 0 5px;
+    margin: 5px 5px;
     max-width: min(400px, 30%);
+    min-width: 300px;
   }
 
   & .card:not(:first-child) {
