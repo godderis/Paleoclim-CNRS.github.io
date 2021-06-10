@@ -285,6 +285,13 @@ defaults:
     values:
       layout: single
       author_profile: false
+  # _news
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: single
+      author_profile: false
 
 
 # Sass/SCSS

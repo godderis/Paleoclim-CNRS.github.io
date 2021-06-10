@@ -56,7 +56,7 @@ feature_row:
   <div class='p-2 flex-grow-1 flex-shrink-1 col-md-8 col-sm-12'>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        {% for entry in news_items %}
+        {% for entry in news_items limit:5 %}
           {% if forloop.index0 == 0%}
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         {% else %}
@@ -65,7 +65,7 @@ feature_row:
         {% endfor %}
       </ol>
       <div class="carousel-inner">
-      {% for entry in news_items %}
+      {% for entry in news_items limit:5 %}
         {% if forloop.index0 == 0%}
         <div class="carousel-item active">
         {% else %}
@@ -77,12 +77,11 @@ feature_row:
           <img class="d-block w-100 news-background" src="{{entry.img}}">
         {% endif %}
           <div class="carousel-caption d-md-block" style="top:20px">
-          {% if entry.link != blank %}
-          <a href="{{ entry.link | relative_url }}">
-          {% endif %}
             <div class="card" style='color:black; opacity:0.7'>
               <div class='card-header'>
-                <div>{{ entry.title }}</div>
+                <a href="{{entry.url}}">
+                  <div>{{ entry.title }}</div>
+                </a>
               </div>
                 <div class="card-block p-1">
                   <div class='card-text'>
@@ -93,9 +92,6 @@ feature_row:
                   </div>
                 </div>
               </div>
-              {% if entry.link != blank %}
-            </a>
-            {% endif %}
           </div>
         </div>
       {% endfor %}
@@ -117,7 +113,9 @@ feature_row:
       {% for entry in news_items %}
       <li>
           <div class="d-flex flex-row justify-content-between align-items-baseline news-title">
-            {{entry.title}}
+            <a href="{{entry.url}}">
+              {{entry.title}}
+            </a>
             <small class="news-date">
               {{ entry.date | date: "%-d %B %Y" }}
             </small>
