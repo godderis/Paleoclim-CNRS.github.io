@@ -100,6 +100,20 @@
     overflow: hidden !important;
     text-overflow: ellipsis;
     -webkit-line-clamp: 3;
+    font-size: $font-size-sm;
+    margin-top: 0.25rem;
+  }
+
+  & .btn {
+    font-size: $font-size-xs;
+    margin-top: 1em;
+  }
+
+  & .news-date {
+    font-size: $font-size-xs;
+    display: block;
+    text-align: end;
+    color: $secondary;
   }
 }
 

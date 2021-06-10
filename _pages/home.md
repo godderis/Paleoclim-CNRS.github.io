@@ -87,6 +87,9 @@ feature_row:
                 <div class="card-block p-1">
                   <div class='card-text'>
                     {{ entry.content }}
+                    <small class="news-date">
+                      {{ entry.date | date: "%-d %B %Y" }}
+                    </small>
                   </div>
                 </div>
               </div>
@@ -113,7 +116,12 @@ feature_row:
       <ul>
       {% for entry in news_items %}
       <li>
-          {{entry.title}}
+          <div class="d-flex flex-row justify-content-between align-items-baseline">
+            {{entry.title}}
+            <small class="news-date">
+              {{ entry.last_modified_at | date: "%-d %B %Y" }}
+            </small>
+          </div>
           <small class="news-content">{{entry.content}}</small>
           {% if entry.link != blank %}
             <a href="{{entry.link | relative_url}}" class='btn btn-outline-info btn-sm'>
