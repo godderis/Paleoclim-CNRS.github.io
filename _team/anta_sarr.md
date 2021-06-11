@@ -8,3 +8,7 @@ header:
     # overlay_color: "#5e616c"
 excerpt: " " # This is to remove the content from the image
 ---
+
+<style> .page { padding-right: 0px; } </style>
+
+<iframe src="https://antac-sarr.github.io" style="width:100%; height:70vh;"></iframe>
