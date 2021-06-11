@@ -2,6 +2,7 @@
 title: Working with PDFs
 author: Wesley
 excerpt: How to embed PDF and how to open them in a new page
+toc: true
 ---
 
 # Embedding PDFs
