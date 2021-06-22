@@ -106,6 +106,6 @@ Alk Supply : 35.141530 Teq/yr
 DIC Supply : 586.800500 TgC/yr
 ```
 
-So it is better to run the simulation for one year only and to adjust concentration if it does not fit. 
+So it is better to run the simulation for one year only and to adjust initial concentration if it does not fit. In this case, after modifying concentrations in PARAM/NAMELIST/namelist_pisces_cfg, change the DateEnd in the config.card and the JobStatus to 'OnQueue' in the run.card and re-submit the Job.
 
 __Nutrient input adapted to climate__
