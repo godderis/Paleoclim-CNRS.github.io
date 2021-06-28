@@ -3,7 +3,7 @@ title: NCO tips
 author: Anta
 toc: true
 toc_sticky: true
-
+excerpt: List of useful tips and tricks for manipulating netcdf files on the command line
 ---
 
 - __Change variables attributes__ 

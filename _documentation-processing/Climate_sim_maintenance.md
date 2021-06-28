@@ -3,6 +3,7 @@ title: Climate Sim Maintenance
 author: Wesley
 toc: true
 toc_sticky: true
+excerpt: General information for working ensuring the climate sim platform is deployed correctly
 ---
 
 # Introduction

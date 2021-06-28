@@ -1,6 +1,7 @@
 ---
 title: JupyterHub
 author: Wesley
+excerpt: General information about the jupyterhub CEREGE deployement
 ---
 
 # Introduction
