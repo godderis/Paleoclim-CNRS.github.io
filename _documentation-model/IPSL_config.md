@@ -11,7 +11,7 @@ Reference paper for the IPSL-CM5A2 model is [Sepulchre et al. 2020](https://gmd.
 
 _Additional documentation on how to download and compile the code can be found [here](https://forge.ipsl.jussieu.fr/igcmg_doc/wiki/DocHconfigAipslcm5a2)_.
 
-_Information provided in the following text is well suited for running simulations on IRENE supercomputer (TGCC). Adaptation might be required to run the code on Jean Zay supercomputer (IDRIS)._
+_Information provided in the following text is well suited for running simulations on IRENE supercomputer (TGCC). Adaptation might be required to run the code on Jean Zay supercomputer (IDRIS) : [here](https://forge.ipsl.jussieu.fr/igcmg_doc/wiki/Doc/ComputingCenters/IDRIS)._
 
 
 _First you have to choose the version of the model you want to install :_
@@ -19,6 +19,21 @@ _First you have to choose the version of the model you want to install :_
 - _Paleo version (PALEORCA)_
 
 _Both can be run without ice, which requires additional changes in the code before compilation_
+
+
+_/!\ Note that in case you want to compile the code on Jean-Zay supercomputer, you cannot compile the code login on your 'normal account'_ : 
+
+```
+_Note that there is a specific front-end to perform compilations tasks. 
+This front-end allows you to compile faster and in one go : 
+default XIOS compilation may crash because of restricted interactive ressources per user on the standard front-end. 
+You can access the compilation front-end by using ssh protocol :
+ssh your_login@jean-zay-pp.idris.fr_
+
+```
+
+__In case compilation failed you can use gmake clean to clean the directory__
+
 
 ## Standard version
 _In case you want to run simulations with a present-day land sea mask_
