@@ -168,6 +168,25 @@ This can be necessary after a power cut for example or if you accidentally remov
         - instance_storage:/usr/src/app/instance
         networks:
         - climsim
+        
+    watchtower-climsim:
+        image: v2tec/watchtower
+        restart: always
+        labels:
+        - "com.centurylinklabs.watchtower.enable=true"
+        environment:
+        - TZ=Europe/Paris
+        - WATCHTOWER_NOTIFICATIONS_LEVEL=info
+        - WATCHTOWER_NOTIFICATIONS=email
+        - WATCHTOWER_NOTIFICATION_EMAIL_FROM=watchtower@osupytheas.fr
+        - WATCHTOWER_NOTIFICATION_EMAIL_TO=banfield@cerege.fr
+        - WATCHTOWER_NOTIFICATION_EMAIL_SERVER=smtp.osupytheas.fr
+        volumes:
+        - /mnt/srvstk0c/SIP/docker/conf/watchtower-wesley/config.json:/config.json
+        - /var/run/docker.sock:/var/run/docker.sock 
+        command: v2tec/watchtower climsim_message_broker_1 climsim_nginx_1 climsim_python_worker_1 climsim_panel_app_1 climsim_flask_app_1 netcdf_editor_app_1 climsim_message_dispatcher_1
+        networks:
+        - climsim
 
     volumes:
     instance_storage:
