@@ -182,7 +182,7 @@ This can be necessary after a power cut for example or if you accidentally remov
         - WATCHTOWER_NOTIFICATION_EMAIL_TO=banfield@cerege.fr
         - WATCHTOWER_NOTIFICATION_EMAIL_SERVER=smtp.osupytheas.fr
         volumes:
-        - /mnt/srvstk0c/SIP/docker/conf/watchtower-wesley/config.json:/config.json
+        - /mnt/srvstk1d/SIP/docker/conf/watchtower-wesley/config.json:/config.json
         - /var/run/docker.sock:/var/run/docker.sock 
         command: v2tec/watchtower climsim_message_broker_1 climsim_nginx_1 climsim_python_worker_1 climsim_panel_app_1 climsim_flask_app_1 netcdf_editor_app_1 climsim_message_dispatcher_1
         networks:
