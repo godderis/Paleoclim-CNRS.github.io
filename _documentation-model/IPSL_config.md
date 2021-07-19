@@ -423,6 +423,9 @@ In most of the case you will only need to create restart for the atmosphere :
   
 # You need to modify the netcdf-hdf5 package otherwise it will not work
 
+  module load netcdf-c/4.3.3.1
+  #module load netcdf/4.3.3.1_hdf5_parallel # Version for XIOS
+  
   bash ./CreateRestartAtm4Oasis.bash Nom_fichier_histmth_last_month.nc
   
   mkdir SimulationName
@@ -435,7 +438,7 @@ You will use the flxat_LMD9695_maskFrom_Unknown.nc file late to setup the couple
 
 #### 1. Generation of simulation directory
 
-- Copy the LMDZOR config.card in the $CCCWORKDIR/MODELE/modipsl/config/IPSLCM5A2 directory (you can also copy it from previous simulation)
+- Copy coupled-model config.card in the $CCCWORKDIR/MODELE/modipsl/config/IPSLCM5A2 directory (you can also copy it from previous coupled simulation)
 - Modify the config.card :
     -	JobName= Name_Experiment [example : CPL-SimulationNAme)]
     -	CalendarType=360d [Choose leap years (leap) or no leap years (noleap) or 360 days-long years (360d = the one we usually use for paleo simulations)]
