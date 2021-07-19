@@ -67,14 +67,6 @@ This can be necessary after a power cut for example or if you accidentally remov
 1. Use your OSU login details.
 1. Click on the `dev` endpoint
     {% include figure image_path="/assets/images/portainer-home.png" alt="Portainer Home" %}
-1. Click on volumes
-    {% include figure image_path="/assets/images/portainer-dev-volumes.png" alt="Portainer Dev Endpoint" %}
-1. If `climsim_instance_storage` exists check it and delete it. 
-    <div class="alert alert-info">
-        <p>
-            Pro Tip: DO NOT DELETE <code class="language-plaintext">INSTANCE STORAGE</code> unless you want to delete the database used by the app
-        </p>
-    </div>
 1. Click on Stacks in the sidebar.
     <figure class style="justify-content: center;">
         <img src="/assets/images/portainer-sidebar.png" style="height: 400px;width: auto;">
@@ -185,3 +177,17 @@ This can be necessary after a power cut for example or if you accidentally remov
   ```
 1. Click Update Stack
     {% include figure image_path="/assets/images/portainer-update-stack.png" alt="Portainer Update Stack" %}
+
+## Volume Failure
+<div class="alert alert-danger">
+Only do this if you get: "Failure volume "instance_storage" ..."
+</div>
+
+1. Navigate to Volumes
+    {% include figure image_path="/assets/images/portainer-dev-volumes.png" alt="Portainer Dev Endpoint" %}
+1. Search through for `climsim_instance_storage` if it exists check it and delete it. 
+    <div class="alert alert-info">
+        <p>
+            Pro Tip: DO NOT DELETE <code class="language-plaintext">INSTANCE STORAGE</code> unless you want to delete the database used by the app
+        </p>
+    </div>
