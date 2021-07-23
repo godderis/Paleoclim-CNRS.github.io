@@ -1,11 +1,13 @@
 main:
-  - title: "Online Resources"
+  - title: "Resources"
     url: /resources
     dropdown:
       - title: "Publications"
         url: "/resources/publications"
       - title: "Presentations"
         url: "/resources/presentations"
+      - title: "Workshops"
+        url: "/resources/workshops"
   - title: "Team"
     url: "/team"
   - title: "Projects"

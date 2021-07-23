@@ -107,3 +107,15 @@ Quentin:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/quentin-pillot-10477012b/"
+
+
+LeHir:
+  name        : "Guillaume LeHir"
+  bio         : >
+    Paleomag specialist
+  avatar      : "http://www.ipgp.fr/sites/all/scripts/ldapjpegphoto.php?email=lehir@ipgp.fr"
+  location    : "Paris, France"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:lehir@ipgp.fr"

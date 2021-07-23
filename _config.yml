@@ -171,6 +171,9 @@ collections:
   presentations:
     output: true
     permalink: /:collection/:path/
+  workshops:
+    output: true
+    permalink: /:collection/:path/
   tools:
     output: true
     permalink: /:collection/:path/
@@ -235,6 +238,16 @@ defaults:
     values:
       layout: single
       read_time: true
+      author_profile: true
+      share: false
+      comments: false
+  # _workshops
+  - scope:
+      path: ""
+      type: workshops
+    values:
+      layout: single
+      read_time: false
       author_profile: true
       share: false
       comments: false
