@@ -119,3 +119,13 @@ LeHir:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:lehir@ipgp.fr"
+
+Anthony:
+  name        : "Anthony Gramoullé"
+  bio         : >
+   Research engineer
+  location    : "Aix en provence, France"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:anthony.gramoulle@outlook.fr"
