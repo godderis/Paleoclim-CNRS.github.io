@@ -645,5 +645,5 @@ __2. (Normal) crash when you launch your 1st simulation ever__
 
 __3. How to generates missing SE
 
-- Well explained [here, point 4.5](https://forge.ipsl.jussieu.fr/igcmg_doc/wiki/Doc/CheckDebug#Restartingtheseasonalmeancalculation)]
+- Well explained [here, point 4.5](https://forge.ipsl.jussieu.fr/igcmg_doc/wiki/Doc/CheckDebug#Restartingtheseasonalmeancalculation)
 
