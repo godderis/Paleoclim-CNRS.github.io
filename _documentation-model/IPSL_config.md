@@ -643,3 +643,7 @@ __2. (Normal) crash when you launch your 1st simulation ever__
 - Check in the Job_SimulationName you did not make any mistake in the path of boundary conditions (in this case the error message is usually : 'xxx.nc does not exist')
 - Useful bash command if grep -ir error . It can help you track 'error' or 'E R R O R' or other key_word that may help you (maybe to find the bug)
 
+__3. How to generates missing SE
+
+- Well explained [here, point 4.5](https://forge.ipsl.jussieu.fr/igcmg_doc/wiki/Doc/CheckDebug#Restartingtheseasonalmeancalculation)]
+
