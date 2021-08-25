@@ -5,6 +5,9 @@ toc: true
 toc_sticky: true
 
 ---
+
+[DISCLAIMER - This (<s> collaborative effort </s>) documentation is under development so there might be small errors/wrong statements within the text. Please contact us via mail or github if you think something is not detailed enough or if one step does not work ]
+
 Reference paper for the IPSL-CM5A2 model is [Sepulchre et al. 2020](https://gmd.copernicus.org/articles/13/3011/2020/gmd-13-3011-2020.html). You will find additional information about each component of the model and appropiate references within this paper as well. 
 
 # Download & Compile the code 
