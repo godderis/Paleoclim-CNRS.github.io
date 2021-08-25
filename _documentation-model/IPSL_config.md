@@ -399,13 +399,13 @@ The CPLRESTART directory should contains 5 files :
    - README.txt
    -	FillOceRestart.py is used to add missing variables in the OASIS restarts 
    - Nemo.py is used with FillOceRestart.py
-   -	CreateRestartOce4Oasis.bash is used to create atmosphee restart for OASIS
-   -	CreateRestartAtm4Oasis.bash is used to create ocean restart for OASIS
+   -	CreateRestartAtm4Oasis.bash is used to create atmosphere restart for OASIS
+   -	CreateRestartOce4Oasis.bash is used to create ocean restart for OASIS
 
 In most of the case you will only need to create restart for the atmosphere : 
  - Copy the histmth.nc file from the corresponding LMDZOR simulation
  - Extract the last month with nco
- - Run the CreateRestartOce4Oasis.bash script
+ - Run the CreateRestartAtm4Oasis.bash script
  - Move the files you generated in a directory spectific to you simulation
 
 ```bash
@@ -421,7 +421,7 @@ In most of the case you will only need to create restart for the atmosphere :
 
   ncks -d time_counter,-1,-1 Nom_fichier_histmth.nc Nom_fichier_histmth_last_month.nc
   
-# You need to modify the netcdf-hdf5 package otherwise it will not work
+# You need to modify the netcdf-hdf5 package otherwise it will not work (careful, this may be depreciated following recent updates on Irene)
 
   module load netcdf-c/4.3.3.1
   #module load netcdf/4.3.3.1_hdf5_parallel # Version for XIOS
