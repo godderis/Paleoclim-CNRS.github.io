@@ -5,6 +5,9 @@ toc: true
 toc_sticky: true
 
 ---
+
+[DISCLAIMER - This (<s> collaborative effort </s>) documentation is under development so there might be small errors/wrong statements within the text. Please contact us via mail or github if you think something is not detailed enough or if one step does not work ]
+
 Reference paper for the IPSL-CM5A2 model is [Sepulchre et al. 2020](https://gmd.copernicus.org/articles/13/3011/2020/gmd-13-3011-2020.html). You will find additional information about each component of the model and appropiate references within this paper as well. 
 
 # Download & Compile the code 
@@ -399,13 +402,13 @@ The CPLRESTART directory should contains 5 files :
    - README.txt
    -	FillOceRestart.py is used to add missing variables in the OASIS restarts 
    - Nemo.py is used with FillOceRestart.py
-   -	CreateRestartOce4Oasis.bash is used to create atmosphee restart for OASIS
-   -	CreateRestartAtm4Oasis.bash is used to create ocean restart for OASIS
+   -	CreateRestartAtm4Oasis.bash is used to create atmosphere restart for OASIS
+   -	CreateRestartOce4Oasis.bash is used to create ocean restart for OASIS
 
 In most of the case you will only need to create restart for the atmosphere : 
  - Copy the histmth.nc file from the corresponding LMDZOR simulation
  - Extract the last month with nco
- - Run the CreateRestartOce4Oasis.bash script
+ - Run the CreateRestartAtm4Oasis.bash script
  - Move the files you generated in a directory spectific to you simulation
 
 ```bash
@@ -421,7 +424,7 @@ In most of the case you will only need to create restart for the atmosphere :
 
   ncks -d time_counter,-1,-1 Nom_fichier_histmth.nc Nom_fichier_histmth_last_month.nc
   
-# You need to modify the netcdf-hdf5 package otherwise it will not work
+# You need to modify the netcdf-hdf5 package otherwise it will not work (careful, this may be depreciated following recent updates on Irene)
 
   module load netcdf-c/4.3.3.1
   #module load netcdf/4.3.3.1_hdf5_parallel # Version for XIOS
@@ -642,4 +645,8 @@ __2. (Normal) crash when you launch your 1st simulation ever__
 
 - Check in the Job_SimulationName you did not make any mistake in the path of boundary conditions (in this case the error message is usually : 'xxx.nc does not exist')
 - Useful bash command if grep -ir error . It can help you track 'error' or 'E R R O R' or other key_word that may help you (maybe to find the bug)
+
+__3. How to generates missing SE__
+
+- Well explained <a href="https://forge.ipsl.jussieu.fr/igcmg_doc/wiki/Doc/CheckDebug#Restartingtheseasonalmeancalculation" target="_blank">here</a> (point 4.5)
 
