@@ -9,11 +9,9 @@ toc: true
 
 To have access to modelserver you need to connect via ssh with port forwarding (using Rubicon as gateway server).
 
-__Requirement__ <br>You need an __OSU Pytheas account__ in order to be able to connect to Rubicon and Modelserver
+__Requirements__<br><br>You need an __OSU Pytheas account__ in order to be able to connect to Rubicon and Modelserver.<br><br>Make sure you already have generated an __ssh key pair__ located in `~/.ssh/`. If not check this [doc](https://cerege-cl.github.io/documentation-website/ssh/#setup) to create one.
 {: .notice--info}
 
-__SSH key__ <br>Make sure you already have generated an ssh key pair located in `~/.ssh/`. If not check this [doc](https://cerege-cl.github.io/documentation-website/ssh/#setup) to create one.
-{: .notice--info}
 
 # Set up the SSH config file
 *If you want more informations about what is done in this step check out this [doc](https://cerege-cl.github.io/documentation-website/ssh/#ssh-config).*
@@ -23,7 +21,7 @@ If the `~/.ssh/config` doesn't exist you have to create one and add the [default
 Once it is done, append to this file:
 ```
 Host rubicon
-  Hostname rubicon
+  Hostname rubicon.cerege.fr
   User [OSU_PYTHEAS_USERNAME]
 
 Host modelserver
@@ -52,22 +50,12 @@ In order to get access to modelserver without having to write your password each
 
 To do this, enter the command lines below:
 
-* Copy SSH key on your local computer to rubicon's `authorized_keys` file:
+* Copy your local computer's SSH key to Rubicon's `authorized_keys` file:
 ``` 
-ssh-copy-id [OSU_PYTHEAS_USERNAME]@modelserver
+ssh-copy-id [OSU_PYTHEAS_USERNAME]@rubicon.cerege.fr
 ```
 
-* Copy SSH key on your local computer to modelserver's `authorized_keys` file:
+* Copy your local computer's SSH key to Modelserver's `authorized_keys` file:
 ```
-ssh-copy-id -o ProxyJump=[OSU_PYTHEAS_USERNAME]@rubicon [OSU_PYTHEAS_USERNAME]@modelserver.cerege.fr
-```
-
-* Connect to rubicon via SSH: 
-```
-ssh rubicon
-```
-
-* Copy SSH key from rubicon to modelserver's `authorized_keys` file:
-```
-ssh-copy-id [OSU_PYTHEAS_USERNAME]@modelserver
+ssh-copy-id -o ProxyJump=[OSU_PYTHEAS_USERNAME]@rubicon.cerege.fr [OSU_PYTHEAS_USERNAME]@modelserver.cerege.fr
 ```
