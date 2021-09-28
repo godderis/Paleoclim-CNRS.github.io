@@ -129,23 +129,3 @@ Anthony:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:anthony.gramoulle@outlook.fr"
-      
- Marie:
-  name        : "Marie Laugie"
-  bio         : >
-    PostDoc interested in sedimentology & paleoclimate interactions. Earth System Modeling. Cretaceous.
-  avatar      : "/assets/images/image001.png"
-  location    : "Pau / Aix-en-Provence, France"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:laugie@cerege.fr"
-    - label: "Google Scholar"
-      icon: "fas fa-fw fa-graduation-cap"
-      url: "https://scholar.google.com/citations?user=TXUSACcAAAAJ&hl=fr"
-    - label: "Researchgate"
-      icon: "fab fa-researchgate"
-      url: "https://www.researchgate.net/profile/Marie-Laugie"
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/marie-laugi%C3%A9-62119352/"
