@@ -147,3 +147,6 @@ Marie:
     - label: "Researchgate"
       icon: "fab fa-researchgate"
       url: "https://www.researchgate.net/profile/Marie-Laugie"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/marie-laugie"
