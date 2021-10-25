@@ -1,5 +1,5 @@
 ---
-title: Available Online Demo of the IPSL Boundary Coondtions Editor by W. Banfield
+title: Available Online Demo of the IPSL Boundary Conditions Editor by W. Banfield
 link: https://cerege-cl.github.io/netcdf_editor_app/multi#installation
 ---
 
