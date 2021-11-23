@@ -123,12 +123,16 @@ LeHir:
 Anthony:
   name        : "Anthony Gramoullé"
   bio         : >
-   Research engineer
+    Engineer working on data processing and web developments to assist the research and modeling activities of the team.
+  avatar      : "/assets/images/anthonygr_photo.jpeg"
   location    : "Aix en provence, France"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:anthony.gramoulle@outlook.fr"
+      url: "mailto:gramoulle@cerege.fr"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Anthogr"
 
 Marie:
   name        : "Marie Laugie"
