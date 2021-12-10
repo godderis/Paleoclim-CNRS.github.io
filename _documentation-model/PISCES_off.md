@@ -22,7 +22,7 @@ svn co http://forge.ipsl.jussieu.fr/igcmg/svn/modipsl/trunk modipsl
 
 # Download PISCES
 cd modipsl/util
-./model NEMO_v6_OMIP 
+./model NEMO_v6.1
 
 # Compile XIOS (on Irene)
 cd ../modeles/XIOS
