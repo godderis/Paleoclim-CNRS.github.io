@@ -24,6 +24,8 @@ svn co http://forge.ipsl.jussieu.fr/igcmg/svn/modipsl/trunk modipsl
 cd modipsl/util
 ./model NEMO_v6.1
 
+# if NEMO version do not exists use ./model -h to check the existing version
+
 # Compile XIOS (on Irene)
 cd ../modeles/XIOS
 ./make_xios --arch X64_IRENE --full --prod --job 8
