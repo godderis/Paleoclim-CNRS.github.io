@@ -52,7 +52,7 @@ cd PALEOPISCES/modipsl/modeles/NEMOGCM/CONFIG/
 ./makenemo -n ORCA2_OFF_PISCES -m X64_IRENE -j 8
 
 #Executable
-cp PALEOPISCES/modipsl/modeles/NEMOGCM/CONFIG/ORCA2_OFF_PISCES/BLD/bin/nemo.exe   PI-SCES/modipsl/bin/orca2offpisces.exe
+cp PALEOPISCES/modipsl/modeles/NEMOGCM/CONFIG/ORCA2_OFF_PISCES/BLD/bin/nemo.exe  PALEOPISCES/modipsl/bin/orca2offpisces.exe
 
 ```
 
