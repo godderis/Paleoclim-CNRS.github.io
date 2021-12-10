@@ -55,6 +55,29 @@ cd PALEOPISCES/modipsl/modeles/NEMOGCM/CONFIG/
 cp PALEOPISCES/modipsl/modeles/NEMOGCM/CONFIG/ORCA2_OFF_PISCES/BLD/bin/nemo.exe  PALEOPISCES/modipsl/bin/orca2offpisces.exe
 
 ```
+# Create a coastal mask 
+
+-	Copy bathymetry file from coupled simulation (PALEORCA file) 
+-	in BC_PISCES-OFFLINE copy the create_coastline.f90 script
+-	Into the script you need to modify input and output file
+-	Compile and execute
+
+
+```bash
+cd BC_PISCES_OFFLINE
+
+cp bathy_paleorca_from_my_coupled_simulation.nc .
+
+cp /ccc/work/cont003/gen2212/MARIE_LOGIN/BC_PISCES_OFFLINE/COASTLINE/create_coastline.f90
+
+vi create_coastline.f90
+# Need to modify lines 30,34,67
+
+ifort -o "createcoast" $NETCDFFORTRAN_LDFLAGS $NETCDFC_LDFLAGS $NETCDFFORTRAN_FFLAGS $NETCDFC_CFLAGS create_coastline.f90
+
+./createcoast
+
+```
 
 # Launch a new simulation
 
