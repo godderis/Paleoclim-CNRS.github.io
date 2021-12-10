@@ -31,10 +31,10 @@ cd ../modeles/XIOS
 ./make_xios --arch X64_IRENE --full --prod --job 8
 
 # ARCH file / key_xios
-cp $WORKDIR/IPSLCM5A2/modipsl/modeles/NEMOGCM/ARCH/arch-X64_IRENE.fcm $WORK-DIR/PALEOPISCES/modipsl/modeles/NEMOGCM/ARCH/.
+cp YOUR_WORKDIR/IPSLCM5A2/modipsl/modeles/NEMOGCM/ARCH/arch-X64_IRENE.fcm YOUR_WORKDIR/PALEOPISCES/modipsl/modeles/NEMOGCM/ARCH/.
 
 vi PALEOPISCES/modipsl/modeles/NEMOGCM/CONFIG/ORCA2_OFF_PISCES/cpp_ORCA2_OFF_PISCES.fcm
-- add key_xios2
+- add key_xios2 to the list
 
 
 ```
@@ -43,6 +43,10 @@ vi PALEOPISCES/modipsl/modeles/NEMOGCM/CONFIG/ORCA2_OFF_PISCES/cpp_ORCA2_OFF_PIS
 - Compile Nemo 
 
 ```bash
+# Add modified source_file for PISCES 
+mkdir YOUR_WORKDIR/PALEOPISCES/modipsl/modeles/NEMOGCM/CONFIG/ORCA2_OFF_PISCES/MY_SRC
+cp MODIFIED_FILE_PATH YOUR_WORKDIR/PALEOPISCES/modipsl/modeles/NEMOGCM/CONFIG/ORCA2_OFF_PISCES/MY_SRC/.
+
 # Compile  NEMO
 cd PALEOPISCES/modipsl/modeles/NEMOGCM/CONFIG/
 ./makenemo -n ORCA2_OFF_PISCES -m X64_IRENE -j 8
