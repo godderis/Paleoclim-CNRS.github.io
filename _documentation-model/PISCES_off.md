@@ -12,6 +12,44 @@ Reference paper for the PISCES model is [Aumont et al. 2015](https://gmd.coperni
 - In the $CCCWORKDIR directory, create a new PALEO-PISCES directory
 - In PALEO-PISCES directory, do a svn to load the required files from the server
 
+```bash
+#Download Modipsl
+cd $CCCWORKDIR
+mkdir PALEOPISCES
+cd PALEOPISCES
+
+svn co http://forge.ipsl.jussieu.fr/igcmg/svn/modipsl/trunk modipsl
+
+# Download PISCES
+cd modipsl/util
+./model NEMO_v6_OMIP 
+
+# Compile XIOS (on Irene)
+cd ../modeles/XIOS
+./make_xios --arch X64_IRENE --full --prod --job 8
+
+# ARCH file / key_xios
+cp $WORKDIR/IPSLCM5A2/modipsl/modeles/NEMOGCM/ARCH/arch-X64_IRENE.fcm $WORK-DIR/PALEOPISCES/modipsl/modeles/NEMOGCM/ARCH/.
+
+vi PALEOPISCES/modipsl/modeles/NEMOGCM/CONFIG/ORCA2_OFF_PISCES/cpp_ORCA2_OFF_PISCES.fcm
+- add key_xios2
+
+
+```
+
+- Modify PISCES source code to have the updates about nutrient input
+- Compile Nemo 
+
+```bash
+# Compile  NEMO
+cd PALEOPISCES/modipsl/modeles/NEMOGCM/CONFIG/
+./makenemo -n ORCA2_OFF_PISCES -m X64_IRENE -j 8
+
+#Executable
+cp PALEOPISCES/modipsl/modeles/NEMOGCM/CONFIG/ORCA2_OFF_PISCES/BLD/bin/nemo.exe   PI-SCES/modipsl/bin/orca2offpisces.exe
+
+```
+
 # Launch a new simulation
 
 ## Get the boundary conditions files from the coupled simulation
