@@ -90,7 +90,10 @@ In file PARAM/file_def_nemo-opa.xml :
  
 ```
 ## Create initial files for MBG component
-- from ptrc.nc file 
+- You need to have the ptrc.nc file of the coupled simulation
+- copy the ScaleNutrients.ksh script from /ccc/work/cont003/gen2212/MARIE_LOGIN/BC_PISCES_OFFLINE/ directory
+- in ScaleNutrients.ksh change the simulation attributes. In case you want to run a simulation with modern total amount of nutrient you do not need to modify other stuffs
+- Run the script
 
 ## Create a coastal mask 
 
