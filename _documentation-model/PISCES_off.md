@@ -89,11 +89,27 @@ In file PARAM/file_def_nemo-opa.xml :
  <field field_ref="wocetr_eff"   name="wocetr_eff"  /> (l.265)
  
 ```
-## Create initial files for MBG component
+
+## Generate initial state for MBG/ component
+
 - You need to have the ptrc.nc file of the coupled simulation
-- copy the ScaleNutrients.ksh script from /ccc/work/cont003/gen2212/MARIE_LOGIN/BC_PISCES_OFFLINE/ directory
-- in ScaleNutrients.ksh change the simulation attributes. In case you want to run a simulation with modern total amount of nutrient you do not need to modify other stuffs
-- Run the script
+- To generate initial state for the ocean-biogeochmistry use the script ScaleNutrient.ksh 
+
+```bash
+cp /ccc/work/cont003/gen2212/MARIE_LOGIN/BC_PISCES_OFFLINE/ScaleNutrients.ksh  .
+
+vi ScaleNutrients.ksh 
+# you need to change file paths at least
+
+```
+__Total nutrient input similar to present-day__
+
+In this case you just need to extract value from the ptrc.nc file and to scale the O2 variable to have the right unit.
+
+__Nutrient input adapted to climate__
+
+In this case you have, in addition, to be sure that each file has been scaled by the factor you calculated from the runoff of the coupled simulation. 
+
 
 ## Create a coastal mask 
 
@@ -153,19 +169,6 @@ This scaling factor is used to scale damping value (l.81-84)
 
 
 as well as to modifiy initial state for the MBG/ component as explained below
-
-
-## Generate initial state for MBG/ component
-
-- To generate initial state for the ocean-biogeochmistry use the script ScaleNutrient.ksh 
-
-__Total nutrient input similar to present-day__
-
-In this case you just need to extract value from the ptrc.nc file and to scale the O2 variable to have the right unit.
-
-__Nutrient input adapted to climate__
-
-In this case you have, in addition, to be sure that each file has been scaled by the factor you calculated from the runoff of the coupled simulation. 
 
 ## Define value of nutrient concentration
 
