@@ -27,7 +27,7 @@ Depending on the options enabled:
 - Enter your `[ProfileName]` as requested:
     - if `[ProfileName]` is not known: a file `[ProfileName]_profile.py` will be created here `userData/[ProfileName]/` and the program will stop. 
     At this point, you will need to edit the `[ProfileName]_profile.py` file  according to your needs and relaunch the program.
-    An exemple can be found in `userData/EXEMPLE/EXEMPLE_profile.py`.
+    An example can be found in `userData/EXAMPLE/EXAMPLE_profile.py`.
     - if `[ProfileName]` is known: program will run following the settings of the `userData/[ProfileName]/[ProfileName]_profile.py` file.
 
     Note that the variables in `[ProfileName]_profile.py` file:
