@@ -8,6 +8,7 @@ toc: true
 ---
 # Overview
 
+### GitHub Pages
 This website is hosted using [GitHub Pages](https://pages.github.com/). GitHub Pages allows users and/or organisations to host websites for them. The code for this website is open-source meaning anyone can see it, adapt it and recopy it to use for another website.
 
 GitHub pages can render static websites but it can also be used with other tools like [Jekyll](https://jekyllrb.com/) a tool to create websites from simple markdown and html files, this is what we have chosen to use.
@@ -15,26 +16,13 @@ GitHub pages can render static websites but it can also be used with other tools
 To make the blog more appealing a certain amount of [preconfigured themes](https://github.com/topics/jekyll-theme) are availible. After looking through a few I decided to go with [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes). Using a theme allows us to save a lot of time with some of the nitty gritty parts but being open source it also means we cna change parts of theme as we want.
 
 ### GitHub
-
 GitHub is the defacto code storage solution used for opensource projects. It works with a command line tool called `git` which version controls files (and folders).
 
 As the code is hosted on GitHub I recommend you create a new github account, you can sign up [here](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home).
 
 ---
 # Set up environment to contribute to the website
-### 1) Cloning the repository
-
-To modify some parts of the website you will need to go through few steps.
-
-Once you have your github account open a terminal and type:
-
-```
-git clone https://github.com/CEREGE-CL/CEREGE-CL.github.io.git
-```
-
-This sets up the repository, meaning it clones the latest version (at the time of execution) from the server to your machine.
-
-### 2) GitHub config to be able to push changes to the distant repository
+### 1) GitHub configuration to be able to push changes to the distant repository
 
 In order to be able to push your local changes to the distant repository, you will need to satisfy two conditions:
 -  Having write access on GitHub (check your GitHub account is registered [here](https://github.com/CEREGE-CL/CEREGE-CL.github.io/people))
@@ -54,6 +42,18 @@ In order to be able to push your local changes to the distant repository, you wi
    
    - Paste the content of the `~/.ssh/id_ed25519.pub` into `Key` window
 
+### 2) Cloning the repository
+
+To modify some parts of the website you will need to go through few steps.
+
+Once you have your github account open a terminal and type:
+
+```
+git clone https://github.com/CEREGE-CL/CEREGE-CL.github.io.git
+```
+
+This sets up the repository, meaning it clones the latest version (at the time of execution) from the server to your machine.
+
 ### 3) Editing files
 
 Before editing files it is good practice to ensure you have the latest version (if you havent worked on the project in a while other collaborators could have written something / modified a file you are going to work on). 
@@ -69,7 +69,7 @@ You can now edit your files as you wish.
 
 ### 4) Viewing changes locally before pushing
 
-It is possible to _test_ your work before deploying to the server.
+It is important to test your work before deploying it to the server.
 
 Full documentaiton can be found [here](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll)
 
