@@ -5,8 +5,8 @@ read_time: false
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mm-home-page-feature.jpg
-excerpt: >
-  Meet the team<br />
+excerpt: <h2><FONT color="#ffffff">Team</FONT></h2>
+
 ---
 
 {% assign fellow = site.team | where: "type", "fellow" %}
