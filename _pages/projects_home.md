@@ -6,8 +6,8 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mm-home-page-feature.jpg
 title: Projects
-excerpt: >
-  This is where you can find all the cool stuff we are working on, have worked on and will hopefully be working on!   
+excerpt: <h2><FONT color="#ffffff">Projects</FONT></h2>
+
 ---
 {% assign old_projects = site.projects | where: "type", "old" %}
 {% assign current_projects = site.projects | where_exp: "proj", "proj.type == 'current'" | sort: 'year_start' | reverse%}
