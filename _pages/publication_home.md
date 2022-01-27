@@ -1,6 +1,7 @@
 ---
 permalink: /resources/publications
-layout: collection
-collection: publications
+layout: archive
 author_profile: false
 ---
+
+Blabla
