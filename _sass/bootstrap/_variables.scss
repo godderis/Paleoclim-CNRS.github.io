@@ -420,7 +420,7 @@ $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 // // $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
 // // $font-size-base effects the font size of the body text
 // $font-size-root:              null !default;
-$font-size-base:              0.5rem; // Assumes the browser default, typically `16px`
+$font-size-base:              1.0rem; // Assumes the browser default, typically `16px`
 $font-size-xs:                $font-size-base * 0.6;
 $font-size-sm:                $font-size-base * 0.8;
 $font-size-lg:                $font-size-base * 1.0;
@@ -1085,11 +1085,11 @@ $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y / 2 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
-$card-cap-bg:                       $gray-400;
-$card-cap-color:                    $gray-400;
+$card-cap-bg:                       $gray-550;
+$card-cap-color:                    $gray-550;
 $card-height:                       null !default;
-$card-color:                        $gray-400;
-$card-bg:                           $gray-500;
+$card-color:                        $gray-550;
+$card-bg:                           $gray-400;
 $card-img-overlay-padding:          $spacer !default;
 $card-group-margin:                 $grid-gutter-width / 2 !default;
 // scss-docs-end card-variables
