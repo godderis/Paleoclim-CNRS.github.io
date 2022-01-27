@@ -5,7 +5,6 @@ read_time: false
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mm-home-page-feature.jpg
-title: "Current Opportunities"
 excerpt: <h2><FONT color="#ffffff">Opportunities</FONT></h2>
 
 ---
