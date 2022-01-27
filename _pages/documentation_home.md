@@ -8,7 +8,7 @@ header:
   # actions:
   #   - label: "<i class='fas fa-download'></i> Install now"
   #     url: "/docs/quick-start-guide/"
-excerpt: <h2><FONT color="#ffffff">This is where you are going to find all of our know-how</FONT></h2>
+excerpt: <h2><FONT color="#ffffff">Documentation</FONT></h2>
 
 feature_rowl1:
   - image_path: /assets/images/mm-responsive-feature.png
