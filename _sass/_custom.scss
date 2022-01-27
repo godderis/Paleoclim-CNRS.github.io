@@ -27,7 +27,7 @@
   & .card {
     flex: 1 1 33%;
     margin: 5px 5px;
-    max-width: 450px;
+    max-width: 300px;
     min-width: 300px;
   }
 
@@ -40,10 +40,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: calc(110px + 5rem);
+  height: calc(110px + 7rem);
   justify-content: space-between;
 
-  & h2 {
+  & h3 {
     text-align: center;
   }
 
