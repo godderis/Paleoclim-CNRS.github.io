@@ -159,9 +159,6 @@ collections:
   opportunities:
     output: true
     permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
   presentations:
     output: true
     permalink: /:collection/:path/
@@ -211,16 +208,6 @@ defaults:
       type: projects
     values:
       layout: project
-      read_time: true
-      author_profile: true
-      share: false
-      comments: false
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
       read_time: true
       author_profile: true
       share: false
