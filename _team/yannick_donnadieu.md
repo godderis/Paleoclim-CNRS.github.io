@@ -1,6 +1,6 @@
 ---
 author: Yannick
-position: Head of the group
+position: CNRS
 type: perm
 title: " "
 header:
