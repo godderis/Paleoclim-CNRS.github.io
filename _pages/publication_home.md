@@ -8,8 +8,6 @@ header:
 excerpt: <h2><FONT color="#ffffff">Publications</FONT></h2>
 
 ---
-
-<font size="-4">
   
 ##### `2021`
 
@@ -27,5 +25,3 @@ __[18]__ Zacaï, A., Monnet, C.,  __Pohl, A.__, Beaugrand, G., Mullins, G., Kroe
 __[17]__ Frau, C., Wimbledon, W.A.P., Ifrim, C., Bulot, L.G., __Pohl, A.__, 2021. Berriasian ammonites of supposed Tethyan origin from the type ‘Ryazanian’, Russia: a systematic re-interpretation. Paleoworld, v. 30(3), p. 515-537. doi: 10.1016/j.palwor.2020.07.004. [[link](https://www.sciencedirect.com/science/article/abs/pii/S1871174X20300585){:target="_blank"}]
 
 ##### `2020`
-
-</font>
