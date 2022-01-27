@@ -1,15 +1,15 @@
 ---
 layout: splash
 permalink: /
-hidden: true
+hidden: false
 header:
-  overlay_color: "#5e616c"
+  overlay_color: "#grey-100"
   overlay_image: /assets/images/mm-home-page-feature.jpg
   # actions:
   #   - label: "<i class='fas fa-download'></i> Install now"
   #     url: "/docs/quick-start-guide/"
 excerpt: >
-  Home of the CEREGE paleoclimate modelling group<br />
+  Home of the French Earth System modeling group<br />
 ---
 
 {% assign news_items = site.news | sort: "date" | reverse %}
