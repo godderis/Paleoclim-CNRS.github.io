@@ -1,7 +1,6 @@
 ---
 layout: splash
-permalink: /Home
-hidden: false
+permalink: /home
 header:
   overlay_color: "#white"
   overlay_image: /assets/images/mm-home-page-feature.jpg
