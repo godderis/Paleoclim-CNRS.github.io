@@ -68,7 +68,7 @@ $colors: (
 
 // scss-docs-start theme-color-variables
 $primary:       $blue !default;
-$secondary:     $gray-200 !default;
+$secondary:     $gray-200;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -421,9 +421,9 @@ $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 // // $font-size-base effects the font size of the body text
 // $font-size-root:              null !default;
 $font-size-base:              .75rem; // Assumes the browser default, typically `16px`
-$font-size-xs:                $font-size-base * .6 !default;
-$font-size-sm:                $font-size-base * .875 !default;
-$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-xs:                $font-size-base * .6;
+$font-size-sm:                $font-size-base * .875;
+$font-size-lg:                $font-size-base * 1.25;
 
 // $font-weight-lighter:         lighter !default;
 // $font-weight-light:           300 !default;
