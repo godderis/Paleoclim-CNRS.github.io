@@ -420,10 +420,10 @@ $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 // // $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
 // // $font-size-base effects the font size of the body text
 // $font-size-root:              null !default;
-$font-size-base:              0.5rem; // Assumes the browser default, typically `16px`
+$font-size-base:              1.0rem; // Assumes the browser default, typically `16px`
 $font-size-xs:                $font-size-base * 0.5;
-$font-size-sm:                $font-size-base * 0.5;
-$font-size-lg:                $font-size-base * 0.5;
+$font-size-sm:                $font-size-base * 0.75;
+$font-size-lg:                $font-size-base * 1.0;
 
 // $font-weight-lighter:         lighter !default;
 // $font-weight-light:           300 !default;
