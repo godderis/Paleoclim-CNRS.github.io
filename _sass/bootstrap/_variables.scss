@@ -1088,8 +1088,8 @@ $card-cap-padding-x:                $card-spacer-x !default;
 $card-cap-bg:                       $gray-400;
 $card-cap-color:                    $gray-300;
 $card-height:                       null !default;
-$card-color:                        null !default;
-$card-bg:                           $gray-200;
+$card-color:                        $gray-300;
+$card-bg:                           $gray-400;
 $card-img-overlay-padding:          $spacer !default;
 $card-group-margin:                 $grid-gutter-width / 2 !default;
 // scss-docs-end card-variables
