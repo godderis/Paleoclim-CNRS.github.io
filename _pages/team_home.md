@@ -9,6 +9,8 @@ excerpt: <h2><FONT color="#ffffff">Team</FONT></h2>
 
 ---
 
+We are a community of deep-time climate modelers working in various research labs in France.
+
 {% assign fellow = site.team | where: "type", "fellow" %}
 {% assign perm = site.team | where: "type", "perm" %}
 {% assign phd = site.team | where: "type", "phd" %}
