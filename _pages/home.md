@@ -1,13 +1,13 @@
 ---
 layout: splash
-permalink: /home
+hidden: true
 header:
   overlay_color: "#white"
   overlay_image: /assets/images/mm-home-page-feature.jpg
   # actions:
   #   - label: "<i class='fas fa-download'></i> Install now"
   #     url: "/docs/quick-start-guide/"
-excerpt: <FONT color="#ff0000">Home of the French Earth System modeling group</FONT>
+excerpt: <FONT color="#ffffff">Home of the French Earth System modeling group</FONT>
 ---
 
 {% assign news_items = site.news | sort: "date" | reverse %}
