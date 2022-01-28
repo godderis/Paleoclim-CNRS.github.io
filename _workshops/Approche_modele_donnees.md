@@ -4,7 +4,6 @@ title: "Le développement de l’approche modèle-données"
 year_start: 2022
 type: upcomping
 description: "To be done"
-layout: workshop
 url: http://www.ipgp.fr/fr
 ---
 
