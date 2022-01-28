@@ -1,7 +1,7 @@
 ---
 author: Wesley
 classes: wide
-title: dummy reveal presentation
+title: Wesley's video
 ---
 
-<iframe src='https://wesleythegeolien.github.io/revealjs_single_file/index.html#/' style='width:100%; height:50vh'></iframe>
+<iframe src='https://cerege-cl.github.io/netcdf_editor_app/multi#installation' style='width:100%; height:50vh'></iframe>
