@@ -21,7 +21,7 @@ feature_rowl1:
     btn_class: "btn--primary"
 
 feature_rowr1:
-  - image_path: /assets/images/mm-responsive-feature.png
+  - image_path: /assets/images/coding-on-laptop.jpg
     alt: "Processing Toolkit"
     title: "Processing Toolkit"
     excerpt: >
