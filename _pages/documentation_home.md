@@ -31,7 +31,7 @@ feature_rowr1:
     btn_class: "btn--primary"
 
 feature_rowl2:
-  - image_path: /assets/images/mm-responsive-feature.png
+  - image_path: /assets/images/flow-chart-presentation.jpg
     alt: "Website Toolkit"
     title: "Website Toolkit"
     excerpt: >
