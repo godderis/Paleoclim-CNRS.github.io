@@ -1,6 +1,6 @@
 ---
 author:
-    name: Alexandre Pohl
+    name: apohl
     avatar: "/assets/images/apohl.jpg"
 position: CNRS 
 type: perm
