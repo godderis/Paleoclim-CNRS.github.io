@@ -1,13 +1,12 @@
 ---
-author: LeHir
-title: Le développement de l’approche modèle-données
-excerpt: "comment mieux comprendre la variabilité des changements environnementaux"
-header:
-    overlay_image: "/assets/images/background_wesley_banfield.jpeg"
-
-toc: true
-toc_sticky: true
+acronyme: Le développement de l’approche modèle-données
+title: "Le développement de l’approche modèle-données"
+year_start: 2022
+type: upcomping
+description: "To be done"
+layout: workshop
 ---
+
 # Ou
 
 Paris, Institut de Physique du Globe de Paris (http://www.ipgp.fr/fr). Cette conférence aura lieu en présentiel.
