@@ -22,10 +22,10 @@ excerpt: <h2><FONT color="#ffffff">Workshops</FONT></h2>
     </div>
     <div class='card-body'>
     <p>
-      <b>Date: </b>{{ workshop.date }}
+      <b>When: </b>{{ workshop.date }}
     </p>
     <p>
-      <b>Title: </b>{{ workshop.title }}
+      <b>Where: </b>{{ workshop.location }}
     </p>
     </div>
   </div>
