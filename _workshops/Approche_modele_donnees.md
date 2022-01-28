@@ -1,10 +1,7 @@
 ---
-acronyme: Le développement de l’approche modèle-données
 title: "Le développement de l’approche modèle-données"
 year_start: 2022
 type: upcoming
-description: "To be done"
-url: http://www.ipgp.fr/fr
 ---
 
 # Ou
