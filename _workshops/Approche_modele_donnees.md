@@ -2,6 +2,7 @@
 author: lehir
 title: "Le développement de l’approche modèle-données"
 date: "March 2022"
+location: IPGP, Paris, France
 type: upcoming
 ---
 
