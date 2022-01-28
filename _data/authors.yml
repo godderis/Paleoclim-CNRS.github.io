@@ -159,7 +159,8 @@ apohl:
   name        : "Alexandre Pohl"
   bio         : >
     CNRS researcher interested in Early Paleozoic climate and biosphere
-  avatar      : "Dijon, France"
+  avatar      : "/assets/images/apohl.jpg"
+  location    : "Dijon, France"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
