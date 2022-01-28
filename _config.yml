@@ -11,11 +11,11 @@ minimal_mistakes_skin    : "air" #"default" # "air", "aqua", "contrast", "dark",
 
 # Site Settings
 locale                   : "en-US"
-title                    : "French Earth System Modeling Group"
+title                    : "French Paleoclimate Modeling Group"
 title_separator          : "-"
 subtitle                 : "Paleoclim-CNRS"
-name                     : &name "French Earth System Modeling Group" # &name is a YAML anchor which can be *referenced later
-description              : &description "Homepage for the French Earth System modeling group"
+name                     : &name "French Paleoclimate Modeling Group" # &name is a YAML anchor which can be *referenced later
+description              : &description "Homepage for the French Paleoclimate modeling group"
 url                      : https://CEREGE-CL.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "CEREGE-CL/CEREGE-CL.github.io"
