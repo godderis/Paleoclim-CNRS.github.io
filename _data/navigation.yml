@@ -1,4 +1,8 @@
 main:
+  - title: "Team"
+    url: "/team"
+  - title: "Workshops"
+    url: "/workshops"
   - title: "Resources"
     url: /resources
     dropdown:
@@ -6,10 +10,6 @@ main:
         url: "/resources/publications"
       - title: "Presentations"
         url: "/resources/presentations"
-      - title: "Workshops"
-        url: "/resources/workshops"
-  - title: "Team"
-    url: "/team"
   - title: "Projects"
     url: "/projects"
   - title: "Opportunities"
