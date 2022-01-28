@@ -154,3 +154,25 @@ Marie:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/marie-laugie"
+      
+Alexandre Pohl:
+  name        : "Alexandre Pohl"
+  bio         : >
+    CNRS researcher interested in Early Paleozoic climate and biosphere
+  avatar      : "Dijon, France"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:alexandre.pohl@u-bourgogne.fr"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://alexpohl.github.io/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/alexpohl"
+    - label: "Researchgate"
+      icon: "fab fa-researchgate"
+      url: "https://www.researchgate.net/profile/Alexandre-Pohl"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=yJqxHr0AAAAJ&hl=en"
