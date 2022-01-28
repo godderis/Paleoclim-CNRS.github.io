@@ -5,7 +5,7 @@ read_time: false
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mm-home-page-feature.jpg
-title: <FONT color="#ffffff">Team</FONT>
+excerpt: <h2><FONT color="#ffffff">Team</FONT></h2>
 
 ---
 
