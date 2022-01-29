@@ -27,7 +27,7 @@ We are a community of deep-time climate modelers working in various research lab
 
     <div class='card'>
       {% assign author = site.data.authors[member.author] | default: member.author %}
-      <div style='overflow:auto' class="card-header team-card-header">
+      <div style='overflow:hidden' class="card-header team-card-header">
         {% if author.avatar %}
         <div class="author__avatar">
           <a href="{{ member.url | relative_url }}">
