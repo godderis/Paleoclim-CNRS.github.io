@@ -54,7 +54,11 @@ excerpt: <h2><FONT color="#ffffff">Workshops</FONT></h2>
   <div class='card'>
     <div class='card-header'>
       <a href="{{ workshop.url }}">
-        {{ workshop.title }}
+        <center>
+        <strong>
+          {{ workshop.title }}
+        </center>
+        </strong>
       </a>
     </div>
   </div>
