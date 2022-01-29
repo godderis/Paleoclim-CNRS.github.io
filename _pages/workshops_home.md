@@ -23,6 +23,7 @@ excerpt: <h2><FONT color="#ffffff">Workshops</FONT></h2>
             <img src="{{ workshop.image | relative_url }}" alt="{{ workshop.image }}" itemprop="image">
           </a>
         </div>
+       {% endif %}
   
       <a href="{{ workshop.url }}">
         {{ workshop.title }}
