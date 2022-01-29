@@ -17,6 +17,15 @@ excerpt: <h2><FONT color="#ffffff">Projects</FONT></h2>
 {% for project in current_projects %}
 <div class='card'>
   <div class='card-header'>
+    
+      {% if project.image %}
+        <div class="project__image">
+          <a href="{{ project.url | relative_url }}">
+            <img src="{{ project.image | relative_url }}" alt="{{ project.image }}" itemprop="image">
+          </a>
+        </div>
+      {% endif %}
+    
       <a href="{{ project.url }}">
         {{ project.acronyme }}
       </a>
