@@ -19,9 +19,9 @@ excerpt: <h2><FONT color="#ffffff">Workshops</FONT></h2>
     
       <a href="{{ workshop.url }}">
         <center>
-        <h3>
+        <h4>
             {{ workshop.title }}
-        </h3>
+        </h4>
         </center>  
       </a>
     
