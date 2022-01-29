@@ -57,8 +57,8 @@ excerpt: <h2><FONT color="#ffffff">Workshops</FONT></h2>
         <center>
         <strong>
           {{ workshop.title }}
-        </center>
         </strong>
+        </center>
       </a>
     </div>
   </div>
