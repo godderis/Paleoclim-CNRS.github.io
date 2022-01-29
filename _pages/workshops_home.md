@@ -19,7 +19,7 @@ excerpt: <h2><FONT color="#ffffff">Workshops</FONT></h2>
     
        {% if workshop.image %}
         <div class="workshop__image">
-            <a href="{{ workshop.url }}">
+          <a href="{{ workshop.url | relative_url }}">
             <img src="{{ workshop.image | relative_url }}" alt="{{ workshop.image }}" itemprop="image">
           </a>
         </div>
