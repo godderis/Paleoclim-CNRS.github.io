@@ -68,11 +68,11 @@ We are a community of deep-time climate modelers working in various research lab
           </a>
         </div>
         {% endif %}
-        <h2>
+        <strong>
           <a href="{{ member.url }}">
             {{ author.name }}
           </a>
-        </h2>
+        </strong>
       </div>
       {% assign bio = author.bio | markdownify | remove: "<p>" | remove: "</p>" %}
       {% if bio.size > 3 %}
@@ -102,11 +102,11 @@ We are a community of deep-time climate modelers working in various research lab
         </a>
       </div>
       {% endif %}
-      <h2>
+      <strong>
         <a href="{{ member.url }}">
           {{ author.name }}
         </a>
-      </h2>
+      </strong>
     </div>
     {% assign bio = author.bio | markdownify | remove: "<p>" | remove: "</p>" %}
     {% if bio.size > 3 %}
@@ -136,11 +136,11 @@ We are a community of deep-time climate modelers working in various research lab
         </a>
       </div>
       {% endif %}
-      <h2>
+      <strong>
         <a href="{{ member.url }}">
           {{ author.name }}
         </a>
-      </h2>
+      </strong>
     </div>
     {% assign bio = author.bio | markdownify | remove: "<p>" | remove: "</p>" %}
     {% if bio.size > 3 %}
