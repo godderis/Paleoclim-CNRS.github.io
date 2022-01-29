@@ -26,7 +26,9 @@ excerpt: <h2><FONT color="#ffffff">Workshops</FONT></h2>
        {% endif %}
   
       <a href="{{ workshop.url }}">
-        {{ workshop.title }}
+        <h2>
+            {{ workshop.title }}
+        </h2>
       </a>
     </div>
     <div class='card-body'>
