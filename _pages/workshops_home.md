@@ -11,11 +11,18 @@ excerpt: <h2><FONT color="#ffffff">Workshops</FONT></h2>
 {% assign old_workshops = site.workshops | where: "type", "old" %}
 {% assign upcoming_workshops = site.workshops | where_exp: "work", "work.type == 'upcoming'" | sort: 'year_start' | reverse%}
 
-<h2>Upcoming workshops</h2>
+<h2>Upcoming Workshops</h2>
 <div class='card-list'>
 {% for workshop in upcoming_workshops %}
 <div class='card'>
   <div class='card-header'>
+    
+       {% if workshop.image %}
+        <div class="workshop__image">
+            <img src="{{ workshop.image | relative_url }}" alt="{{ workshop.image }}" itemprop="image">
+          </a>
+        </div>
+  
       <a href="{{ workshop.url }}">
         {{ workshop.title }}
       </a>
