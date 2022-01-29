@@ -17,18 +17,23 @@ excerpt: <h2><FONT color="#ffffff">Projects</FONT></h2>
 {% for project in current_projects %}
 <div class='card'>
   <div class='card-header'>
-    
-      {% if project.image %}
-        <div class="project__image">
-          <a href="{{ project.url | relative_url }}">
-            <img src="{{ project.image | relative_url }}" alt="{{ project.image }}" itemprop="image">
-          </a>
-        </div>
-      {% endif %}
-    
+        
       <a href="{{ project.url }}">
-        {{ project.acronyme }}
+        <center>
+        <strong>
+          {{ project.acronyme }}
+        </center>
+        </strong>
       </a>
+    
+    {% if project.image %}
+      <div class="project__image">
+         <a href="{{ project.url | relative_url }}">
+          <img src="{{ project.image | relative_url }}" alt="{{ project.image }}" itemprop="image">
+        </a>
+      </div>
+    {% endif %}
+    
     </div>
     <div class='card-body'>
     <p>
@@ -49,7 +54,11 @@ excerpt: <h2><FONT color="#ffffff">Projects</FONT></h2>
   <div class='card'>
     <div class='card-header'>
       <a href="{{ project.url }}">
-        {{ project.title }}
+        <center>
+        <strong>
+          {{ project.title }}
+        </center>
+        </strong>
       </a>
     </div>
   </div>
