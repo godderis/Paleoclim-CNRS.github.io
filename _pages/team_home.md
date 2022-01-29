@@ -21,7 +21,7 @@ We are a community of deep-time climate modelers working in various research lab
   {% if perm != blank %}
 
     <h2>Permanent Staff</h2>
-    <div class='card-list card-group'>
+    <div class='card-list'>
 
     {% for member in perm %}
 
