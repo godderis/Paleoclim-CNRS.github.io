@@ -22,8 +22,8 @@ excerpt: <h2><FONT color="#ffffff">Projects</FONT></h2>
         <center>
         <strong>
           {{ project.acronyme }}
-        </center>
         </strong>
+        </center>
       </a>
     
     {% if project.image %}
@@ -57,8 +57,8 @@ excerpt: <h2><FONT color="#ffffff">Projects</FONT></h2>
         <center>
         <strong>
           {{ project.title }}
-        </center>
         </strong>
+        </center>
       </a>
     </div>
   </div>
