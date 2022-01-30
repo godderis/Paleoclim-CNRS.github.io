@@ -19,12 +19,15 @@ Interested in the Earth system evolution across the Earth’s history with a com
 <h2>Permenant Positions</h2>
 <div class='card-list'>
   {% for position in perm %}
+  
   <div class='card'>
+    
     <div class='card card-header'>
       <a href="{{ position.url }}">
         {{ position.title }}
       </a>
     </div>
+    
     <div class='card-body'>
     {% if position.image %}
       <div class="position__image">
@@ -33,10 +36,12 @@ Interested in the Earth system evolution across the Earth’s history with a com
         </a>
       </div>      
     {% endif %}
+    </div>   
+    
     </div>     
-    </div>  
-    </div>
+
   {% endfor %}
+  </div>
 {% endif %}
 
 {% if fellow != blank %}
