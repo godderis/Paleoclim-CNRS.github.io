@@ -26,16 +26,17 @@ excerpt: <h2><FONT color="#ffffff">Projects</FONT></h2>
         </center>
       </a>
     
+    </div>
+    <div class='card-body'>
+      
     {% if project.image %}
       <div class="project__image">
          <a href="{{ project.url | relative_url }}">
           <img src="{{ project.image | relative_url }}" alt="{{ project.image }}" itemprop="image">
         </a>
       </div>
-    {% endif %}
-    
-    </div>
-    <div class='card-body'>
+    {% endif %}      
+      
     <p>
       <b>Start year: </b>{{ project.year_start }}
     </p>
