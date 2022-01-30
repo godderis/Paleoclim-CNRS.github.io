@@ -24,7 +24,10 @@ excerpt: <h2><FONT color="#ffffff">Workshops</FONT></h2>
         </strong>
         </center>  
       </a>
-    
+  
+    </div>
+    <div class='card-body'>
+     
        {% if workshop.image %}
         <div class="workshop__image">
           <a href="{{ workshop.url | relative_url }}">
@@ -32,9 +35,7 @@ excerpt: <h2><FONT color="#ffffff">Workshops</FONT></h2>
           </a>
         </div>
        {% endif %}
-  
-    </div>
-    <div class='card-body'>
+      
     <p>
       <b>When: </b>{{ workshop.days}}
     </p>
