@@ -63,7 +63,7 @@ Interested in the Earth system evolution across the Earth’s history with a com
   </div>
 {% endif %}
 
-{% if perm != blank %}
+{% if phd != blank %}
 <h2>PhD Positions</h2>
 <div class='card-list'>
   {% for position in phd %}
@@ -73,15 +73,15 @@ Interested in the Earth system evolution across the Earth’s history with a com
           {{ position.title }}
         </a>
       </div>
-      <div class='card-body'>
-        {% if position.image %}
+      {% if position.image %}
+        <div class='card-body'>
           <div class="position__image">
              <a href="{{ position.url | relative_url }}">
              <img src="{{ position.image | relative_url }}" alt="{{ position.image }}" itemprop="image">
-           </a>
-         </div>      
-       {% endif %}
-      </div>   
+             </a>
+          </div>   
+        </div>      
+      {% endif %}
    </div>     
   {% endfor %}
   </div>
