@@ -19,53 +19,70 @@ Interested in the Earth system evolution across the Earth’s history with a com
 <h2>Permenant Positions</h2>
 <div class='card-list'>
   {% for position in perm %}
-  
-  <div class='card'>
-    
-    <div class='card-header'>
-      <a href="{{ position.url }}">
-        {{ position.title }}
-      </a>
-    </div>
-    
-    <div class='card-body'>
-    {% if position.image %}
-      <div class="position__image">
-         <a href="{{ position.url | relative_url }}">
-          <img src="{{ position.image | relative_url }}" alt="{{ position.image }}" itemprop="image">
+   <div class='card'>
+      <div class='card-header'>
+        <a href="{{ position.url }}">
+          {{ position.title }}
         </a>
-      </div>      
-    {% endif %}
-    </div>   
-    
-    </div>     
-
+      </div>
+      <div class='card-body'>
+        {% if position.image %}
+          <div class="position__image">
+             <a href="{{ position.url | relative_url }}">
+             <img src="{{ position.image | relative_url }}" alt="{{ position.image }}" itemprop="image">
+           </a>
+         </div>      
+       {% endif %}
+      </div>   
+   </div>     
   {% endfor %}
   </div>
 {% endif %}
 
-{% if fellow != blank %}
+{% if perm != blank %}
 <h2>Fellow Positions</h2>
 <div class='card-list'>
   {% for position in fellow %}
-    <div class='card card-header'>
-      <a href="{{ position.url }}">
-        {{ position.title }}
-      </a>
-    </div>
+   <div class='card'>
+      <div class='card-header'>
+        <a href="{{ position.url }}">
+          {{ position.title }}
+        </a>
+      </div>
+      <div class='card-body'>
+        {% if position.image %}
+          <div class="position__image">
+             <a href="{{ position.url | relative_url }}">
+             <img src="{{ position.image | relative_url }}" alt="{{ position.image }}" itemprop="image">
+           </a>
+         </div>      
+       {% endif %}
+      </div>   
+   </div>     
   {% endfor %}
-</div>
+  </div>
 {% endif %}
 
-{% if phd != blank %}
+{% if perm != blank %}
 <h2>PhD Positions</h2>
 <div class='card-list'>
   {% for position in phd %}
-    <div class='card card-header'>
-      <a href="{{ position.url }}">
-        {{ position.title }}
-      </a>
-    </div>
+   <div class='card'>
+      <div class='card-header'>
+        <a href="{{ position.url }}">
+          {{ position.title }}
+        </a>
+      </div>
+      <div class='card-body'>
+        {% if position.image %}
+          <div class="position__image">
+             <a href="{{ position.url | relative_url }}">
+             <img src="{{ position.image | relative_url }}" alt="{{ position.image }}" itemprop="image">
+           </a>
+         </div>      
+       {% endif %}
+      </div>   
+   </div>     
   {% endfor %}
-</div>
+  </div>
 {% endif %}
