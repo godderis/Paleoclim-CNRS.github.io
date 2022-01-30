@@ -30,10 +30,10 @@ Interested in the Earth system evolution across the Earth’s history with a com
           <div class="position__image">
              <a href="{{ position.url | relative_url }}">
              <img src="{{ position.image | relative_url }}" alt="{{ position.image }}" itemprop="image">
-           </a>
+             </a>
+          </div>   
         </div>      
       {% endif %}
-      </div>   
    </div>     
   {% endfor %}
   </div>
@@ -54,10 +54,10 @@ Interested in the Earth system evolution across the Earth’s history with a com
           <div class="position__image">
              <a href="{{ position.url | relative_url }}">
              <img src="{{ position.image | relative_url }}" alt="{{ position.image }}" itemprop="image">
-           </a>
+             </a>
+          </div>   
         </div>      
       {% endif %}
-      </div>   
    </div>     
   {% endfor %}
   </div>
