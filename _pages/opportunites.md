@@ -16,7 +16,7 @@ Interested in the Earth system evolution across the Earth’s history with a com
 {% assign phd = site.opportunities | where: "type", "phd" %}
 
 {% if perm != blank %}
-<h2>Permenant Positions</h2>
+<h2>Permanent Positions</h2>
 <div class='card-list'>
   {% for position in perm %}
    <div class='card'>
@@ -25,21 +25,21 @@ Interested in the Earth system evolution across the Earth’s history with a com
           {{ position.title }}
         </a>
       </div>
-      <div class='card-body'>
-        {% if position.image %}
+      {% if position.image %}
+        <div class='card-body'>
           <div class="position__image">
              <a href="{{ position.url | relative_url }}">
              <img src="{{ position.image | relative_url }}" alt="{{ position.image }}" itemprop="image">
            </a>
-         </div>      
-       {% endif %}
+        </div>      
+      {% endif %}
       </div>   
    </div>     
   {% endfor %}
   </div>
 {% endif %}
 
-{% if perm != blank %}
+{% if fellow != blank %}
 <h2>Fellow Positions</h2>
 <div class='card-list'>
   {% for position in fellow %}
@@ -49,14 +49,14 @@ Interested in the Earth system evolution across the Earth’s history with a com
           {{ position.title }}
         </a>
       </div>
-      <div class='card-body'>
-        {% if position.image %}
+      {% if position.image %}
+        <div class='card-body'>
           <div class="position__image">
              <a href="{{ position.url | relative_url }}">
              <img src="{{ position.image | relative_url }}" alt="{{ position.image }}" itemprop="image">
            </a>
-         </div>      
-       {% endif %}
+        </div>      
+      {% endif %}
       </div>   
    </div>     
   {% endfor %}
