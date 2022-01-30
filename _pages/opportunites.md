@@ -22,7 +22,7 @@ Interested in the Earth system evolution across the Earth’s history with a com
   
   <div class='card'>
     
-    <div class='card card-header'>
+    <div class='card-header'>
       <a href="{{ position.url }}">
         {{ position.title }}
       </a>
