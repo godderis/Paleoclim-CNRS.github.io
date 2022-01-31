@@ -8,7 +8,7 @@ header:
   # actions:
   #   - label: "<i class='fas fa-download'></i> Install now"
   #     url: "/docs/quick-start-guide/"
-excerpt: <h2><FONT color="#ffffff">Home of the French Paleoclimate Modeling Group</FONT></h2>
+excerpt: <h2><FONT color="#ffffff">Home of the French Deep-Time Paleoclimate Modeling Group</FONT></h2>
 ---
 
 {% assign news_items = site.news | sort: "date" | reverse %}
