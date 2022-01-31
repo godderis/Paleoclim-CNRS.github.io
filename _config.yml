@@ -16,9 +16,9 @@ title_separator          : "-"
 subtitle                 : "Paleoclim-CNRS"
 name                     : &name "French Paleoclimate Modeling Group" # &name is a YAML anchor which can be *referenced later
 description              : &description "Homepage for the French Paleoclimate modeling group"
-url                      : https://CEREGE-CL.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://paleoclim-cnrs.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "CEREGE-CL/CEREGE-CL.github.io"
+repository               : "Paleoclim-CNRS/Paleoclim-CNRS.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -79,10 +79,10 @@ author:
   links:
     - label: "Homepage"
       icon: "fas fa-fw fa-link"
-      url: "https://cerege-cl.github.io/"
+      url: "https://paleoclim-cnrs.github.io/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/CEREGE-CL"
+      url: "https://github.com/Paleoclim-CNRS"
 
 
 # Site Footer
@@ -90,7 +90,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/CEREGE-CL"
+      url: "https://github.com/Paleoclim-CNRS"
 
 
 # Reading Files

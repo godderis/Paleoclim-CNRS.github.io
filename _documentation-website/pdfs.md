@@ -12,12 +12,12 @@ Jekyll support for pdfs seems somewhat limited, we are going to use the google d
 ## Instructions
 
 1. Upload the file to Github prefereably in /assets/pdfs or some other place on the internet
-1. Go to the file and copy the url eg. `https://github.com/CEREGE-CL/CEREGE-CL.github.io/blob/main/assets/pdf/Advertises-Engineer-2021-1.pdf`
+1. Go to the file and copy the url eg. `https://github.com/Paleoclim-CNRS/Paleoclim-CNRS.github.io/blob/main/assets/pdf/Advertises-Engineer-2021-1.pdf`
 1. Use this below code and change the pdf_url with your link
 
 {% raw %}
 ```
-{% assign pdf_url = 'https://github.com/CEREGE-CL/CEREGE-CL.github.io/blob/main/assets/pdf/Advertises-Engineer-2021-1.pdf' %}
+{% assign pdf_url = 'https://github.com/Paleoclim-CNRS/Paleoclim-CNRS.github.io/blob/main/assets/pdf/Advertises-Engineer-2021-1.pdf' %}
 
 <iframe src="https://drive.google.com/viewerng/viewer?
 url={{pdf_url}}?raw=true?
@@ -51,12 +51,12 @@ Example here:
 Similar to the First part:
 
 1. Upload the file to Github prefereably in /assets/pdfs or some other place on the internet
-1. Go to the file and copy the url eg. `https://github.com/CEREGE-CL/CEREGE-CL.github.io/blob/main/assets/pdf/Advertises-Engineer-2021-1.pdf`
+1. Go to the file and copy the url eg. `https://github.com/Paleoclim-CNRS/Paleoclim-CNRS.github.io/blob/main/assets/pdf/Advertises-Engineer-2021-1.pdf`
 1. Use this below code and change the pdf_url with your link
 
 {% raw %}
 ```
-{% assign pdf_url = 'https://github.com/CEREGE-CL/CEREGE-CL.github.io/blob/main/assets/pdf/Advertises-Engineer-2021-1.pdf' %}
+{% assign pdf_url = 'https://github.com/Paleoclim-CNRS/Paleoclim-CNRS.github.io/blob/main/assets/pdf/Advertises-Engineer-2021-1.pdf' %}
 
 <a src="https://drive.google.com/viewerng/viewer?
 url={{pdf_url}}?raw=true?

@@ -52,7 +52,7 @@ Dans l’idéal il s’agit de résumer une prospective dans laquelle vous souha
 
 # Qui sommes nous
 
-<a href="https://cerege-cl.github.io/team">Team Website <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i></a>
+<a href="https://paleoclim-cnrs.github.io/team">Team Website <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i></a>
 
 # Détail sur le GDR
 Climat-Environnement-Vie (CEV) --> lien

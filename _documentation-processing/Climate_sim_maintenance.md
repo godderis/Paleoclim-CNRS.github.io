@@ -8,15 +8,15 @@ excerpt: General information for working ensuring the climate sim platform is de
 
 # Introduction
 
-The IPSL Boundary Condtion Editor is developped on [GitHub](https://github.com/CEREGE-CL/netcdf_editor_app) and automatically deployed to [https://climate_sim.osupytheas.fr](https://climate_sim.osupytheas.fr).
+The IPSL Boundary Condtion Editor is developped on [GitHub](https://github.com/Paleoclim-CNRS/netcdf_editor_app) and automatically deployed to [https://climate_sim.osupytheas.fr](https://climate_sim.osupytheas.fr).
 
 ## CICD
 The automated workflow is the following:
 1. Commit Changes to the github repository
-1. When there is a change on `main` (either direct commit or a pull request) [GitHub actions](https://github.com/CEREGE-CL/netcdf_editor_app/tree/main/.github/workflows) are triggered:
+1. When there is a change on `main` (either direct commit or a pull request) [GitHub actions](https://github.com/Paleoclim-CNRS/netcdf_editor_app/tree/main/.github/workflows) are triggered:
     - Python tests: ensure the code works
     - Build Docker Images
-1. The GitHub Action for building the Docker images, builds the images (the app is composed of a stack of images see: [Doc](https://cerege-cl.github.io/netcdf_editor_app/multi#architecture)) and then pushes the images (updates the images) to:
+1. The GitHub Action for building the Docker images, builds the images (the app is composed of a stack of images see: [Doc](https://paleoclim-cnrs.github.io/netcdf_editor_app/multi#architecture)) and then pushes the images (updates the images) to:
     - [DockerHub](https://hub.docker.com/u/ceregecl) with the tag `latest`. This means that anyone can easily install the application (but there is a limit on the number of image pulls on dockerhub free 200?).
     - [OSU Infrastructure](https://docker.osupytheas.fr) at registry.osupytheas.fr (you need an osu account to access this) with the tag `latest` and a tag with the timestamp (previous versions are stored here). This is the preferred place to get the images as there is no limiting and is on local infrastructure.
 1. On the OSU infrastructure (contact Julien Lecubin) where the app is deployed to [Watch Tower](https://containrrr.dev/watchtower/) is used. This tool monitors (certain) images every 5 minutes and looks to see if a new version is availble. If it is the case it will automatically download it, stop the previous container using the given image and redeploy a new container using the new image with the same configuration as the previous container.
@@ -75,7 +75,7 @@ This can be necessary after a power cut for example or if you accidentally remov
     {% include figure image_path="/assets/images/portainer-stacks.png" alt="Portainer Stacks" %}
 1. Click on editor
     {% include figure image_path="/assets/images/portainer-editor.png" alt="Portainer Editor" %}
-1. Change any code needs FYI you can look at the [docker-compose](https://github.com/CEREGE-CL/netcdf_editor_app/blob/main/docker-compose.yaml)
+1. Change any code needs FYI you can look at the [docker-compose](https://github.com/Paleoclim-CNRS/netcdf_editor_app/blob/main/docker-compose.yaml)
     or the base config here:
     ```
     version: '2'

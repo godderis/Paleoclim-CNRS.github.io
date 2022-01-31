@@ -1,5 +1,5 @@
-# CEREGE-CL.github.io
-CEREGE-CL Homepage
+# Paleoclim-CNRS.github.io
+Paleoclim-CNRS Homepage
 
 # Dev
 

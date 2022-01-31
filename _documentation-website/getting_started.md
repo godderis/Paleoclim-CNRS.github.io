@@ -25,7 +25,7 @@ As the code is hosted on GitHub I recommend you create a new github account, you
 ### 1) GitHub configuration to be able to push changes to the distant repository
 
 In order to be able to push your local changes to the distant repository, you will need to satisfy two conditions:
--  Having write access on GitHub (check your GitHub account is registered [here](https://github.com/CEREGE-CL/CEREGE-CL.github.io/people))
+-  Having write access on GitHub (check your GitHub account is registered [here](https://github.com/Paleoclim-CNRS/Paleoclim-CNRS.github.io/people))
 
 -  Having your local machine registered for GitHub:
 
@@ -49,7 +49,7 @@ To modify some parts of the website you will need to go through few steps.
 Once you have your github account open a terminal and type:
 
 ```
-git clone https://github.com/CEREGE-CL/CEREGE-CL.github.io.git
+git clone https://github.com/Paleoclim-CNRS/Paleoclim-CNRS.github.io.git
 ```
 
 This sets up the repository, meaning it clones the latest version (at the time of execution) from the server to your machine.
@@ -109,4 +109,4 @@ This needs 3 steps to be done:
   git push
   ```
 
-Your changes should now be on the server, wait a minute or two for GitHub to rebuild and then your changes should be live at [https://cerege-cl.github.io/](https://cerege-cl.github.io/).
+Your changes should now be on the server, wait a minute or two for GitHub to rebuild and then your changes should be live at [https://paleoclim-cnrs.github.io/](https://paleoclim-cnrs.github.io/).

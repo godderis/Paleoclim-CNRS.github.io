@@ -4,4 +4,4 @@ author: Wesley
 excerpt: Code documentation for the climate sim platform
 ---
 
-<iframe src="https://cerege-cl.github.io/netcdf_editor_app/" style="width:50vw; height:60vh;"></iframe>
+<iframe src="https://paleoclim-cnrs.github.io/netcdf_editor_app/" style="width:50vw; height:60vh;"></iframe>

@@ -14,9 +14,9 @@ __Requirements__<br><br>You need an __OSU Pytheas account__ in order to be able 
 
 
 # Set up the SSH config file
-*If you want more informations about what is done in this step check out this [doc](https://cerege-cl.github.io/documentation-website/ssh/#ssh-config).*
+*If you want more informations about what is done in this step check out this [doc](https://paleoclim-cnrs.github.io/documentation-website/ssh/#ssh-config).*
 
-- If the `~/.ssh/config` doesn't exist you have to create one and add the [default options](https://cerege-cl.github.io/documentation-website/ssh/#default-options) on top of it.
+- If the `~/.ssh/config` doesn't exist you have to create one and add the [default options](https://paleoclim-cnrs.github.io/documentation-website/ssh/#default-options) on top of it.
 
 - Append to the `~/.ssh/config` file:
   ```
@@ -56,7 +56,7 @@ __Requirements__<br><br>You need an __OSU Pytheas account__ in order to be able 
 
 # Copy your SSH key to the servers (not mandatory)
 
-*If you want more informations about what is done in this step check out this [doc](https://cerege-cl.github.io/documentation-website/ssh/#copy-public-key-to-server).*
+*If you want more informations about what is done in this step check out this [doc](https://paleoclim-cnrs.github.io/documentation-website/ssh/#copy-public-key-to-server).*
 
 In order to get access to modelserver without having to write your password twice (one for Rubicon and one for Modelserver) each time you connect, you can copy your public key in the `~/.ssh/authorized_keys` files located in Rubicon and Modelserver.
 

@@ -17,8 +17,8 @@ Since starting at CEREGE he has been involved in a number of initatives notbaly:
 
 - Conception and Developpement of the [NetCDF editor tool](/tools/IPSL_Boundary_Conditions)
 - Deployment and maintenance of [JupyterHub](/tools/JupyterHub)
-- Deployment and maintenance of [Lab Website](https://github.com/CEREGE-CL/CEREGE-CL.github.io)
-- Deployment and maintenance of [Lab Demo Notebook Gallery](https://cerege-cl.github.io/Notebooks-Gallery/#)
+- Deployment and maintenance of [Lab Website](https://github.com/Paleoclim-CNRS/Paleoclim-CNRS.github.io)
+- Deployment and maintenance of [Lab Demo Notebook Gallery](https://paleoclim-cnrs.github.io/Notebooks-Gallery/#)
 - Animates the weekly [Snakes in Space](https://curvenote.com/@wesley/snakes-in-space/snakes-in-space-overview) Meetup for learning interactive computing tips and tricks
 - Post Processing Workflows
 - Indexing and search of simulations using ElasticStack
