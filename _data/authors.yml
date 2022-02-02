@@ -199,3 +199,25 @@ psepulchre:
     - label: "Google Scholar"
       icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.fr/citations?hl=fr&pli=1&user=Er4h_F8AAAAJ"
+
+ffluteau:
+  name        : "Frédéric Fluteau"
+  bio         : >
+        Professor at IPGP interested in deep-time climate changes
+
+  avatar      : "/assets/images/ffluteau.jpg"
+  location    : "Paris, France"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "http://www.ipgp.fr/fr/fluteau-frederic"
+    - label: "Researchgate"
+      icon: "fab fa-researchgate"
+      url: "https://www.researchgate.net/profile/Frederic-Fluteau"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.fr/citations?hl=fr&user=M0Mqp64AAAAJ"
+    - label: "Publons"
+      icon: "fas fa-fw fa-PUBLONS"
+      url: "https://publons.com/researcher/2814819/frederic-fluteau/"
+
