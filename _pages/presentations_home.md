@@ -27,16 +27,27 @@ excerpt: <h2><FONT color="#ffffff">Presentations</FONT></h2>
       </a>
     
     </div>
-    <div class='card-body'>
+
+    {% if presentation.summary %}
+      <div class='card-body'>
       
-    {% if presentation.image %}
-      <div class="presentation__image">
-         <a href="{{ presentation.url | relative_url }}">
-          <img src="{{ presentation.image | relative_url }}" alt="{{ presentation.image }}" itemprop="image">
-        </a>
+        {% if presentation.image %}
+          <div class="presentation__image">
+            <a href="{{ presentation.url | relative_url }}">
+               <img src="{{ presentation.image | relative_url }}" alt="{{ presentation.image }}" itemprop="image">
+            </a>
+          </div>
+        {% endif %}      
+
+    
+        {% assign sum = presentation.summary | markdownify | remove: "<p>" | remove: "</p>" %}
+        {% if sum.size > 3 %}
+          <p>{{ sum }}</p>
+        {% endif %}
+      
       </div>
-    {% endif %}      
-    </div>
+    {% endif %}  
+
   </div>
 {% endfor %}
 </div>
@@ -58,16 +69,27 @@ excerpt: <h2><FONT color="#ffffff">Presentations</FONT></h2>
       </a>
     
     </div>
-    <div class='card-body'>
+
+    {% if presentation.summary %}
+      <div class='card-body'>
       
-    {% if presentation.image %}
-      <div class="presentation__image">
-         <a href="{{ presentation.url | relative_url }}">
-          <img src="{{ presentation.image | relative_url }}" alt="{{ presentation.image }}" itemprop="image">
-        </a>
+        {% if presentation.image %}
+          <div class="presentation__image">
+            <a href="{{ presentation.url | relative_url }}">
+               <img src="{{ presentation.image | relative_url }}" alt="{{ presentation.image }}" itemprop="image">
+            </a>
+          </div>
+        {% endif %}      
+
+    
+        {% assign sum = presentation.summary | markdownify | remove: "<p>" | remove: "</p>" %}
+        {% if sum.size > 3 %}
+          <p>{{ sum }}</p>
+        {% endif %}
+      
       </div>
-    {% endif %}      
-    </div>
+    {% endif %}  
+
   </div>
 {% endfor %}
 </div>
