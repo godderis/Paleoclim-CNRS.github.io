@@ -1,4 +1,3 @@
-
 ---
 layout: splash
 permalink: /resources/presentations
@@ -38,6 +37,8 @@ excerpt: <h2><FONT color="#ffffff">Presentations</FONT></h2>
     {% endif %}      
     </div>
   </div>
+{% endfor %}
+</div>
 
 <h2>Defenses</h2>
 <div class='card-list'>
@@ -65,3 +66,5 @@ excerpt: <h2><FONT color="#ffffff">Presentations</FONT></h2>
     {% endif %}      
     </div>
   </div>
+{% endfor %}
+</div>

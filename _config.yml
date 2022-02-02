@@ -221,7 +221,7 @@ defaults:
       type: presentations
     values:
       layout: single
-      read_time: true
+      read_time: false
       author_profile: true
       share: false
       comments: false
