@@ -1,6 +1,6 @@
 ---
 author: psepulchre
-title: [28 Jan 2022] Julia Bres
+title: "28 Jan 2022 - Julia Bres"
 type: defense
 ---
 
