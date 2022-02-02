@@ -4,4 +4,4 @@ img: assets/images/these_julia.jpg
 ---
 Julia has defended successfully her thesis on Cretaceous climate and flowering plant evolution, congrats to her! 
 
-Check out the article [here](https://www.ipsl.fr/agenda/archives-soutenances/soutenance-de-these-de-julia-bres/)
+Check out the presentation and associated paper [here](https://paleoclim-cnrs.github.io/presentations/Julia-Bres-PhD/)
