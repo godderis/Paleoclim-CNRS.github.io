@@ -7,5 +7,5 @@ title: 28 January 2022 -Julia Bres- PhD defense
 </video>
 
 <iframe src="https://bg.copernicus.org/articles/18/5729/2021/"
-        title="Associated paper" width="400" height="300">
+        title="Associated paper" width="200" height="150">
 </iframe> 
