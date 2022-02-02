@@ -8,8 +8,8 @@ header:
 excerpt: <h2><FONT color="#ffffff">Presentations</FONT></h2>
 ---
 
-{% assign defenses = site.resources/presentations | where: "type", "defense" %}
-{% assign seminaires = site.resources.presentations | where: "type", "seminaire" %}
+{% assign defenses = site.presentations | where: "type", "defense" %}
+{% assign seminaires = site.presentations | where: "type", "seminaire" %}
 
 <h2>Seminaires</h2>
 <div class='card-list'>

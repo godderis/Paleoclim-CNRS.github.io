@@ -214,7 +214,7 @@ defaults:
       comments: false
   # _presentations
   - scope:
-      path: "_presentations"
+      path: ""
       type: presentations
     values:
       layout: single
