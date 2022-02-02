@@ -14,7 +14,7 @@ excerpt: <h2><FONT color="#ffffff">Presentations</FONT></h2>
 
 <h2>Seminaires</h2>
 <div class='card-list'>
-{% for presentations in seminaires %}
+{% for presentation in seminaires %}
 <div class='card'>
   <div class='card-header'>
         
@@ -41,7 +41,7 @@ excerpt: <h2><FONT color="#ffffff">Presentations</FONT></h2>
 
 <h2>Defenses</h2>
 <div class='card-list'>
-{% for presentations in defenses %}
+{% for presentation in defenses %}
 <div class='card'>
   <div class='card-header'>
         
