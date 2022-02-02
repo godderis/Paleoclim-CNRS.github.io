@@ -181,7 +181,9 @@ apohl:
 psepulchre:
   name        : "Pierre Sepulchre"
   bio         : >
-    CNRS researcher interested in paleoclimate and biodiversity evolution
+        CNRS researcher interested in paleoclimate and biodiversity evolution.
+        co-head of the climate modelling group (CLIM) at LSCE.
+
   avatar      : "/assets/images/psepulchre.jpg"
   location    : "Saclay, France"
   links:
