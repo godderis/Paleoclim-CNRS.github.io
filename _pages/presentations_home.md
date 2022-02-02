@@ -11,6 +11,7 @@ excerpt: <h2><FONT color="#ffffff">Presentations</FONT></h2>
 {% assign defenses = site.presentations | where: "type", "defense" %}
 {% assign seminaires = site.presentations | where: "type", "seminaire" %}
 
+{% if seminaires != blank %}
 <h2>Seminaires</h2>
 <div class='card-list'>
 {% for presentation in seminaires %}
@@ -39,7 +40,9 @@ excerpt: <h2><FONT color="#ffffff">Presentations</FONT></h2>
   </div>
 {% endfor %}
 </div>
+{% endif %}
 
+{% if defenses != blank %}
 <h2>Defenses</h2>
 <div class='card-list'>
 {% for presentation in defenses %}
@@ -68,3 +71,4 @@ excerpt: <h2><FONT color="#ffffff">Presentations</FONT></h2>
   </div>
 {% endfor %}
 </div>
+{% endif %}
