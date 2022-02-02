@@ -20,9 +20,7 @@ excerpt: <h2><FONT color="#ffffff">Presentations</FONT></h2>
         
       <a href="{{ presentation.url }}">
         <center>
-        <strong>
           {{ presentation.title }}
-        </strong>
         </center>
       </a>
     
@@ -62,9 +60,7 @@ excerpt: <h2><FONT color="#ffffff">Presentations</FONT></h2>
         
       <a href="{{ presentation.url }}">
         <center>
-        <strong>
           {{ presentation.title }}
-        </strong>
         </center>
       </a>
     
