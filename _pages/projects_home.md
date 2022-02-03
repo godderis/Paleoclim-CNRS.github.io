@@ -57,7 +57,7 @@ excerpt: <h2><FONT color="#ffffff">Projects</FONT></h2>
       <a href="{{ project.url }}">
         <center>
         <strong>
-          {{ project.title }}
+          {{ project.acronyme }}
         </strong>
         </center>
       </a>
