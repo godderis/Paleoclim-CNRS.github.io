@@ -10,9 +10,6 @@ description: "Simulating deep-time ocean oxygenation and its coupling with the e
 collaborators:
     - name: apohl
 image: "/assets/images/apohl_turbidites.jpg"
-publications:
-  - name:  Vertical decoupling in Late Ordovician anoxia due to reorganization of ocean circulation
-    url: "https://www.nature.com/articles/s41561-021-00843-9"
 ---
 
 Oceans play a vital role in removing CO2 from the atmosphere through a mechanism involving algae known as the biological pump. Changing environmental conditions may affect this system and the oxygenation of oceans in ways we cannot at this time predict easily. BioSIGNAL project will use modelling of coupled oceanic ecosystems and geochemical cycles using past records of the biological pump’s reactions to change to understand the mechanics of the process. This will provide invaluable help to scientists and policymakers who are working on next-generation marine ecosystem models projecting the effect of climate change on ocean processes.
