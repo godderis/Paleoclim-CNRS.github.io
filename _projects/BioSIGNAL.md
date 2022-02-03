@@ -2,7 +2,7 @@
 acronyme: BioSIGNAL
 title: Biological pump Sensitivity and climate change: InterroGatiNg past environmentAL perturbations
 funder: H2020
-lab: Biogéosciences, U. California Riverside
+lab: Biogéosciences and U. California Riverside
 year_start: 2019
 type: old
 layout: project
@@ -11,7 +11,7 @@ collaborators:
     - name: apohl
 image: "/assets/images/apohl_turbidites.jpg"
 publications:
-  - name:  Vertical decoupling in Late Ordovician anoxia due to reorganization of ocean circulation. Nature Geoscience 14(11), doi:10.1038/s41561-021-00843-9.
+  - name:  Vertical decoupling in Late Ordovician anoxia due to reorganization of ocean circulation
     url: "https://www.nature.com/articles/s41561-021-00843-9"
 ---
 
