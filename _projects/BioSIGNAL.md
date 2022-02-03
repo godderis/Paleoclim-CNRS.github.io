@@ -11,7 +11,7 @@ collaborators:
     - name: apohl
 image: "/assets/images/apohl_turbidites.jpg"
 publications:
-  - name:  Pohl, A., Lu, Z., Lu, W., Stockey, R.G., Elrick, M., Li, M., Desrochers, A., Shen, Y., He, R., Finnegan, S., Ridgwell, A., 2021. Vertical decoupling in Late Ordovician anoxia due to reorganization of ocean circulation. Nature Geoscience 14(11), doi:10.1038/s41561-021-00843-9.
+  - name:  Vertical decoupling in Late Ordovician anoxia due to reorganization of ocean circulation. Nature Geoscience 14(11), doi:10.1038/s41561-021-00843-9.
     url: "https://www.nature.com/articles/s41561-021-00843-9"
 ---
 
