@@ -5,7 +5,9 @@ excerpt: Use Diag_CMA5A2.py file on IRENE to perform basic diags over CMA5A2's o
 toc: true
 ---
 
-The folder containing the script and all the packages required is located on IRENE here: `/ccc/store/cont003/gen2212/gen2212/Diag_CMA5A2/`.
+[![](https://img.shields.io/static/v1?label=Code&message=here&color=lightgrey&style=flat-square&logo=github)](https://github.com/Anthogr/Diag_CMA5A2/tree/IRENE_GEN2212)
+
+The folder containing the script and all the packages required is located on IRENE here: `/ccc/work/cont003/gen2212/gen2212/Diag_CMA5A2/`.
 
 This script plots several diagnostics from CMA5A2 outputs.
 Depending on the options enabled:
