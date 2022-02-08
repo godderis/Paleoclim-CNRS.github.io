@@ -6,5 +6,5 @@ summary: Modeling the marine oxygen and the primary productivity during the Ceno
 image: "/assets/images/paved-highway-in-USA.jpg"
 ---
 
-<video src="https://sharebox.lsce.ipsl.fr/index.php/s/IMAoENOREvl52s8/download" type="video/mp4" controls="controls" style="max-width: 730px;">
+<video src="https://nuage.osupytheas.fr/s/F2j6NbL6nFpYP68/download/Laugie-PhD-Defense.mp4" type="video/mp4" controls="controls" style="max-width: 730px;">
 </video>
