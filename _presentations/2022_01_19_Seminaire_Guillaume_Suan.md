@@ -1,8 +1,8 @@
 ---
 author: ydonnadieu
-title: "XX Jan 2022 - Guillaume Suan"
+title: "19 Jan 2022 - Guillaume Suan"
 type: seminaire
-summary: Blabla
+summary: Causes et conséquences des épisodes hyperthermaux au cours des derniers 200 Ma
 image: "/assets/images/paved-highway-in-USA.jpg"
 ---
 
