@@ -1,6 +1,6 @@
 ---
 author: ydonnadieu
-title: "28 Jan 2021 - Axelle Zacai"
+title: "28 Jan 2021 - A. Zacai"
 type: seminaire
 summary: Truncated bimodal latitudinal diversity gradient in early Palaeozoic phytoplankton
 image: "/assets/images/paved-highway-in-USA.jpg"
