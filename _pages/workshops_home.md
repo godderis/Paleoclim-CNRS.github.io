@@ -49,7 +49,7 @@ excerpt: <h2><FONT color="#ffffff">Workshops</FONT></h2>
 </div>
 
 
-<h2>Archived Workshops</h2>
+<h2>Past Workshops</h2>
 <div class='card-list'>
 {% for workshop in old_workshops %}
   <div class='card'>
