@@ -6,7 +6,7 @@ lab: Biogéosciences and U. California Riverside
 year_start: 2019
 type: old
 layout: project
-description: "Simulating deep-time ocean oxygenation and its coupling with the evolution of the marine biosphere"
+description: "This is a H2020 Marie Curie Global Fellowship (257 k€) that allowed me to spend 2 years in California Riverside to work with Andy Ridgwell, and one additional year back home at the Biogéosciences research lab in Dijon, France. The main idea was to simulate deep-time ocean oxygenation and its coupling with the evolution of the marine biosphere."
 collaborators:
     - name: apohl
 image: "/assets/images/apohl_turbidites.jpg"
