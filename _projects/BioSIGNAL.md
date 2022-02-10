@@ -10,6 +10,9 @@ description: "Simulating deep-time ocean oxygenation and its coupling with the e
 collaborators:
     - name: apohl
 image: "/assets/images/apohl_turbidites.jpg"
+publications:
+  - name: "Frau, C., Wimbledon, W.A.P., Ifrim, C., Bulot, L.G., Pohl, A., 2021. Berriasian ammonites of supposed Tethyan origin from the type ‘Ryazanian’, Russia: a systematic re-interpretation. Paleoworld, v. 30(3), p. 515-537. doi: 10.1016/j.palwor.2020.07.004"
+    url: "https://www.sciencedirect.com/science/article/abs/pii/S1871174X20300585"
 ---
 
 Oceans play a vital role in removing CO2 from the atmosphere through a mechanism involving algae known as the biological pump. Changing environmental conditions may affect this system and the oxygenation of oceans in ways we cannot at this time predict easily. BioSIGNAL project will use modelling of coupled oceanic ecosystems and geochemical cycles using past records of the biological pump’s reactions to change to understand the mechanics of the process. This will provide invaluable help to scientists and policymakers who are working on next-generation marine ecosystem models projecting the effect of climate change on ocean processes.
