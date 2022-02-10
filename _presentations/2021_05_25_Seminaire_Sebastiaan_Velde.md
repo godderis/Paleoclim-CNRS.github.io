@@ -2,7 +2,7 @@
 author: ydonnadieu
 title: "25 May 2021 - S. van de Velde"
 type: seminaire
-summary: Iron and sulphur cycling: from the modern seafloor to the Precambrian ocean
+summary: Iron and sulphur cycling, from the modern seafloor to the Precambrian ocean
 image: "/assets/images/paved-highway-in-USA.jpg"
 ---
 
