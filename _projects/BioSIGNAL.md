@@ -4,7 +4,7 @@ title: Biological pump Sensitivity and climate change, InterroGatiNg past enviro
 funder: H2020
 lab: Biogéosciences and U. California Riverside
 year_start: 2019
-type: current
+type: old
 layout: project
 description: "Simulating deep-time ocean oxygenation and its coupling with the evolution of the marine biosphere"
 collaborators:
