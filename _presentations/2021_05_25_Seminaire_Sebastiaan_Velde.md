@@ -6,6 +6,6 @@ summary: Iron and sulphur cycling: from the modern seafloor to the Precambrian o
 image: "/assets/images/paved-highway-in-USA.jpg"
 ---
 
-<video src="https://nuage.osupytheas.fr/s/6RAaoy6xXHn8AaW/download/zoom_0.mp4" type="video/mp4" controls="controls" style="max-width: 730px;">
+<video src="https://nuage.osupytheas.fr/s/XbnZrZR3ffBkpzo/download/zoom_SebVelde.mp4" type="video/mp4" controls="controls" style="max-width: 730px;">
 </video>
 
