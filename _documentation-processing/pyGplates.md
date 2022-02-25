@@ -1,9 +1,9 @@
 ---
-title: pyGplates
+title: pyGPlates
 author: apohl
 toc: true
 toc_sticky: true
-excerpt: HOWTO: use pyGPlates to rotate present-day lat-on data back in time
+excerpt: Using pyGPlates to programmatically rotate present-day lat-on data back in time
 ---
 
 # Overview
@@ -23,6 +23,8 @@ python3 rotate.py
 ```
 
 # Python code
+
+Provided in the archive, shown here for illustration.
 
 ```
 # python3 rotate.py
