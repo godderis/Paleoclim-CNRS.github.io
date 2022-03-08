@@ -18,7 +18,7 @@ __Requirements__<br><br>You'll need a python 3.8 install. Tested on MacOS 12.1 o
     - Scotese and Right (2018) rotation and polygon files.
 
 To execute the script on MacOS, just open your favorite terminal and type in:
-```
+```bash
 python3 rotate.py
 ```
 
@@ -26,7 +26,7 @@ python3 rotate.py
 
 Provided in the archive, shown here for illustration.
 
-```
+```python
 # python3 rotate.py
 # https://pip.pypa.io/en/stable/getting-started/
 # python3 -m pip install pandas
