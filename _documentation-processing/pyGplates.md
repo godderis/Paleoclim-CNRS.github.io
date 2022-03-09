@@ -8,6 +8,8 @@ excerpt: Using pyGPlates to programmatically rotate present-day lat-on data back
 
 # Overview
 
+This is a very short tutorial showing how to rotate data points back in time based on (1) present-day lon-lat data and (2)  a rotational model (here using the model of Scotese and Wright, 2018).
+
 __Requirements__<br><br>You'll need a python 3.8 install. Tested on MacOS 12.1 only.<br><br>
 {: .notice--info}
 
