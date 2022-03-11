@@ -16,7 +16,6 @@ fellows:
     - Nicolas Seon, PhD, October2019-XX (Sorbonne Universités, MNHN)
     - Thomas Letulle, PhD, October2019-XX (UCBL - LGLTPE)
     - To be recruited, Postdoc, 24 months (AMU, CEREGE)
-image: "/assets/images/paved-highway-in-USA.jpg"
 ---
 
 The main objective of the OXYMORE project is to provide the first reliable reconstructions of Mesozoic
