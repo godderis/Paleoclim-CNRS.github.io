@@ -91,7 +91,7 @@ Interested in the Earth system evolution across the Earth’s history with a com
 {% if master2 != blank %}
 <h2>Master 2 Positions</h2>
 <div class='card-list'>
-  {% for position in phd %}
+  {% for position in master2 %}
    <div class='card'>
       <div class='card-header'>
         <a href="{{ position.url }}">
