@@ -9,4 +9,7 @@ header:
 excerpt: " " # This is to remove the content from the image
 ---
 
-test
+
+<style> .page { padding-right: 0px; } </style>
+
+<iframe src="https://delphinetardif.github.io/" style="width:100%; height:70vh;"></iframe>
