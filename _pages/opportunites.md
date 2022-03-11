@@ -14,7 +14,7 @@ Interested in the Earth system evolution across the Earth’s history with a com
 {% assign fellow = site.opportunities | where: "type", "fellow" %}
 {% assign perm = site.opportunities | where: "type", "perm" %}
 {% assign phd = site.opportunities | where: "type", "phd" %}
-{% assign master = site.opportunities | where: "type", "M2" %}
+{% assign master2 = site.opportunities | where: "type", "master2" %}
 
 {% if perm != blank %}
 <h2>Permanent Positions</h2>
@@ -88,7 +88,7 @@ Interested in the Earth system evolution across the Earth’s history with a com
   </div>
 {% endif %}
 
-{% if master != blank %}
+{% if master2 != blank %}
 <h2>Master 2 Positions</h2>
 <div class='card-list'>
   {% for position in phd %}
